@@ -1,0 +1,272 @@
+@lecture 1
+@title Engineering Materials and Their Properties ||| 工程材料及其性能
+@summary 本讲是课程导论：介绍课程安排、教材与参考资源，说明为什么要学习材料；概览“材料世界”的六大材料族及其发展史；讲解设计中的选材流程、工程材料的性能分类；通过五个产品案例讨论材料对设计的关键程度；介绍“加工—结构—性能”三者关系，以及材料性能的微观起源（键合、原子堆垛、晶粒、合金化、析出相、位错）；最后给出工程师选材的四个步骤。
+
+@glossary
+material family ||| 材料族（材料大类）
+metals and alloys ||| 金属与合金
+polymers ||| 聚合物（高分子）
+elastomers ||| 弹性体（橡胶类）
+glasses ||| 玻璃
+ceramics ||| 陶瓷
+hybrids / composites ||| 混杂材料 / 复合材料
+stiffness ||| 刚度
+strength ||| 强度
+toughness ||| 韧性（抵抗裂纹扩展的能力）
+elastic / plastic ||| 弹性的 / 塑性的
+creep ||| 蠕变
+fatigue ||| 疲劳
+fracture ||| 断裂
+brittle / ductile ||| 脆性的 / 韧性（延性）的
+corrosion / oxidation ||| 腐蚀 / 氧化
+materials selection ||| 选材（材料选择）
+process selection ||| 工艺选择
+microstructure ||| 显微组织（微观结构）
+atomic bonding ||| 原子键合
+atomic packing ||| 原子堆垛（排列）
+grain / grain size ||| 晶粒 / 晶粒尺寸
+alloying ||| 合金化
+lattice strain ||| 晶格应变（晶格畸变）
+precipitates ||| 析出相（沉淀相）
+dislocation ||| 位错
+plastic deformation ||| 塑性变形
+constraints and objectives ||| 约束条件与目标
+screening / ranking ||| 筛选 / 排序
+performance metrics ||| 性能指标
+
+@slide 1
+Properties of Materials — Lecture 1 ||| 材料性能 —— 第 1 讲
+Dr. Alkis Tsamis (at441@leicester.ac.uk) ||| 主讲：Alkis Tsamis 博士（at441@leicester.ac.uk）
+CTGU/UoL JEP, September 2024 ||| 三峡大学 / 莱斯特大学联合教育项目，2024 年 9 月
+
+@slide 2
+Course Topics and Schedule ||| 课程主题与安排
+Lecture 1: Module Overview, Module Aim, Why Study Materials, The World of Materials (1), History – The Evolution of Materials, Materials Selection in Design (1), Properties of Engineering Materials (1), Products, Three-Way Relationship (1), Origins of Material Properties, How Do We – As Engineers – Select Materials ||| 第 1 讲：课程概述、课程目标、为什么学习材料、材料世界(1)、历史——材料的演变、设计中的选材(1)、工程材料的性能(1)、产品案例、三者关系(1)、材料性能的起源、工程师如何选材
+Lecture 2: Concepts and Terminology (1), Properties of Engineering Materials (2), Mechanical Properties (1), Elastic Properties, Elastic Properties: Covalent and Metallic Bonds – Ionic Model – The Origin of Modulus, Plastic Properties, Fracture / Fatigue / Creep, Thermal Properties (1), Density and Corrosion, Corrosion: Anodic and Cathodic Reactions, Ellingham Diagram ||| 第 2 讲：概念与术语(1)、工程材料的性能(2)、力学性能(1)、弹性性能、弹性性能：共价键与金属键——离子模型——模量的起源、塑性性能、断裂/疲劳/蠕变、热性能(1)、密度与腐蚀、腐蚀：阳极与阴极反应、埃林汉姆图
+Lecture 3: Structure-Property-Processing Relationship, Structure Sensitive Properties, Structure Insensitive Properties, The Three-Part Relationship, Materials Property Web Sites, Materials Selection, Material Property Charts: Modulus – Density, Mechanical Properties (2), Thermal Properties (2), A TOOL for Materials Selection, Structure Sensitivity, Structure Sensitivity in Metals, Controlling Structure, Case Study ||| 第 3 讲：结构—性能—加工关系、结构敏感性能、结构不敏感性能、三者关系、材料性能网站、选材、材料性能图：模量—密度、力学性能(2)、热性能(2)、选材工具、结构敏感性、金属中的结构敏感性、控制结构、案例分析
+
+@slide 3
+Course Topics and Schedule ||| 课程主题与安排（续）
+Lecture 4: Availability of Materials, Case Study, Exam Question 2013, Example Questions, The World of Materials (2), Materials Selection in Design (2), Properties of Engineering Materials (3), Three-Way Relationship (2), Learning Objectives, Why Do We Need a Selection Methodology, Mechanical Properties (3), Thermal Properties (3), Trade-Offs Must Be Made, Materials Selection in Design (3), Materials Selection Process (1) ||| 第 4 讲：材料的可获得性、案例分析、2013 年考题、例题、材料世界(2)、设计中的选材(2)、工程材料的性能(3)、三者关系(2)、学习目标、为什么需要选材方法、力学性能(3)、热性能(3)、必须进行权衡、设计中的选材(3)、选材流程(1)
+Lecture 5: Step 1 – Translation, Step 2 – Screening, Materials Selection Process (2), Step 3 – Ranking Materials, Example – Hydraulic Cylinder Tie Rods, Step 4 – Refining Selection, Concepts and Terminology (2) ||| 第 5 讲：第 1 步——转化、第 2 步——筛选、选材流程(2)、第 3 步——材料排序、例题——液压缸拉杆、第 4 步——细化选择、概念与术语(2)
+Lecture 6: The Elastic Moduli, Deformation of Brittle Materials, Deformation of Ductile Materials, Hooke's Law – Young's Modulus, Linear Elastic Behaviour, Structural Engineering, What Might Have Saved the Bridge, Engineering Stress and Strain, True Stress and Strain, Comparison ||| 第 6 讲：弹性模量、脆性材料的变形、韧性材料的变形、胡克定律——杨氏模量、线弹性行为、结构工程、什么能挽救那座桥、工程应力与应变、真应力与真应变、比较
+Lecture 7: Practice Time, Definitions, Concepts and Terminology (3), Task ||| 第 7 讲：练习时间、定义、概念与术语(3)、任务
+Exercise Seminar 1 ||| 习题课 1
+
+@slide 4
+Course Topics and Schedule ||| 课程主题与安排（续）
+Lecture 8: Bonding Between Atoms, Learning Objectives, Bonding Energies, Primary Bonding, Ionic Bonding, Covalent Bonding, Metallic Bonding, Crystal Structures, Body-Centred Cubic, Face-Centred Cubic, Secondary Bonding, Van der Waals Forces, Hydrogen Bonding, Bonding Energies and Properties, Bonding Types and Properties, Concepts and Terminology (4) ||| 第 8 讲：原子间的键合、学习目标、键能、主价键（一次键）、离子键、共价键、金属键、晶体结构、体心立方、面心立方、次价键（二次键）、范德华力、氢键、键能与性能、键型与性能、概念与术语(4)
+Lecture 9: Recap from Last Time, Task ||| 第 9 讲：上次内容回顾、任务
+Exercise Seminar 2 / Lecture 10: Packing of Atoms in Solids (1), Learning Objectives, The Structure of Metals and Ceramics (1), Unit Cell Parameters, Face-Centred Cubic (fcc), Hexagonal Close-Packed (hcp), Crystal Structures – Metals, Crystal Structures – Ceramics, Concepts and Terminology (5) ||| 习题课 2 / 第 10 讲：固体中的原子堆垛(1)、学习目标、金属与陶瓷的结构(1)、晶胞参数、面心立方（fcc）、密排六方（hcp）、晶体结构——金属、晶体结构——陶瓷、概念与术语(5)
+Lecture 11: Packing of Atoms in Solids (2), Learning Objectives, Atomic Packing, Atomic Packing – bcc Structures, Atomic Packing Factor – bcc, Atomic Packing – fcc Structures, Atomic Packing Factor – fcc, Atomic Packing – hcp Structures, Atomic Packing Factor – hcp, Tips for Calculating APF for hcp, Concepts and Terminology (6) ||| 第 11 讲：固体中的原子堆垛(2)、学习目标、原子堆垛、原子堆垛——bcc 结构、原子堆积因子——bcc、原子堆垛——fcc 结构、原子堆积因子——fcc、原子堆垛——hcp 结构、原子堆积因子——hcp、计算 hcp 堆积因子的技巧、概念与术语(6)
+
+@slide 5
+Course Topics and Schedule ||| 课程主题与安排（续）
+Lecture 12: The Physical Basis of Young's Modulus, Learning Objectives, Moduli of Crystals, Rubbers and the Glass Transition Temperature, Composite, Composite Terminology, Fibre-Reinforced Composites, Rule of Mixtures (1) ||| 第 12 讲：杨氏模量的物理基础、学习目标、晶体的模量、橡胶与玻璃化转变温度、复合材料、复合材料术语、纤维增强复合材料、混合法则(1)
+Lecture 13: Rule of Mixtures (2), Task, Concepts and Terminology (7) ||| 第 13 讲：混合法则(2)、任务、概念与术语(7)
+Exercise Seminar 3 ||| 习题课 3
+Lecture 14: The Yield Strength, Tensile Strength, Hardness and Ductility, Case Studies, Learning Objectives, How do Crystalline Materials Fail (1), Length Scales, Continuum Plastic Flow, Shearing, Shearing of a Ductile Polycrystal, Plastic Instability, What is Creep, Where is Creep Important ||| 第 14 讲：屈服强度、抗拉强度、硬度与延性、案例分析、学习目标、晶体材料如何失效(1)、尺度、连续体塑性流动、剪切、韧性多晶体的剪切、塑性失稳、什么是蠕变、蠕变在哪些场合重要
+Lecture 15: How Does Creep Happen, Lattice Diffusion, Other Diffusion Paths, Creep Resistant Materials, Concepts and Terminology (8), Learning Objectives, How do Crystalline Materials Fail (2), Fracture Concepts, Fracture Jargon, Fracture Length Scales ||| 第 15 讲：蠕变如何发生、晶格扩散、其他扩散路径、抗蠕变材料、概念与术语(8)、学习目标、晶体材料如何失效(2)、断裂概念、断裂术语、断裂的尺度
+Exercise Seminar 4 ||| 习题课 4
+
+@slide 6
+Course Topics and Schedule ||| 课程主题与安排（续）
+Lecture 16: Idealised Fracture Mechanisms, (More) Realistic Fracture Mechanisms, Brittle Fracture, Brittle Fracture – Amorphous Materials, Brittle Fracture – Zn at −120°C, Brittle Fracture – Al-Li 8090, Ductile Fracture by Tearing, Ductile Fracture – 'Pure' Cu, Fracture Mechanisms, Premature Failures, Brittle Fracture – Materials with Soft 'Voids', Brittle Fracture – Materials with Hard 'Inclusions', Ductility, Premature Failures, Concepts and Terminology (9) ||| 第 16 讲：理想化的断裂机制、（更）真实的断裂机制、脆性断裂、脆性断裂——非晶材料、脆性断裂——−120°C 下的锌、脆性断裂——Al-Li 8090 合金、撕裂型韧性断裂、韧性断裂——“纯”铜、断裂机制、过早失效、脆性断裂——含软“孔洞”的材料、脆性断裂——含硬“夹杂物”的材料、延性、过早失效、概念与术语(9)
+Test ||| 测验
+Lecture 17: Dislocations and Yielding in Crystals, Learning Objectives, The Structure of Metals and Ceramics (2), What Controls Mechanical Behaviour, Grains and Grain Boundaries, Grain Structure Examples, Imperfections, Hall-Petch Effect (1), Defects in Crystals ||| 第 17 讲：晶体中的位错与屈服、学习目标、金属与陶瓷的结构(2)、什么控制力学行为、晶粒与晶界、晶粒结构实例、缺陷、霍尔—佩奇效应(1)、晶体中的缺陷
+Lecture 18: Vacancies, Edge Dislocations, Edge Dislocation Movement, Slip Planes, Hall-Petch Effect (2), Strengthening Mechanisms – Grain Refinement, Limits of Hall-Petch Effect, Concepts and Terminology (10) ||| 第 18 讲：空位、刃型位错、刃型位错的运动、滑移面、霍尔—佩奇效应(2)、强化机制——细晶强化、霍尔—佩奇效应的局限、概念与术语(10)
+
+@slide 7
+Course Topics and Schedule ||| 课程主题与安排（续）
+Exercise Seminar 5 ||| 习题课 5
+Lecture 19: Revision of Theory ||| 第 19 讲：理论复习
+Lecture 20: Revision of Exercises ||| 第 20 讲：习题复习
+
+@slide 8
+Engineering Materials and Their Properties ||| 工程材料及其性能
+
+@slide 9
+Module Overview ||| 课程概述
+Exam Schedule — Final Exam: (Time and Location: To Be Announced) ||| 考试安排 —— 期末考试：（时间和地点待定）
+Textbook — M.F. Ashby and D.R.H. Jones, Engineering Materials: An Introduction to Properties, Applications and Design, Butterworth-Heinemann ||| 教材 —— M.F. Ashby、D.R.H. Jones 著，《工程材料：性能、应用与设计导论》，Butterworth-Heinemann 出版社
+Reference Sources — Cambridge Engineering Selector (CES) EduPack software ||| 参考资源 —— 剑桥工程选材软件（CES EduPack）
+"Matter" on CFS & http://www.matter.org.uk/universities.htm ||| “Matter” 学习资源（CFS 平台）及 http://www.matter.org.uk/universities.htm
+Doitpoms http://www.doitpoms.ac.uk/tlplib/index.php ||| DoITPoMS 剑桥材料教学资源库 http://www.doitpoms.ac.uk/tlplib/index.php
+
+@slide 10
+(Book cover) Ashby & Jones, Engineering Materials 1, Fourth Edition: An Introduction to Properties, Applications and Design ||| （封面）Ashby & Jones《工程材料 1》第四版：性能、应用与设计导论 —— 本课程教材
+! 本课程的主教材。书中的数据表、性能图（如模量—密度图）和例题是课程与考试的重要来源。
+
+@slide 11
+(Book cover) Michael F. Ashby, Materials Selection in Mechanical Design, Fourth Edition ||| （封面）Michael F. Ashby《机械设计中的材料选择》第四版 —— 参考书
+! 这本书系统讲解“性能指标 + 材料性能图”的选材方法，第 4、5 讲的选材流程即来源于此。
+
+@slide 12
+What this module is all about… ||| 本课程讲什么……
+• The selection of Engineering Materials… ||| • 工程<b>材料</b>的选择……
+– Metals, alloys; polymers; elastomers; glasses; ceramics ||| – 金属、合金；聚合物；弹性体；玻璃；陶瓷
+• …by their properties… ||| • ……依据它们的<b>性能</b>……
+– Stiffness, strength, toughness ||| – 刚度、强度、韧性
+• …their mechanical behaviour and failure… ||| • ……它们的力学<b>行为</b>与<b>失效</b>……
+– Elastic, plastic, creep, brittle, ductile, fracture, fatigue and corrosion ||| – 弹性、塑性、蠕变、脆性、韧性（延性）、断裂、疲劳和腐蚀
+• …and the physical origins of these properties and behaviours ||| • ……以及这些性能和行为的<b>物理起源</b>
+– Bonding, crystal structure, grain size, precipitates, alloying and dislocations! ||| – 键合、晶体结构、晶粒尺寸、析出相、合金化和位错！
+! 本页是整门课的“路线图”：材料是什么（材料族）→ 用什么来衡量（性能）→ 如何变形和失效（行为）→ 为什么会这样（微观起源）。注意区分 stiffness（刚度，抵抗弹性变形，与模量 E 相关）、strength（强度，抵抗塑性变形或断裂）和 toughness（韧性，抵抗裂纹扩展）。
+
+@slide 13
+Module Aim ||| 课程目标
+To provide an exposure to a wide range of materials and processing methods. ||| 让学生广泛接触各种材料和加工方法。
+This exposure should provide an insight into the effect of the processing of materials on the final structure and properties of engineering materials. ||| 通过这种接触，理解材料的加工如何影响工程材料最终的结构和性能。
+Why? What use is this to me? What help is it to an engineer? ||| 为什么？这对我有什么用？对工程师有什么帮助？
+
+@slide 14
+Why study materials? ||| 为什么要学习材料？
+Reason #1: Cool pictures! ||| 理由一：图片很酷！
+Nickel/Gold Nanowire Array (scale bar 500 nm) ||| 镍/金纳米线阵列（标尺 500 nm）
+! 图中是电子显微镜下的纳米线阵列。材料科学可以在纳米尺度上观察并“设计”材料的结构。
+
+@slide 15
+The World of Materials ||| 材料世界
+• >150,000 different materials available ||| • 可供使用的材料超过 150,000 种
+• 5 families of materials ||| • 材料分为 5 大族
+• Hybrids combine two or more of the others ||| • 混杂材料由其他两种或多种材料组合而成
+Metals, alloys: Steels, cast irons, Al-alloys; Cu-alloys, Ni-alloys, Ti-alloys ||| 金属、合金：钢、铸铁、铝合金；铜合金、镍合金、钛合金
+Polymers: PE, PP, PC, PS, PET, PVC, PA; Polyester, Phenolic, Epoxies ||| 聚合物：聚乙烯、聚丙烯、聚碳酸酯、聚苯乙烯、聚对苯二甲酸乙二酯、聚氯乙烯、聚酰胺（尼龙）；聚酯、酚醛树脂、环氧树脂
+Elastomers: Isoprene, butyl rubber; Natural rubber, silicones, EVA ||| 弹性体：异戊橡胶、丁基橡胶；天然橡胶、硅橡胶、乙烯—醋酸乙烯共聚物（EVA）
+Glasses: Soda glass, borosilicate; Silica glass, glass ceramic ||| 玻璃：钠钙玻璃、硼硅酸盐玻璃；石英玻璃、微晶玻璃
+Ceramics: Alumina, silicon carbide; Silicon nitride, zirconia ||| 陶瓷：氧化铝、碳化硅；氮化硅、氧化锆
+Hybrids: Composites, sandwiches; GFRP, CFRP, foams ||| 混杂材料：复合材料、夹层结构；玻璃纤维增强塑料（GFRP）、碳纤维增强塑料（CFRP）、泡沫
+! 图中五个外圈（金属、聚合物、弹性体、玻璃、陶瓷）是 5 个基本材料族，中间的“混杂材料（Hybrids）”由它们组合而成，所以有时也说“6 大类”。
+
+@slide 16
+History – the evolution of materials ||| 历史——材料的演变
+(Chart) Relative importance of metals, polymers & elastomers, composites, and ceramics & glasses from 10000 BC to 2020 ||| （图）从公元前 10000 年到 2020 年，金属、聚合物与弹性体、复合材料、陶瓷与玻璃的相对重要性变化
+Image from: Ashby, M. F., (2011), Materials Selection in Mechanical Design ||| 图片来源：Ashby, M. F.（2011），《机械设计中的材料选择》
+! 读图要点：早期以天然材料（木材、石头、皮革、黏土）为主；青铜、铁出现后金属的重要性上升，约 1960 年前后达到顶峰；此后聚合物、复合材料和先进陶瓷的重要性迅速增长，金属的发展转向“质量控制与加工”。
+
+@slide 17
+Materials selection in design ||| 设计中的选材
+Engineering design → Environment, Component shape, Design loads → Required properties ||| 工程设计 → 环境、零件形状、设计载荷 → 所需性能
+1. Is there a material with a suitable combination of properties? → Materials selection ||| 1. 是否有材料具备合适的性能组合？→ 选材
+2. Can the component be made from these materials? → Process selection ||| 2. 能否用这些材料把零件制造出来？→ 工艺选择
+3. Would the cost be within budget if these materials were used? → Cost ||| 3. 如果使用这些材料，成本是否在预算之内？→ 成本
+Yes → Make part; No → return to engineering design ||| 是 → 制造零件；否 → 返回重新设计
+! 选材是一个迭代过程：任何一步回答“否”，都要回到设计阶段修改（换材料、换形状或换工艺），直到三个问题都回答“是”。
+
+@slide 18
+Properties of engineering materials ||| 工程材料的性能
+Mechanical: Strength, Stiffness, Toughness, Creep ||| 力学性能：强度、刚度、韧性、蠕变
+Chemical: Reactivity, Corrosion, Oxidation ||| 化学性能：反应活性、腐蚀、氧化
+Physical: Optical, Magnetic, Electrical ||| 物理性能：光学、磁学、电学
+Thermal: Expansion, Conductivity, Heat capacity, Transitions ||| 热性能：热膨胀、导热、热容、相变（转变温度）
+Life-cycle: Availability, Formability, Recyclability ||| 生命周期：可获得性、可成形性、可回收性
+Others: Aesthetics, Ergonomics, Desirability ||| 其他：美观、人机工程、受欢迎程度
+
+@slide 19
+Product 1: Paving (stone/concrete) ||| 产品 1：铺路材料（石材/混凝土）
+Non-critical ← DESIGN REASONS → Critical ||| 非关键 ← 设计原因 → 关键
+! 课堂讨论：判断材料对该产品是“关键”还是“非关键”的设计因素。铺路石主要承受压缩载荷，可选材料多、要求不苛刻，材料偏“非关键”，主要考虑成本、耐磨和美观。
+
+@slide 20
+Product 2: Windows (glass) ||| 产品 2：窗户（玻璃）
+Photography by Design Services, University of Leicester ||| 摄影：莱斯特大学设计服务部
+Non-critical ← DESIGN REASONS → Critical ||| 非关键 ← 设计原因 → 关键
+! 窗户必须透明（光学性能），可选材料很少（玻璃或透明聚合物），同时要考虑脆性断裂和隔热，材料属于较“关键”的因素。
+
+@slide 21
+Product 3: Bridges (structural steel) ||| 产品 3：桥梁（结构钢）
+Forth Rail Bridge, Scotland ||| 苏格兰福斯铁路桥
+Non-critical ← DESIGN REASONS → Critical ||| 非关键 ← 设计原因 → 关键
+! 桥梁需要高刚度、高强度、良好韧性和抗疲劳性能，而且失效后果严重，材料选择是关键因素。
+
+@slide 22
+Product 4: Cutting tools (tungsten carbides) ||| 产品 4：切削刀具（碳化钨）
+Hard Turning ||| 硬车削
+Cobalt-bonded tungsten carbide (Thornton, 2014) ||| 钴粘结碳化钨（硬质合金）（Thornton，2014）
+Non-critical ← DESIGN REASONS → Critical ||| 非关键 ← 设计原因 → 关键
+! 刀具必须比被加工材料更硬，并能在高温下保持硬度和耐磨性。右图为钴粘结碳化钨的显微组织：硬的 WC 颗粒被韧性较好的 Co 粘结在一起，属于金属陶瓷复合材料。
+
+@slide 23
+Product 5: Turbine blades (Ni-based superalloys) ||| 产品 5：涡轮叶片（镍基高温合金）
+Rolls-Royce Trent engine: Fan blades, Compressor blades, High-pressure turbine blades, Low-pressure turbine blades ||| 罗尔斯·罗伊斯 Trent 发动机：风扇叶片、压气机叶片、高压涡轮叶片、低压涡轮叶片
+High-pressure turbine blade: 1600°C, 10,000 rpm, extracts 550 kW from gas stream ||| 高压涡轮叶片：1600°C、10,000 转/分，从燃气流中提取 550 kW 功率
+Non-critical ← DESIGN REASONS → Critical ||| 非关键 ← 设计原因 → 关键
+! 高压涡轮叶片在极高温度和巨大离心应力下工作，必须抗蠕变、抗氧化，是“材料最关键”的典型例子。五个产品从“非关键”到“关键”大致排序为：铺路 → 窗户 → 桥梁 → 刀具 → 涡轮叶片。
+
+@slide 24
+Three-way relationship ||| 三者关系
+Design requirements: Function, Shape; Materials selection: Material / structure, Processing, Properties ||| 设计要求：功能、形状；选材：材料/结构、加工、性能
+Must understand how processing history controls microstructures and properties ||| 必须理解加工历史如何控制显微组织与性能
+• Processing: shaping and tailoring material properties ||| • 加工：成形并调控材料性能
+• Structure: controlled by composition and processing ||| • 结构：由成分和加工共同控制
+• Properties: controlled by microstructure ||| • 性能：由显微组织控制
+! 核心链条：成分 + 加工 → 显微组织 → 性能。同一种钢经过不同热处理，强度可以相差好几倍，原因就在于显微组织不同。
+
+@slide 25
+Origins of material properties (1) ||| 材料性能的起源（1）
+• Atomic bonding: ||| • 原子<b>键合</b>：
+– 'Strength of attraction' between atoms and chains of atoms ||| – 原子之间以及原子链之间的“吸引力强弱”
+(Diagram) F ← atoms joined by a spring → F; Interatomic spacing, r ||| （示意图）原子像被弹簧连接，受力 F 拉伸；原子间距 r
+• Atomic packing: ||| • 原子<b>堆垛</b>：
+– Arrangement of atoms in solids; can be structured (e.g. metals) or un-structured (e.g. glasses) ||| – 固体中原子的排列方式；可以是有序的（如金属），也可以是无序的（如玻璃）
+! “弹簧模型”是理解弹性模量的关键：键越强（弹簧越硬），模量越大。第 8、12 讲会进一步展开。
+
+@slide 26
+Origins of material properties (2) ||| 材料性能的起源（2）
+• Grain size: ||| • <b>晶粒尺寸</b>：
+– Materials are rarely made up of a single homogeneous structure ||| – 材料很少由单一、均匀的结构组成
+– Instead materials are formed of many irregular units or 'grains' ||| – 而是由许多不规则的单元——“晶粒”构成
+• Alloying: ||| • <b>合金化</b>：
+– Replacing atoms with those of another element ||| – 用另一种元素的原子替换原有原子
+– Results in 'lattice strain' that influences dislocation movement ||| – 产生“晶格应变（畸变）”，从而影响位错运动
+
+@slide 27
+Origins of material properties (3) ||| 材料性能的起源（3）
+• Precipitates: ||| • <b>析出相</b>：
+– Different (hard) chemical compounds that exist within a (soft) bulk material ||| – 存在于（较软）基体材料中的另一种（较硬）化合物
+– Dislocations can become entangled around them, or have to cut through them ||| – 位错会缠绕在它们周围，或必须切过它们
+• Dislocations: ||| • <b>位错</b>：
+– Atomic imperfections or defects in crystalline structures ||| – 晶体结构中的原子级缺陷
+– Dislocation movement is the origin of plastic deformation ||| – 位错运动是塑性变形的根源
+! 第 26、27 页的晶粒细化、合金化、析出相本质上都是“阻碍位错运动”，因此都能提高强度，这就是金属的主要强化机制（第 17、18 讲详述）。
+
+@slide 28
+How do we, as engineers, select materials? ||| 作为工程师，我们如何选材？
+• Materials selection process: ||| • 选材流程：
+1. Translate design requirements in constraints and objectives ||| 1. <b>转化</b>：把设计要求转化为约束条件和目标
+2. Screen materials to eliminate those that are not suitable ||| 2. <b>筛选</b>：淘汰不合适的材料
+3. Rank materials against performance metrics ||| 3. <b>排序</b>：按性能指标对材料排序
+4. Refine selection using additional information ||| 4. <b>细化</b>：利用更多信息完善选择
+• Materials databases: ||| • 材料数据库：
+– Online, e.g. MatWeb, Goodfellow, eFunda ||| – 在线数据库，如 MatWeb、Goodfellow、eFunda
+– Specialist software, e.g. Cambridge Engineering Selector EduPack ||| – 专业软件，如剑桥工程选材软件 EduPack
+• Next time, we will be learning how to apply the materials selection process and develop performance metrics ||| • 下次课我们将学习如何应用选材流程并建立性能指标
+! 四步法“转化—筛选—排序—细化”是整门课选材部分的主线（第 4、5 讲）。约束条件（constraints）是“必须满足”的硬性要求，用来筛选；目标（objective）是“越好越好”的量，用来排序。
+
+@example 材料族分类 Classifying materials into families
+Q: Classify each of the following into one of the material families and give one property that makes it suitable: (a) CFRP bicycle frame; (b) aluminium drinks can; (c) borosilicate laboratory beaker; (d) car tyre; (e) alumina spark-plug insulator; (f) PET water bottle. ||| 将下列材料归入相应的材料族，并各写出一条使其适用的性能：(a) CFRP 自行车车架；(b) 铝制饮料罐；(c) 硼硅酸盐玻璃实验烧杯；(d) 汽车轮胎；(e) 氧化铝火花塞绝缘体；(f) PET 矿泉水瓶。
+S: 思路：对照第 15 页“材料世界”，先判断材料的化学本质（金属键 / 长链高分子 / 无机非金属），再看是否由两种材料组合而成。
+S: (a) CFRP = 碳纤维 + 环氧树脂，属于<b>混杂材料（复合材料）</b>；比刚度、比强度高（轻而硬）。
+S: (b) 铝合金属于<b>金属</b>；延性好，可深冲成形，且耐腐蚀、可回收。
+S: (c) 硼硅酸盐玻璃属于<b>玻璃</b>；热膨胀系数小，抗热冲击，耐化学腐蚀。
+S: (d) 轮胎主体是橡胶，属于<b>弹性体</b>；能产生很大的可恢复弹性变形。（实际轮胎内有钢丝和帘线，整体上是混杂材料。）
+S: (e) 氧化铝属于<b>陶瓷</b>；电绝缘、耐高温、硬度高。
+S: (f) PET 属于<b>聚合物</b>；密度低、韧、透明，易于吹塑成形。
+A: 金属：b；聚合物：f；弹性体：d；玻璃：c；陶瓷：e；混杂材料：a。
+
+@example 用选材流程图分析涡轮叶片 Applying the selection flow chart
+Q: Use the materials-selection-in-design flow chart (slide 17) to explain why high-pressure turbine blades are made from Ni-based superalloys rather than steel or a polymer. ||| 利用第 17 页“设计中的选材”流程图，说明为什么高压涡轮叶片用镍基高温合金，而不用钢或聚合物。
+S: <b>第 0 步：由设计要求得到所需性能。</b>环境：约 1600°C 的燃气，强氧化性；形状：薄壁、带冷却通道的复杂叶片；载荷：10,000 rpm 产生的巨大离心力，并长期持续作用。所以需要：高温强度高、抗<b>蠕变</b>、抗<b>氧化</b>、抗热疲劳。
+S: <b>问题 1（选材）：</b>聚合物在几百摄氏度就会分解，直接淘汰；普通钢在 600°C 以上强度迅速下降、蠕变严重，也被淘汰；陶瓷耐高温但脆性大、韧性低，在离心载荷和热冲击下有断裂风险。镍基高温合金在接近熔点的温度下仍能保持强度和抗蠕变性 → “是”。
+S: <b>问题 2（工艺）：</b>能否制造？可以用熔模精密铸造，甚至定向凝固或单晶铸造，加工出复杂的冷却通道 → “是”。
+S: <b>问题 3（成本）：</b>高温合金很贵，但叶片失效的代价（发动机损坏、飞行安全）更高，提高涡轮进口温度还能提高效率、节省燃油 → 成本可以接受 → “是” → 制造零件。
+A: 只有镍基高温合金能同时满足高温强度、抗蠕变和抗氧化的要求，并且可以制造、成本合理，所以三个问题都回答“是”。
+
+@example 比刚度比较（预习第 3–5 讲） Specific stiffness
+Q: Using typical values — steel: E = 210 GPa, ρ = 7.8 Mg m⁻³; aluminium alloy: E = 70 GPa, ρ = 2.7 Mg m⁻³; CFRP: E = 100 GPa, ρ = 1.55 Mg m⁻³ — calculate the specific stiffness E/ρ of each. Which is best for a light, stiff bicycle frame? ||| 取典型值——钢：E = 210 GPa，ρ = 7.8 Mg m⁻³；铝合金：E = 70 GPa，ρ = 2.7 Mg m⁻³；CFRP：E = 100 GPa，ρ = 1.55 Mg m⁻³——分别计算比刚度 E/ρ。哪种最适合做轻而刚的自行车车架？
+S: 比刚度（specific stiffness）= 杨氏模量 / 密度，表示“单位质量的刚度”。单位为 GPa/(Mg m⁻³)。
+S: 钢：E/ρ = 210 / 7.8 ≈ <b>26.9</b> GPa/(Mg m⁻³)
+S: 铝合金：E/ρ = 70 / 2.7 ≈ <b>25.9</b> GPa/(Mg m⁻³)
+S: CFRP：E/ρ = 100 / 1.55 ≈ <b>64.5</b> GPa/(Mg m⁻³)
+S: 讨论：钢和铝的 E/ρ 几乎相同——铝虽然模量只有钢的 1/3，但密度也只有约 1/3。CFRP 的比刚度约为金属的 2.5 倍。
+A: CFRP 的比刚度最高（约 64.5），最适合轻量化的刚性车架，但成本更高、加工更难（又回到第 17 页的问题 2 和问题 3）。注意：对梁或板等不同受力形式，性能指标会变成 E<sup>1/2</sup>/ρ、E<sup>1/3</sup>/ρ（第 5 讲）。
