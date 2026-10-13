@@ -27,7 +27,7 @@ from docx.shared import Cm, Pt, RGBColor
 FONT_SCALE = 0.6          # slide font sizes are far larger than document text
 MIN_PT, MAX_BODY_PT = 9.5, 16
 TITLE_MIN_SIZE = 24        # slide font size from which a line counts as a title
-FIG_DPI = 200
+FIG_DPI = 150
 PAGE_W, PAGE_H = Cm(29.7), Cm(21.0)
 MARGIN = Cm(1.6)
 CONTENT_W = PAGE_W - 2 * MARGIN
@@ -261,7 +261,10 @@ def render_figure(work_page, rect):
     pad = 2
     clip = (rect + (-pad, -pad, pad, pad)) & work_page.rect
     pix = work_page.get_pixmap(clip=clip, dpi=FIG_DPI, alpha=False)
-    return pix.tobytes("png"), clip
+    png = pix.tobytes("png")
+    jpg = pix.tobytes("jpeg", jpg_quality=85)
+    # photos compress far better as JPEG; keep PNG for line art where it is smaller
+    return (jpg if len(jpg) < 0.7 * len(png) else png), clip
 
 
 # ---------------------------------------------------------------- docx utils
