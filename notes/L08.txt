@@ -1,0 +1,190 @@
+@lecture 8
+@skip 1-4
+@title Bonding between Atoms ||| 原子间的键合
+@summary 本讲先回顾脆性与韧性材料的变形以及球—弹簧模型，然后把模型扩展到键能：原子间同时存在吸引和排斥，平衡间距 r₀ 处能量最低，势能曲线“阱”的深度 E₀ 就是键能。接着介绍主价键（离子键、共价键、金属键）和次价键（范德华力、氢键）的成因与特点，简要介绍晶体结构（体心立方、面心立方等），最后总结键能、键型与模量、强度、熔点、热膨胀等性能之间的关系。
+
+@glossary
+atom / ion / electron ||| 原子 / 离子 / 电子
+primary bonding ||| 主价键（一次键）
+secondary bonding ||| 次价键（二次键）
+ionic bond ||| 离子键
+covalent bond ||| 共价键
+metallic bond ||| 金属键
+Van der Waals forces ||| 范德华力
+hydrogen bonding ||| 氢键
+bond energy E₀ ||| 键能 E₀
+potential energy U ||| 势能 U
+equilibrium interatomic spacing r₀ ||| 平衡原子间距 r₀
+energy of attraction / repulsion ||| 吸引能 / 排斥能
+dissociate ||| 解离（使键断开）
+electrostatic attraction ||| 静电吸引
+electron orbital ||| 电子轨道
+directional / non-directional ||| 有方向性的 / 无方向性的
+'sea' of electrons ||| “电子海”
+cation / anion ||| 阳离子 / 阴离子
+dipole / dipolar attraction ||| 偶极子 / 偶极吸引
+liquefaction ||| 液化
+crystal structure ||| 晶体结构
+body-centred cubic (bcc) ||| 体心立方
+face-centred cubic (fcc) ||| 面心立方
+hexagonal close-packed (hcp) ||| 密排六方
+body-centred tetragonal ||| 体心四方
+ferrite / austenite / martensite ||| 铁素体 / 奥氏体 / 马氏体
+
+@slide 5
+Deformation of brittle materials ||| 脆性材料的变形（回顾）
+σ–ε: Elastic behaviour to failure; X Fracture at (ε_f, σ_f) ||| σ—ε：一直弹性直到失效；在 (ε_f, σ_f) 处断裂
+! 第 5–7 页是第 6 讲的回顾，详见第 6 讲 Slide 12、13、15。
+
+@slide 6
+Deformation of ductile materials ||| 韧性材料的变形（回顾）
+Elastic and plastic regions; σ_y, σ_TS, ε_e, ε_p; Total strain ε = ε_e + ε_p = σ_y/E + ε_p ||| 弹性区和塑性区；σ_y、σ_TS、ε_e、ε_p；总应变 ε = ε_e + ε_p = σ_y/E + ε_p
+
+@slide 7
+Linear elastic behaviour ||| 线弹性行为（回顾）
+• Ball and spring model of elasticity • Material in tension – bonds stretched and atoms move apart • Material in compression – bonds compressed and atoms move closer together ||| • 弹性的球—弹簧模型 • 受拉——键被拉长，原子远离 • 受压——键被压缩，原子靠近
+
+@slide 8
+Learning objectives ||| 学习目标
+• Develop an appreciation of the different ways in which atoms can bond together and how that begins to influence material properties ||| • 了解原子之间的不同键合方式，以及它们如何影响材料性能
+• Expand our ball and spring model to consider bond energies and how these vary with bond type ||| • 扩展球—弹簧模型，考虑<b>键能</b>及其随键型的变化
+• Learn about Primary and Secondary bonding mechanisms: – Ionic, covalent and metallic – Van der Waals forces and hydrogen bonding ||| • 学习<b>主价键</b>和<b>次价键</b>机制：– 离子键、共价键和金属键 – 范德华力和氢键
+
+@slide 9
+Bond energies (1) ||| 键能（1）
+• Ball and spring model: – Atoms subjected to competing repulsive and attractive forces ||| • 球—弹簧模型：– 原子同时受到相互竞争的排斥力和吸引力
+• At rest, atoms will be in their lowest energy state ||| • 静止时，原子处于能量最低的状态
+• r₀ = equilibrium interatomic spacing ||| • r₀ = 平衡原子间距
+U = potential energy of bond; curves: Energy of repulsion, Energy of attraction, Total bond energy ||| U = 键的势能；曲线：排斥能、吸引能、总键能
+! 排斥能在原子靠得很近时急剧上升（电子云重叠）；吸引能随距离增大而减弱。两者相加的总能量曲线在 r₀ 处有最低点，这时合力为零（F = dU/dr = 0）。
+
+@slide 10
+Bond energies (2) ||| 键能（2）
+• Bond energy (E₀) is the minimum of potential vs spacing curve ||| • 键能 E₀ 是势能—间距曲线的最小值
+• Bond energy describes the energy required to break the bond between (dissociate) atoms ||| • 键能表示把原子之间的键断开（使原子解离）所需的能量
+• Depth of the 'well' in the total energy curve gives bond strength: – Deep well = strong – Shallow well = weak ||| • 总能量曲线中“势阱”的深度代表键的强弱：– 阱深 = 键强 – 阱浅 = 键弱
+
+@slide 11
+Primary bonding ||| 主价键
+• In Chemistry, you may have previously discussed primary bonds as being 'intra-molecular' bonds: – In Engineering Materials, we don't deal with many molecular substances! ||| • 在化学中，主价键可能被称为“分子内”键：– 但工程材料中，分子物质并不多！
+• Primary bond types: ||| • 主价键类型：
+– Ionic bonds – electrostatic attraction between positively and negatively charged ions ||| – <b>离子键</b>——带正电和带负电的离子之间的静电吸引
+– Covalent bonds – sharing of electron orbitals between neighbouring nuclei ||| – <b>共价键</b>——相邻原子核之间共享电子轨道
+– Metallic bonds – high energy electrons leave their parent atoms to create a 'sea' of electrons ||| – <b>金属键</b>——高能电子离开母原子，形成“电子海”
+
+@slide 12
+Ionic bonding (1) ||| 离子键（1）
+• Electrostatic attraction between ions: – e.g. Na⁺ + Cl⁻ → NaCl ||| • 离子之间的静电吸引：– 例如 Na⁺ + Cl⁻ → NaCl
+• At equilibrium spacing, electrostatic attraction balanced with repulsion energy: – Ions repulse when electron charge distributions start to overlap ||| • 在平衡间距处，静电吸引与排斥相平衡：– 当电子电荷分布开始重叠时，离子之间相互排斥
+• Ionic bonds are non-directional but ionic structures must alternate from +ve to −ve ||| • 离子键<b>没有方向性</b>，但离子结构中正、负离子必须交替排列
+(Graph) Energy of repulsion, Electrostatic attraction, Total bond energy vs r ||| （图）排斥能、静电吸引能和总键能随 r 的变化
+
+@slide 13
+Ionic bonding (2) ||| 离子键（2）
+• Common examples: – Table salt (NaCl) and other chlorides – Metal oxides (e.g. MgO, Al₂O₃) – Many ceramics (although these also contain covalent bonding) ||| • 常见例子：– 食盐（NaCl）及其他氯化物 – 金属氧化物（如 MgO、Al₂O₃）– 许多陶瓷（同时也含有共价键）
+• Ionic bonds tend to be stronger than covalent or metallic bonds ||| • 离子键往往比共价键或金属键更强
+! 注：键的强弱因具体材料而异，金刚石的共价键其实非常强（熔点约 3550°C）。课件中这一结论是一般性的概括。
+
+@slide 14
+Covalent bonding ||| 共价键
+• Sharing of electron orbitals: – e.g. Diamond, silicon carbide – Contributes to bonding of high-melting point metals (e.g. W, Mo, Ta) – Bonding in hydrocarbon chains ||| • 共享电子轨道：– 例如金刚石、碳化硅 – 对高熔点金属（如 W、Mo、Ta）的键合也有贡献 – 碳氢链中的键合
+• Covalent bonds are highly directional: – Influences the way in which atoms 'stack' together to form larger structures ||| • 共价键具有很强的<b>方向性</b>：– 影响原子“堆叠”成更大结构的方式
+(Graph) Energy of repulsion, Electron overlap attraction, Total bond energy ||| （图）排斥能、电子云重叠吸引能、总键能
+
+@slide 15
+Metallic bonding ||| 金属键
+• Mobile electrons around fixed metal cations: – e.g. Metals! – Mobile electrons give the highest electrical conductivity ||| • 可自由移动的电子环绕在固定的金属阳离子周围：– 例如金属！– 自由电子使金属具有最高的导电性
+• Metallic bonds are completely non-directional: – Atoms can 'stack' close together while electrons flow around them ||| • 金属键<b>完全没有方向性</b>：– 原子可以紧密“堆叠”，电子在它们周围流动
+! 金属键无方向性 → 原子可以密排 → 有很多滑移系，位错容易运动 → 金属通常有良好的延性。共价键有方向性 → 位错难以运动 → 陶瓷硬而脆。
+
+@slide 16
+Crystal structures (more detail next time!) ||| 晶体结构（下次详细讲！）
+• Atoms in ceramics and metals organise themselves into very ordered structures, known as crystals ||| • 陶瓷和金属中的原子排列成高度有序的结构，称为<b>晶体</b>
+• Their arrangements and stacking have an enormous impact on material properties and behaviour ||| • 原子的排列和堆垛方式对材料性能和行为有巨大影响
+• Some common crystal structures and examples: ||| • 一些常见晶体结构及例子：
+– Body-centred cubic – e.g. Iron (ferrite), chromium, tungsten ||| – 体心立方——如铁（铁素体）、铬、钨
+– Face-centred cubic – e.g. Iron (austenite), aluminium, copper, nickel ||| – 面心立方——如铁（奥氏体）、铝、铜、镍
+– Hexagonal close-packed – e.g. Tungsten carbide (WC), zinc, titanium, magnesium ||| – 密排六方——如碳化钨（WC）、锌、钛、镁
+– Body-centred tetragonal – e.g. Iron (martensite) ||| – 体心四方——如铁（马氏体）
+– Other structures include Orthorhombic, Rhombohedral, Monoclinic, Triclinic… ||| – 其他结构还有正交、菱方、单斜、三斜……
+
+@slide 17
+Crystalline structures – body-centred cubic ||| 晶体结构 —— 体心立方
+Body-centred cubic crystals (Thornton, R., 2014) ||| 体心立方晶体（Thornton, R.，2014）：立方体 8 个顶点各一个原子，体心一个原子
+
+@slide 18
+Crystalline structures – face-centred cubic ||| 晶体结构 —— 面心立方
+Face-centred cubic crystals (Thornton, R., 2014) ||| 面心立方晶体（Thornton, R.，2014）：立方体 8 个顶点各一个原子，6 个面的中心各一个原子
+
+@slide 19
+Secondary bonding ||| 次价键
+• In Chemistry, also known as 'inter-molecular' bonding ||| • 在化学中也称为“分子间”键合
+• Much weaker than primary bonds… …but still has a significant influence on properties ||| • 比主价键弱得多……但对性能仍有重要影响
+• Secondary bond types: ||| • 次价键类型：
+– Van der Waals forces – dipolar attraction between uncharged atoms ||| – <b>范德华力</b>——不带电原子之间的偶极吸引
+– Hydrogen bonding – dipole attraction between bonded hydrogen (slightly +ve) and neighbouring ions (slightly –ve); nitrogen, oxygen and fluorine are the only possible hydrogen bonding pairs ||| – <b>氢键</b>——已成键的氢原子（略带正电）与相邻离子（略带负电）之间的偶极吸引；只有氮、氧、氟能与氢形成氢键
+
+@slide 20
+Van der Waals forces ||| 范德华力
+• Dipolar attraction between uncharged atoms – Electron movement causes fluctuation in charge on individual atoms, which then interact to create dipoles on others ||| • 不带电原子之间的偶极吸引——电子运动使单个原子的电荷分布产生涨落，形成瞬时偶极，并诱导相邻原子产生偶极，从而相互吸引
+• Without Van der Waals forces, liquefaction would not be possible for many important industrial liquids: – Liquid nitrogen, oxygen, helium and hydrogen ||| • 如果没有范德华力，许多重要的工业液体就无法液化：– 液氮、液氧、液氦和液氢
+
+@slide 21
+Hydrogen bonding ||| 氢键
+• Hydrogen atoms are able to share their charge: – Only with nitrogen, oxygen or fluorine in molecules ||| • 氢原子能够“共享”其电荷：– 只能与分子中的氮、氧或氟形成
+• Essential for solid polymers and keeping water liquid! ||| • 对固态聚合物至关重要，也使水在常温下保持液态！
+Hydrogen bonding in nylon 6,6 (Oxygen, Nitrogen) ||| 尼龙 6,6 中的氢键（氧、氮）
+
+@slide 22
+Bonding energies and properties ||| 键能与性能
+• Greater bond energy: – Greater stiffness (E) – Greater strength (σ) – Higher melting point (Tₘ) – Lower thermal expansion coeff. (α) ||| • 键能越大：– 刚度（E）越大 – 强度（σ）越高 – 熔点（Tₘ）越高 – 热膨胀系数（α）越小
+• Generally speaking*: ||| • 一般来说*：
+– Stiff, brittle materials are ionically bonded (e.g. ceramics) ||| – 刚而脆的材料以离子键结合（如陶瓷）
+– Strong, ductile materials are metallically bonded (e.g. metals) ||| – 强而韧的材料以金属键结合（如金属）
+– Good insulators are covalently bonded (e.g. polymers) ||| – 良好的绝缘体以共价键结合（如聚合物）
+*Note that there are A LOT of exceptions to these generalisations! ||| *注意：这些概括有<b>大量</b>例外！
+
+@slide 23
+Bonding types and properties ||| 键型与性能
+• We often talk of materials as though they only contain one type of bond ||| • 我们常把材料说得好像只含一种键
+• In reality most materials have several different bond types within them: ||| • 实际上大多数材料内部都有几种不同的键：
+– e.g. Water (H₂O) molecules are covalently bonded, but hydrogen bonds exist between molecules ||| – 例如水分子（H₂O）内部是共价键，分子之间则存在氢键
+– Many metals will feature covalent bonds as well as metallic ||| – 许多金属除了金属键也有共价键成分
+• Material structure also plays a significant role: ||| • 材料结构也起着重要作用：
+– e.g. Diamond and graphite are purely made of covalently bonded carbon atoms, but their properties are a bit different! ||| – 例如金刚石和石墨都完全由共价键结合的碳原子组成，但性能却“有点”不同！
+! 金刚石：每个碳原子与 4 个碳原子形成三维共价网络 → 最硬的材料、绝缘。石墨：碳原子在层内以共价键结合，层与层之间只有范德华力 → 层间容易滑动（润滑剂、铅笔芯）、层内导电。
+
+@slide 24
+Bonding types and properties ||| 键型与性能
+• Ceramics: – Large bond energy – Stiff and strong, but brittle – High melting point and low thermal expansion coefficient – Ionic and covalent bonding ||| • 陶瓷：– 键能大 – 刚而强，但脆 – 熔点高、热膨胀系数低 – 离子键和共价键
+• Metals: – Variable bond energy – Moderate stiffness and strength, can be brittle or ductile – Tend to have high thermal and electrical conductivity – Metallic bonding ||| • 金属：– 键能不一 – 刚度和强度中等，可脆可韧 – 导热、导电性往往很高 – 金属键
+• Polymers: – Directional properties – Low stiffness and strength; poor thermal properties – Covalent and secondary bonding ||| • 聚合物：– 性能有方向性 – 刚度和强度低；热性能差 – 共价键（链内）和次价键（链间）
+
+@slide 25
+Concepts and terminology ||| 概念与术语
+• Atoms, ions, electrons • Primary bonding: – Ionic – Covalent – Metallic • Secondary bonding: – Van der Waals forces – Hydrogen bonding • Bond energy • Dipolar attraction • Liquefaction • Crystal structures: – Body-centred cubic – Face-centred cubic ||| • 原子、离子、电子 • 主价键：– 离子键 – 共价键 – 金属键 • 次价键：– 范德华力 – 氢键 • 键能 • 偶极吸引 • 液化 • 晶体结构：– 体心立方 – 面心立方
+
+@example 离子键的平衡间距与键能 Equilibrium spacing and bond energy of an ionic bond
+Q: The potential energy of an ion pair is often written U(r) = −A/r + B/r⁹, where the first term is the electrostatic attraction and the second is the repulsion. (a) Find r₀ in terms of A and B. (b) Show that the bond energy is E₀ = −8A/(9r₀). (c) For Na⁺Cl⁻, A = q²/4πε₀ = 2.31 × 10⁻²⁸ J m and r₀ = 0.282 nm; calculate E₀ in J and eV. ||| 离子对的势能常写成 U(r) = −A/r + B/r⁹，第一项为静电吸引，第二项为排斥。(a) 用 A、B 表示 r₀；(b) 证明键能 E₀ = −8A/(9r₀)；(c) 对 Na⁺Cl⁻，A = q²/4πε₀ = 2.31 × 10⁻²⁸ J·m，r₀ = 0.282 nm，求 E₀（以 J 和 eV 表示）。
+S: (a) 平衡时合力为零：dU/dr = A/r² − 9B/r¹⁰ = 0 → r₀⁸ = 9B/A → <b>r₀ = (9B/A)<sup>1/8</sup></b>
+S: (b) 由 (a) 得 B = A r₀⁸/9，代入：E₀ = U(r₀) = −A/r₀ + (A r₀⁸/9)/r₀⁹ = −A/r₀ + A/(9r₀) = <b>−8A/(9r₀)</b>
+S: (c) A/r₀ = 2.31 × 10⁻²⁸ / 2.82 × 10⁻¹⁰ = 8.19 × 10⁻¹⁹ J
+S: E₀ = −(8/9) × 8.19 × 10⁻¹⁹ = <b>−7.28 × 10⁻¹⁹ J</b>；换算成 eV（1 eV = 1.602 × 10⁻¹⁹ J）：E₀ ≈ <b>−4.5 eV</b>
+A: r₀ = (9B/A)<sup>1/8</sup>；E₀ = −8A/(9r₀) ≈ −7.3 × 10⁻¹⁹ J ≈ −4.5 eV（单个孤立离子对）。负号表示成键后能量降低；要把键拆开需要提供约 4.5 eV 的能量。排斥项指数越大，势阱越“陡”，排斥只在很近时才起作用。
+
+@example 离子间的静电力 Electrostatic force between ions
+Q: Calculate the electrostatic attractive force between a Na⁺ ion and a Cl⁻ ion at the equilibrium spacing r₀ = 0.282 nm (q = 1.602 × 10⁻¹⁹ C, ε₀ = 8.85 × 10⁻¹² F m⁻¹). Why is the net force at r₀ zero? ||| 计算 Na⁺ 和 Cl⁻ 离子在平衡间距 r₀ = 0.282 nm 处的静电吸引力（q = 1.602 × 10⁻¹⁹ C，ε₀ = 8.85 × 10⁻¹² F·m⁻¹）。为什么在 r₀ 处合力为零？
+S: 库仑定律：F = q² / (4πε₀ r₀²)
+S: q²/4πε₀ = (1.602 × 10⁻¹⁹)² / (4π × 8.85 × 10⁻¹²) = 2.307 × 10⁻²⁸ N·m²
+S: r₀² = (0.282 × 10⁻⁹)² = 7.95 × 10⁻²⁰ m²
+S: F = 2.307 × 10⁻²⁸ / 7.95 × 10⁻²⁰ = <b>2.9 × 10⁻⁹ N</b>
+A: 吸引力约 2.9 nN。在 r₀ 处电子云开始重叠，产生大小相等、方向相反的排斥力，因此合力 F = dU/dr = 0，这正是“平衡”间距的含义（第 9 页）。
+
+@example 由键型预测性能 Predicting properties from bond type
+Q: Rank diamond, alumina (Al₂O₃), copper and polyethylene by (a) melting point, (b) Young's modulus, (c) thermal expansion coefficient, and (d) electrical conductivity, and explain each ranking using bond type and bond energy. ||| 将金刚石、氧化铝（Al₂O₃）、铜和聚乙烯按 (a) 熔点、(b) 杨氏模量、(c) 热膨胀系数、(d) 电导率排序，并用键型和键能解释。
+S: 键型：金刚石——三维共价网络；Al₂O₃——离子键 + 共价键；铜——金属键；聚乙烯——链内共价键、链间范德华力（决定宏观性能的是弱的链间键）。
+S: (a) 熔点：金刚石（≈3550 °C）＞ Al₂O₃（≈2050 °C）＞ 铜（1085 °C）＞ 聚乙烯（≈130 °C）——键能越大，熔点越高。
+S: (b) 模量：金刚石（≈1000 GPa）＞ Al₂O₃（≈390 GPa）＞ 铜（≈124 GPa）＞ 聚乙烯（≈0.2–1 GPa）——键越强、越“硬”，模量越大。
+S: (c) 热膨胀系数：顺序正好相反，聚乙烯最大、金刚石最小——键能大，势阱深而窄，原子振动时平均间距增加得少（第 22 页）。
+S: (d) 电导率：铜远远最高（自由电子“电子海”）；金刚石、Al₂O₃、聚乙烯都是绝缘体（电子被束缚在共价键或离子中）。
+A: Tₘ 和 E：金刚石 ＞ Al₂O₃ ＞ Cu ＞ PE；α：PE ＞ Cu ＞ Al₂O₃ ＞ 金刚石；导电：Cu 远高于其余三者。都可以用“键能越大 → E、Tₘ 越高，α 越小”和“只有金属键有自由电子”来解释。
