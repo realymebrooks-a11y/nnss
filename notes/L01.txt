@@ -1,4 +1,5 @@
 @lecture 1
+@skip 1-8
 @title Engineering Materials and Their Properties ||| 工程材料及其性能
 @summary 本讲是课程导论：介绍课程安排、教材与参考资源，说明为什么要学习材料；概览“材料世界”的六大材料族及其发展史；讲解设计中的选材流程、工程材料的性能分类；通过五个产品案例讨论材料对设计的关键程度；介绍“加工—结构—性能”三者关系，以及材料性能的微观起源（键合、原子堆垛、晶粒、合金化、析出相、位错）；最后给出工程师选材的四个步骤。
 
@@ -33,57 +34,6 @@ plastic deformation ||| 塑性变形
 constraints and objectives ||| 约束条件与目标
 screening / ranking ||| 筛选 / 排序
 performance metrics ||| 性能指标
-
-@slide 1
-Properties of Materials — Lecture 1 ||| 材料性能 —— 第 1 讲
-Dr. Alkis Tsamis (at441@leicester.ac.uk) ||| 主讲：Alkis Tsamis 博士（at441@leicester.ac.uk）
-CTGU/UoL JEP, September 2024 ||| 三峡大学 / 莱斯特大学联合教育项目，2024 年 9 月
-
-@slide 2
-Course Topics and Schedule ||| 课程主题与安排
-Lecture 1: Module Overview, Module Aim, Why Study Materials, The World of Materials (1), History – The Evolution of Materials, Materials Selection in Design (1), Properties of Engineering Materials (1), Products, Three-Way Relationship (1), Origins of Material Properties, How Do We – As Engineers – Select Materials ||| 第 1 讲：课程概述、课程目标、为什么学习材料、材料世界(1)、历史——材料的演变、设计中的选材(1)、工程材料的性能(1)、产品案例、三者关系(1)、材料性能的起源、工程师如何选材
-Lecture 2: Concepts and Terminology (1), Properties of Engineering Materials (2), Mechanical Properties (1), Elastic Properties, Elastic Properties: Covalent and Metallic Bonds – Ionic Model – The Origin of Modulus, Plastic Properties, Fracture / Fatigue / Creep, Thermal Properties (1), Density and Corrosion, Corrosion: Anodic and Cathodic Reactions, Ellingham Diagram ||| 第 2 讲：概念与术语(1)、工程材料的性能(2)、力学性能(1)、弹性性能、弹性性能：共价键与金属键——离子模型——模量的起源、塑性性能、断裂/疲劳/蠕变、热性能(1)、密度与腐蚀、腐蚀：阳极与阴极反应、埃林汉姆图
-Lecture 3: Structure-Property-Processing Relationship, Structure Sensitive Properties, Structure Insensitive Properties, The Three-Part Relationship, Materials Property Web Sites, Materials Selection, Material Property Charts: Modulus – Density, Mechanical Properties (2), Thermal Properties (2), A TOOL for Materials Selection, Structure Sensitivity, Structure Sensitivity in Metals, Controlling Structure, Case Study ||| 第 3 讲：结构—性能—加工关系、结构敏感性能、结构不敏感性能、三者关系、材料性能网站、选材、材料性能图：模量—密度、力学性能(2)、热性能(2)、选材工具、结构敏感性、金属中的结构敏感性、控制结构、案例分析
-
-@slide 3
-Course Topics and Schedule ||| 课程主题与安排（续）
-Lecture 4: Availability of Materials, Case Study, Exam Question 2013, Example Questions, The World of Materials (2), Materials Selection in Design (2), Properties of Engineering Materials (3), Three-Way Relationship (2), Learning Objectives, Why Do We Need a Selection Methodology, Mechanical Properties (3), Thermal Properties (3), Trade-Offs Must Be Made, Materials Selection in Design (3), Materials Selection Process (1) ||| 第 4 讲：材料的可获得性、案例分析、2013 年考题、例题、材料世界(2)、设计中的选材(2)、工程材料的性能(3)、三者关系(2)、学习目标、为什么需要选材方法、力学性能(3)、热性能(3)、必须进行权衡、设计中的选材(3)、选材流程(1)
-Lecture 5: Step 1 – Translation, Step 2 – Screening, Materials Selection Process (2), Step 3 – Ranking Materials, Example – Hydraulic Cylinder Tie Rods, Step 4 – Refining Selection, Concepts and Terminology (2) ||| 第 5 讲：第 1 步——转化、第 2 步——筛选、选材流程(2)、第 3 步——材料排序、例题——液压缸拉杆、第 4 步——细化选择、概念与术语(2)
-Lecture 6: The Elastic Moduli, Deformation of Brittle Materials, Deformation of Ductile Materials, Hooke's Law – Young's Modulus, Linear Elastic Behaviour, Structural Engineering, What Might Have Saved the Bridge, Engineering Stress and Strain, True Stress and Strain, Comparison ||| 第 6 讲：弹性模量、脆性材料的变形、韧性材料的变形、胡克定律——杨氏模量、线弹性行为、结构工程、什么能挽救那座桥、工程应力与应变、真应力与真应变、比较
-Lecture 7: Practice Time, Definitions, Concepts and Terminology (3), Task ||| 第 7 讲：练习时间、定义、概念与术语(3)、任务
-Exercise Seminar 1 ||| 习题课 1
-
-@slide 4
-Course Topics and Schedule ||| 课程主题与安排（续）
-Lecture 8: Bonding Between Atoms, Learning Objectives, Bonding Energies, Primary Bonding, Ionic Bonding, Covalent Bonding, Metallic Bonding, Crystal Structures, Body-Centred Cubic, Face-Centred Cubic, Secondary Bonding, Van der Waals Forces, Hydrogen Bonding, Bonding Energies and Properties, Bonding Types and Properties, Concepts and Terminology (4) ||| 第 8 讲：原子间的键合、学习目标、键能、主价键（一次键）、离子键、共价键、金属键、晶体结构、体心立方、面心立方、次价键（二次键）、范德华力、氢键、键能与性能、键型与性能、概念与术语(4)
-Lecture 9: Recap from Last Time, Task ||| 第 9 讲：上次内容回顾、任务
-Exercise Seminar 2 / Lecture 10: Packing of Atoms in Solids (1), Learning Objectives, The Structure of Metals and Ceramics (1), Unit Cell Parameters, Face-Centred Cubic (fcc), Hexagonal Close-Packed (hcp), Crystal Structures – Metals, Crystal Structures – Ceramics, Concepts and Terminology (5) ||| 习题课 2 / 第 10 讲：固体中的原子堆垛(1)、学习目标、金属与陶瓷的结构(1)、晶胞参数、面心立方（fcc）、密排六方（hcp）、晶体结构——金属、晶体结构——陶瓷、概念与术语(5)
-Lecture 11: Packing of Atoms in Solids (2), Learning Objectives, Atomic Packing, Atomic Packing – bcc Structures, Atomic Packing Factor – bcc, Atomic Packing – fcc Structures, Atomic Packing Factor – fcc, Atomic Packing – hcp Structures, Atomic Packing Factor – hcp, Tips for Calculating APF for hcp, Concepts and Terminology (6) ||| 第 11 讲：固体中的原子堆垛(2)、学习目标、原子堆垛、原子堆垛——bcc 结构、原子堆积因子——bcc、原子堆垛——fcc 结构、原子堆积因子——fcc、原子堆垛——hcp 结构、原子堆积因子——hcp、计算 hcp 堆积因子的技巧、概念与术语(6)
-
-@slide 5
-Course Topics and Schedule ||| 课程主题与安排（续）
-Lecture 12: The Physical Basis of Young's Modulus, Learning Objectives, Moduli of Crystals, Rubbers and the Glass Transition Temperature, Composite, Composite Terminology, Fibre-Reinforced Composites, Rule of Mixtures (1) ||| 第 12 讲：杨氏模量的物理基础、学习目标、晶体的模量、橡胶与玻璃化转变温度、复合材料、复合材料术语、纤维增强复合材料、混合法则(1)
-Lecture 13: Rule of Mixtures (2), Task, Concepts and Terminology (7) ||| 第 13 讲：混合法则(2)、任务、概念与术语(7)
-Exercise Seminar 3 ||| 习题课 3
-Lecture 14: The Yield Strength, Tensile Strength, Hardness and Ductility, Case Studies, Learning Objectives, How do Crystalline Materials Fail (1), Length Scales, Continuum Plastic Flow, Shearing, Shearing of a Ductile Polycrystal, Plastic Instability, What is Creep, Where is Creep Important ||| 第 14 讲：屈服强度、抗拉强度、硬度与延性、案例分析、学习目标、晶体材料如何失效(1)、尺度、连续体塑性流动、剪切、韧性多晶体的剪切、塑性失稳、什么是蠕变、蠕变在哪些场合重要
-Lecture 15: How Does Creep Happen, Lattice Diffusion, Other Diffusion Paths, Creep Resistant Materials, Concepts and Terminology (8), Learning Objectives, How do Crystalline Materials Fail (2), Fracture Concepts, Fracture Jargon, Fracture Length Scales ||| 第 15 讲：蠕变如何发生、晶格扩散、其他扩散路径、抗蠕变材料、概念与术语(8)、学习目标、晶体材料如何失效(2)、断裂概念、断裂术语、断裂的尺度
-Exercise Seminar 4 ||| 习题课 4
-
-@slide 6
-Course Topics and Schedule ||| 课程主题与安排（续）
-Lecture 16: Idealised Fracture Mechanisms, (More) Realistic Fracture Mechanisms, Brittle Fracture, Brittle Fracture – Amorphous Materials, Brittle Fracture – Zn at −120°C, Brittle Fracture – Al-Li 8090, Ductile Fracture by Tearing, Ductile Fracture – 'Pure' Cu, Fracture Mechanisms, Premature Failures, Brittle Fracture – Materials with Soft 'Voids', Brittle Fracture – Materials with Hard 'Inclusions', Ductility, Premature Failures, Concepts and Terminology (9) ||| 第 16 讲：理想化的断裂机制、（更）真实的断裂机制、脆性断裂、脆性断裂——非晶材料、脆性断裂——−120°C 下的锌、脆性断裂——Al-Li 8090 合金、撕裂型韧性断裂、韧性断裂——“纯”铜、断裂机制、过早失效、脆性断裂——含软“孔洞”的材料、脆性断裂——含硬“夹杂物”的材料、延性、过早失效、概念与术语(9)
-Test ||| 测验
-Lecture 17: Dislocations and Yielding in Crystals, Learning Objectives, The Structure of Metals and Ceramics (2), What Controls Mechanical Behaviour, Grains and Grain Boundaries, Grain Structure Examples, Imperfections, Hall-Petch Effect (1), Defects in Crystals ||| 第 17 讲：晶体中的位错与屈服、学习目标、金属与陶瓷的结构(2)、什么控制力学行为、晶粒与晶界、晶粒结构实例、缺陷、霍尔—佩奇效应(1)、晶体中的缺陷
-Lecture 18: Vacancies, Edge Dislocations, Edge Dislocation Movement, Slip Planes, Hall-Petch Effect (2), Strengthening Mechanisms – Grain Refinement, Limits of Hall-Petch Effect, Concepts and Terminology (10) ||| 第 18 讲：空位、刃型位错、刃型位错的运动、滑移面、霍尔—佩奇效应(2)、强化机制——细晶强化、霍尔—佩奇效应的局限、概念与术语(10)
-
-@slide 7
-Course Topics and Schedule ||| 课程主题与安排（续）
-Exercise Seminar 5 ||| 习题课 5
-Lecture 19: Revision of Theory ||| 第 19 讲：理论复习
-Lecture 20: Revision of Exercises ||| 第 20 讲：习题复习
-
-@slide 8
-Engineering Materials and Their Properties ||| 工程材料及其性能
 
 @slide 9
 Module Overview ||| 课程概述

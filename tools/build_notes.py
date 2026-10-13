@@ -5,6 +5,7 @@ below it comes an English/Chinese table for the slide text, optional notes,
 and each lecture ends with worked examples. Content lives in notes/LNN.txt:
 
   @lecture N               lecture number (matches "Lecture N.pdf")
+  @skip 1-7,8              slides left out (title, schedule, section dividers)
   @title EN ||| ZH         lecture title
   @summary text            Chinese overview of the lecture
   @glossary                followed by "EN ||| ZH" term lines
@@ -52,7 +53,7 @@ th {{ background-color: #dfecef; font-size: 9pt; }}
 
 # ---------------------------------------------------------------- parsing
 def parse(path):
-    lec = {"slides": {}, "glossary": [], "examples": [], "summary": ""}
+    lec = {"slides": {}, "glossary": [], "examples": [], "summary": "", "skip": set()}
     section, cur = None, None
     for raw in open(path, encoding="utf-8"):
         line = raw.rstrip("\n")
@@ -60,6 +61,10 @@ def parse(path):
             continue
         if line.startswith("@lecture"):
             lec["n"] = int(line.split()[1])
+        elif line.startswith("@skip"):
+            for part in line[5:].replace(" ", "").split(","):
+                a, _, b = part.partition("-")
+                lec["skip"].update(range(int(a), int(b or a) + 1))
         elif line.startswith("@title"):
             en, zh = pair(line[6:])
             lec["title"] = (en, zh)
@@ -156,16 +161,6 @@ def examples_html(lec):
     return out
 
 
-def cover_html(lectures):
-    items = "".join(f"<tr><td>Lecture {l['n']}</td><td>{esc(l['title'][0])}</td><td>{esc(l['title'][1])}</td></tr>"
-                    for l in lectures)
-    return (f"<h1>Properties of Materials</h1><h2>材料性能 —— 中英文对照讲义</h2>"
-            f"<p>Dr. Alkis Tsamis · CTGU/UoL JEP, September 2024</p>"
-            f"<p class='small'>说明：每页上方为原课件幻灯片（原样保留、未作修改），下方为逐句英汉对照、"
-            f"【讲解】要点；每讲开头附关键术语表，结尾附例题讲解。</p>"
-            f"<h3>目录 Contents</h3><table>{cols(16, 46, 38)}<tr><th>Lecture</th><th>English</th><th>中文</th></tr>{items}</table>")
-
-
 # ---------------------------------------------------------------- layout
 class Builder:
     """Flows content continuously: slides, tables and notes follow each other
@@ -256,21 +251,19 @@ def main():
     out, paths = sys.argv[1], sys.argv[2:]
     lectures = sorted((parse(p) for p in paths), key=lambda l: l["n"])
     b = Builder(out)
-    b.new_page()
-    b.html(cover_html(lectures))
-    b.toc.append([1, "目录 Contents", 1])
     for lec in lectures:
         src = pymupdf.open(os.path.join(ROOT, f"Lecture {lec['n']}.pdf"))
         b.header = f"Lecture {lec['n']}  {lec['title'][0]}  {lec['title'][1]}"
         b.new_page()
         b.toc.append([1, f"Lecture {lec['n']}  {lec['title'][1]}", b.page])
         b.html(lecture_intro_html(lec))
-        missing = [k for k in range(1, len(src) + 1) if k not in lec["slides"]]
+        keep = [k for k in range(1, len(src) + 1) if k not in lec["skip"]]
+        missing = [k for k in keep if k not in lec["slides"]]
         if missing:
             print(f"Lecture {lec['n']}: no notes for slides {missing}", file=sys.stderr)
-        for k in range(1, len(src) + 1):
+        for i, k in enumerate(keep):
             b.slide(lec, k, lec["slides"].get(k, {"rows": [], "notes": []}), src)
-            if k == 1 or k % 5 == 0:
+            if i == 0 or k % 5 == 0:
                 b.toc.append([2, f"Slide {k}", b.page])
         if lec["examples"]:
             b.ensure(120)
