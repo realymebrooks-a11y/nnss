@@ -26,14 +26,16 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FONT_DIR = "/usr/share/fonts/truetype/wqy"
 FONT_FILE = "wqy-zenhei.ttc"
 PAGE = pymupdf.paper_size("a4")
-M = 40                                   # page margin (pt)
-SLIDE_W = PAGE[0] - 2 * M
+M = 30                                   # page margin (pt)
+TOP, BOTTOM = M + 4, PAGE[1] - 26        # usable band of each page
+GAP = 6                                  # space after each block
+SLIDE_W = 370                            # width of an embedded slide (pt)
 
 CSS = f"""
 @font-face {{ font-family: zh; src: url({FONT_FILE}); }}
 * {{ font-family: sans-serif, zh; }}
 body {{ font-size: 9.5pt; line-height: 1.35; color: #222; }}
-h1 {{ font-size: 22pt; color: #0b6e8a; margin: 0 0 6pt 0; }}
+h1 {{ font-size: 18pt; color: #0b6e8a; margin: 0 0 6pt 0; }}
 h2 {{ font-size: 15pt; color: #0b6e8a; margin: 10pt 0 4pt 0; }}
 h3 {{ font-size: 11.5pt; color: #b3372e; margin: 10pt 0 3pt 0; }}
 p {{ margin: 2pt 0; }}
@@ -125,19 +127,23 @@ def slide_html(lec, k, slide):
 def lecture_intro_html(lec):
     en, zh = lec["title"]
     out = (f"<h1>Lecture {lec['n']} 第 {lec['n']} 讲</h1>"
-           f"<h2>{esc(en)}<br>{esc(zh)}</h2>")
+           f"<h2 style='margin-top:0'>{esc(en)}　{esc(zh)}</h2>")
     if lec["summary"]:
         out += f"<h3>本讲概要 Overview</h3><p>{esc(lec['summary'])}</p>"
     if lec["glossary"]:
-        rows = "".join(f"<tr><td>{esc(e)}</td><td>{esc(z)}</td></tr>"
-                       for e, z in lec["glossary"])
-        out += (f"<h3>关键术语 Key Terms</h3><table>{cols(50, 50)}<tr><th>English</th><th>中文</th></tr>"
+        g = lec["glossary"]
+        half = (len(g) + 1) // 2
+        left, right = g[:half], g[half:] + [("", "")] * (half - len(g[half:]))
+        rows = "".join(f"<tr><td>{esc(a)}</td><td>{esc(b)}</td><td>{esc(c)}</td><td>{esc(d)}</td></tr>"
+                       for (a, b), (c, d) in zip(left, right))
+        out += (f"<h3>关键术语 Key Terms</h3><table>{cols(26, 24, 26, 24)}"
+                f"<tr><th>English</th><th>中文</th><th>English</th><th>中文</th></tr>"
                 f"{rows}</table>")
     return out
 
 
 def examples_html(lec):
-    out = f"<h1>例题讲解 Worked Examples</h1><p class='small'>Lecture {lec['n']}：{esc(lec['title'][1])}</p>"
+    out = f"<h2>例题讲解 Worked Examples（Lecture {lec['n']}）</h2>"
     for i, ex in enumerate(lec["examples"], 1):
         out += f"<h3>例题 {i}　{esc(ex['title'])}</h3>"
         for en, zh in ex["q"]:
@@ -162,76 +168,84 @@ def cover_html(lectures):
 
 # ---------------------------------------------------------------- layout
 class Builder:
+    """Flows content continuously: slides, tables and notes follow each other
+    on the page instead of each slide starting a new page."""
+
     def __init__(self, out_path):
         self.out_path = out_path
         self.tmp = out_path + ".tmp.pdf"
         self.writer = pymupdf.DocumentWriter(self.tmp)
         self.archive = pymupdf.Archive(FONT_DIR)
-        self.stamps = []        # (page index, src pdf, slide no, rect)
+        self.stamps = []        # (page index, src pdf, slide index, rect, label)
         self.toc = []           # [level, title, page]
+        self.headers = {}
+        self.header = ""
         self.page = 0
+        self.dev = None
+        self.y = TOP
 
-    def flow(self, html_text, header=""):
-        """Place HTML on new pages, continuing until it is all placed."""
-        story = pymupdf.Story(html=html_text, user_css=CSS, archive=self.archive)
-        full = pymupdf.Rect(M, M + 14, PAGE[0] - M, PAGE[1] - M)
-        more, first = True, True
-        while more:
-            self.begin(header if first else header + "（续）")
-            more, _ = story.place(full)
-            story.draw(self.dev)
-            self.end()
-            first = False
-
-    def begin(self, header):
+    def new_page(self):
+        if self.dev is not None:
+            self.writer.end_page()
         self.dev = self.writer.begin_page(pymupdf.Rect(0, 0, *PAGE))
-        self.header = header
         self.page += 1
-
-    def end(self):
-        self.writer.end_page()
-        self.headers = getattr(self, "headers", {})
         self.headers[self.page - 1] = self.header
+        self.y = TOP
 
-    def slide_page(self, lec, k, slide, src):
+    def ensure(self, h):
+        if self.dev is None or self.y + h > BOTTOM:
+            self.new_page()
+
+    def html(self, text):
+        story = pymupdf.Story(html=text, user_css=CSS, archive=self.archive)
+        more = True
+        while more:
+            self.ensure(30)
+            more, filled = story.place(pymupdf.Rect(M, self.y, PAGE[0] - M, BOTTOM))
+            story.draw(self.dev)
+            if more:
+                self.new_page()
+            else:
+                self.y = pymupdf.Rect(filled).y1 + GAP
+
+    def slide(self, lec, k, slide, src):
         sr = src[k - 1].rect
         h = SLIDE_W * sr.height / sr.width
-        box = pymupdf.Rect(M, M + 14, M + SLIDE_W, M + 14 + h)
-        header = f"Lecture {lec['n']} · Slide {k}"
-        self.begin(header)
-        self.stamps.append((self.page - 1, src, k - 1, box))
+        self.ensure(h + 12 + (40 if slide["rows"] or slide["notes"] else 0))
+        x0 = (PAGE[0] - SLIDE_W) / 2
+        box = pymupdf.Rect(x0, self.y + 10, x0 + SLIDE_W, self.y + 10 + h)
+        self.stamps.append((self.page - 1, src, k - 1, box, f"Lecture {lec['n']} · Slide {k}"))
+        self.y = box.y1 + 5
         body = slide_html(lec, k, slide)
-        rect = pymupdf.Rect(M, box.y1 + 8, PAGE[0] - M, PAGE[1] - M)
-        if not body:
-            self.end()
-            return
-        story = pymupdf.Story(html=body, user_css=CSS, archive=self.archive)
-        more, _ = story.place(rect)
-        story.draw(self.dev)
-        self.end()
-        while more:                                    # continuation pages
-            self.begin(header + "（续）")
-            more, _ = story.place(pymupdf.Rect(M, M + 14, PAGE[0] - M, PAGE[1] - M))
-            story.draw(self.dev)
-            self.end()
+        if body:
+            self.html(body)
+        self.y += 4
 
     def finish(self):
+        self.writer.end_page()
         self.writer.close()
         doc = pymupdf.open(self.tmp)
-        for pno, src, sidx, box in self.stamps:
+        for p in doc:
+            p.wrap_contents()          # isolate the writer's coordinate transform
+        font = pymupdf.Font(fontfile=os.path.join(FONT_DIR, FONT_FILE))
+        for pno, src, sidx, box, label in self.stamps:
             p = doc[pno]
             p.show_pdf_page(box, src, sidx)
             p.draw_rect(box, color=(0.6, 0.6, 0.6), width=0.5)
-        font = pymupdf.Font(fontfile=os.path.join(FONT_DIR, FONT_FILE))
+            tw = pymupdf.TextWriter(p.rect)
+            tw.append((box.x0, box.y0 - 2.5), label, font=font, fontsize=7.5)
+            tw.write_text(p, color=(0.04, 0.43, 0.54))
         for i, p in enumerate(doc):
             tw = pymupdf.TextWriter(p.rect)
             hdr = self.headers.get(i, "")
             if hdr:
-                tw.append((M, M + 2), hdr, font=font, fontsize=8)
+                tw.append((PAGE[0] - M - font.text_length(hdr, 7.5), M - 6), hdr, font=font, fontsize=7.5)
             num = f"{i + 1}"
-            tw.append((PAGE[0] / 2 - font.text_length(num, 8) / 2, PAGE[1] - M / 2), num,
+            tw.append((PAGE[0] / 2 - font.text_length(num, 8) / 2, PAGE[1] - 14), num,
                       font=font, fontsize=8)
             tw.write_text(p, color=(0.45, 0.45, 0.45))
+            if hdr:
+                p.draw_line((M, M - 3), (PAGE[0] - M, M - 3), color=(0.75, 0.75, 0.75), width=0.4)
         doc.set_toc(self.toc)
         doc.subset_fonts()
         doc.save(self.out_path, garbage=3, deflate=True)
@@ -242,22 +256,26 @@ def main():
     out, paths = sys.argv[1], sys.argv[2:]
     lectures = sorted((parse(p) for p in paths), key=lambda l: l["n"])
     b = Builder(out)
-    b.flow(cover_html(lectures), header="")
+    b.new_page()
+    b.html(cover_html(lectures))
     b.toc.append([1, "目录 Contents", 1])
     for lec in lectures:
         src = pymupdf.open(os.path.join(ROOT, f"Lecture {lec['n']}.pdf"))
-        b.toc.append([1, f"Lecture {lec['n']}  {lec['title'][1]}", b.page + 1])
-        b.flow(lecture_intro_html(lec), header=f"Lecture {lec['n']} · 概要与术语")
+        b.header = f"Lecture {lec['n']}  {lec['title'][0]}  {lec['title'][1]}"
+        b.new_page()
+        b.toc.append([1, f"Lecture {lec['n']}  {lec['title'][1]}", b.page])
+        b.html(lecture_intro_html(lec))
         missing = [k for k in range(1, len(src) + 1) if k not in lec["slides"]]
         if missing:
             print(f"Lecture {lec['n']}: no notes for slides {missing}", file=sys.stderr)
         for k in range(1, len(src) + 1):
+            b.slide(lec, k, lec["slides"].get(k, {"rows": [], "notes": []}), src)
             if k == 1 or k % 5 == 0:
-                b.toc.append([2, f"Slide {k}", b.page + 1])
-            b.slide_page(lec, k, lec["slides"].get(k, {"rows": [], "notes": []}), src)
+                b.toc.append([2, f"Slide {k}", b.page])
         if lec["examples"]:
-            b.toc.append([2, "例题讲解 Worked Examples", b.page + 1])
-            b.flow(examples_html(lec), header=f"Lecture {lec['n']} · 例题讲解")
+            b.ensure(120)
+            b.toc.append([2, "例题讲解 Worked Examples", b.page])
+            b.html(examples_html(lec))
     b.finish()
     print("pages:", b.page)
 

@@ -1,0 +1,223 @@
+@lecture 2
+@title Concepts, Terminology and Properties of Engineering Materials ||| 概念、术语与工程材料的性能
+@summary 本讲先回顾第 1 讲（材料世界、材料族、性能、失效机制、三者关系），然后系统介绍工程材料的各类性能：力学性能（应力—应变曲线、弹性模量及其原子键合起源、塑性变形与位错、断裂/疲劳/蠕变）、热性能（热膨胀、模量随温度的变化）、密度与腐蚀（电极电势序列、阳极与阴极反应、埃林汉姆图）。
+
+@glossary
+stress / strain ||| 应力 / 应变
+stress–strain curve ||| 应力—应变曲线
+Young's modulus (modulus of elasticity) ||| 杨氏模量（弹性模量）
+shear modulus ||| 剪切模量
+Poisson's ratio ||| 泊松比
+yield stress (0.2% offset) ||| 屈服应力（0.2% 残余变形法）
+ultimate tensile strength (UTS) ||| 极限抗拉强度
+uniform elongation / necking ||| 均匀伸长 / 颈缩
+secant / tangent modulus ||| 割线模量 / 切线模量
+covalent / metallic / ionic bond ||| 共价键 / 金属键 / 离子键
+van der Waals bond ||| 范德华键
+bond stiffness S = dF/dr ||| 键刚度 S = dF/dr
+equilibrium spacing r₀ ||| 平衡原子间距 r₀
+slip system / slip plane / slip direction ||| 滑移系 / 滑移面 / 滑移方向
+thermoplastic / thermosetting ||| 热塑性 / 热固性
+fatigue / cyclic stress ||| 疲劳 / 循环应力
+melting temperature Tₘ ||| 熔点 Tₘ
+glass transition temperature T_g ||| 玻璃化转变温度 T_g
+coefficient of linear thermal expansion α ||| 线膨胀系数 α
+specific heat c_p ||| 比热容 c_p
+thermal conductivity k ||| 导热系数 k
+density ρ ||| 密度 ρ
+corrosion / anode / cathode ||| 腐蚀 / 阳极 / 阴极
+standard electrode potential E° ||| 标准电极电势 E°
+noble / ignoble metal ||| 贵金属 / 贱金属（活泼金属）
+Ellingham diagram ||| 埃林汉姆图（氧化物标准生成自由能图）
+
+@slide 1
+Properties of Materials — Lecture 2 ||| 材料性能 —— 第 2 讲
+Dr. Alkis Tsamis (at441@leicester.ac.uk), CTGU/UoL JEP, September 2024 ||| 主讲：Alkis Tsamis 博士；三峡大学 / 莱斯特大学联合教育项目，2024 年 9 月
+
+@slide 2
+Course Topics and Schedule (Lectures 1–3; Lecture 1 highlighted as already covered) ||| 课程主题与安排（第 1–3 讲；高亮的第 1 讲为已讲内容）
+! 表中各讲主题的逐条中文翻译见第 1 讲 Slide 2–7。
+
+@slide 3
+Engineering Materials and Their Properties ||| 工程材料及其性能
+
+@slide 4
+Summary ||| 小结（第 1 讲回顾）
+• The World of Materials is vast: ||| • 材料世界非常广阔：
+– >150,000 different materials created or discovered to date ||| – 迄今已创造或发现的材料超过 150,000 种
+• As Engineers, we need to be able to: ||| • 作为工程师，我们需要能够：
+– Select the optimum material for any given application ||| – 为任何给定的应用<b>选出最合适的材料</b>
+– Understand the factors that influence the properties and behaviour of materials – strengthening mechanisms ||| – 理解影响材料性能和行为的因素——<b>强化机制</b>
+– Predict and prevent common failure mechanisms from occurring ||| – 预测并防止常见<b>失效机制</b>的发生
+• With any luck*, in 5 weeks you'll be able to do just that! ||| • 运气好的话*，5 周后你们就能做到这些！
+*By 'luck', I of course mean studious learning, practice and paying attention in my sessions! ||| *所谓“运气”，当然是指认真学习、勤加练习，并在课堂上专心听讲！
+
+@slide 5
+Concepts and terminology ||| 概念与术语
+• Material families: Metals, alloys; Polymers; Elastomers; Glasses; Ceramics ||| • 材料<b>族</b>：金属、合金；聚合物；弹性体；玻璃；陶瓷
+• (Some) material properties: Stiffness; Strength; Toughness ||| • （部分）材料<b>性能</b>：刚度；强度；韧性
+• (Some) failure mechanisms: Yielding; Creep; Fracture; Fatigue; Corrosion ||| • （部分）失效机制：屈服；蠕变；断裂；疲劳；腐蚀
+• Three-way relationship: Processing; Structure; Properties ||| • 三者关系：加工；结构；性能
+
+@slide 6
+Properties of Engineering Materials ||| 工程材料的性能
+MATERIALS — Mechanical: elastic, plastic, fracture/fatigue, creep ||| 材料 —— 力学性能：弹性、塑性、断裂/疲劳、蠕变
+Chemical: corrosion, oxidation ||| 化学性能：腐蚀、氧化
+Functional Materials — Physical: optical, magnetic, electrical ||| 功能材料 —— 物理性能：光学、磁学、电学
+Thermal: thermal expansion, thermal conductivity, heat capacity, melting points, transition temperature ||| 热性能：热膨胀、导热、热容、熔点、转变温度
+Environmental: recycling, energy consumption ||| 环境性能：回收、能耗
+Other: feel, look ||| 其他：手感、外观
+
+@slide 7
+Review: Mechanical Properties ||| 回顾：力学性能
+Stress σ = P / A₀; Strain e = (l − l₀) / l₀ ||| 应力 σ = P / A₀（载荷 / 原始截面积）；应变 e = (l − l₀) / l₀（伸长量 / 原始长度）
+Elastic region; Plastic region ||| 弹性区；塑性区
+Yield stress (Offset 0.2%); Ultimate tensile strength (UTS) ||| 屈服应力（0.2% 残余应变法）；极限抗拉强度（UTS）
+Uniform elongation → Necking → Fracture ||| 均匀伸长 → 颈缩 → 断裂
+! 读图：直线段斜率就是杨氏模量 E；当曲线偏离直线、无法确定屈服点时，从应变 0.2% 处作平行于弹性段的直线，与曲线的交点即为屈服应力 σ<sub>y</sub>；曲线最高点为 UTS，此后试样局部变细（颈缩）直至断裂。
+
+@slide 8
+Elastic Properties ||| 弹性性能
+Modulus of elasticity (Young's Modulus E): slope of the stress-strain curve, determined by the strength (stiffness) of the atomic bonds and the nature of the atomic packing ||| <b>弹性模量（杨氏模量 E）</b>：应力—应变曲线的斜率，由原子键的强度（刚度）和原子堆垛方式决定
+Covalent bonds — Ceramics: Al₂O₃ 380 GPa (GN m⁻²) ||| 共价键 —— 陶瓷：Al₂O₃ 380 GPa（GN m⁻²）
+Metallic bond — Steel: 200 GPa, Al: 70 GPa ||| 金属键 —— 钢：200 GPa，铝：70 GPa
+Van der Waals bonds — Polymers: Nylon 2–4 GPa ||| 范德华键 —— 聚合物：尼龙 2–4 GPa
+! 键越强，模量越高：共价/离子键（陶瓷，数百 GPa）＞ 金属键（金属，几十到两百多 GPa）＞ 分子链之间的范德华键（聚合物，几 GPa）。
+
+@slide 9
+Elastic Properties ||| 弹性性能
+Modulus of elasticity (Young's Modulus E): slope of the stress-strain curve, determined by the strength (stiffness) of the atomic bonds and the nature of the atomic packing. Some materials show non linear elastic behaviour…. ||| 弹性模量（杨氏模量 E）：应力—应变曲线的斜率，由原子键的强度（刚度）和原子堆垛方式决定。有些材料表现出<b>非线性弹性</b>行为……
+Figure 6.6 Schematic stress–strain diagram showing non-linear elastic behavior, and how secant and tangent moduli are determined. ||| 图 6.6　非线性弹性行为的应力—应变示意图，以及割线模量和切线模量的求法。
+Tangent modulus (at σ₂) = Δσ/Δε; Secant modulus (between origin and σ₁) = Δσ/Δε ||| 切线模量（在 σ₂ 处）= 该点切线斜率 Δσ/Δε；割线模量（原点到 σ₁）= 连线斜率 Δσ/Δε
+
+@slide 10
+Elastic Properties ||| 弹性性能
+• Modulus of elasticity (Young's Modulus E): ||| • 弹性模量（杨氏模量 E）：
+Table 6.1 Room-Temperature Elastic and Shear Moduli, and Poisson's Ratio for Various Metal Alloys ||| 表 6.1　各种金属合金的室温弹性模量、剪切模量和泊松比
+Columns: Metal Alloy; Modulus of Elasticity (GPa, 10⁶ psi); Shear Modulus (GPa, 10⁶ psi); Poisson's Ratio ||| 列：金属合金；弹性模量（GPa，10⁶ psi）；剪切模量（GPa，10⁶ psi）；泊松比
+Aluminum 69 GPa; Brass 97; Copper 110; Magnesium 45; Nickel 207; Steel 207; Titanium 107; Tungsten 407 ||| 铝 69 GPa；黄铜 97；铜 110；镁 45；镍 207；钢 207；钛 107；钨 407
+! 对各向同性材料，三个弹性常数满足 E = 2G(1 + ν)。例如钢：2 × 83 × (1 + 0.30) ≈ 216 GPa，与表中 207 GPa 接近。
+
+@slide 11
+Elastic Properties: Covalent and Metallic bonds ||| 弹性性能：共价键与金属键
+Fig. 4.5 The formation of a covalent bond – in this case between two hydrogen atoms, making a hydrogen molecule. ||| 图 4.5　共价键的形成——以两个氢原子形成氢分子为例（两个电子共享一个分子轨道）。
+Bonding in a metal – metallic bonding: metal ions in a "gas" of "free" electrons ||| 金属中的键合——金属键：金属离子浸在“自由”电子组成的“电子气”中
+Fig. 4.6 The formation of a covalent bond, viewed in terms of energy: repulsion U = B/rⁿ; electron overlap attraction U = −A/rᵐ, m < n; net curve with a stable minimum ||| 图 4.6　从能量角度看共价键的形成：排斥能 U = B/rⁿ；电子云重叠产生的吸引能 U = −A/rᵐ（m < n）；两者叠加的净能量曲线在平衡位置处有最低点（稳定）
+Directional covalent bonding in diamond ||| 金刚石中具有方向性的共价键
+
+@slide 12
+Elastic Properties: Ionic Model ||| 弹性性能：离子键模型
+Fig. 4.3 The formation of an ionic bond – in this case between a sodium atom and a chlorine atom, making sodium chloride. Attractive force F = q²/4πε₀r² ||| 图 4.3　离子键的形成——以钠原子和氯原子形成氯化钠为例。静电吸引力 F = q²/4πε₀r²
+Fig. 4.4 The formation of ionic bond, viewed in terms of energy: repulsion curve U = B/rⁿ; electrostatic attraction U = −q²/4πε₀r; net curve; inter-ion distance for most stable bond, r₀ ||| 图 4.4　从能量角度看离子键的形成：排斥曲线 U = B/rⁿ；静电吸引 U = −q²/4πε₀r；净能量曲线；最稳定键对应的离子间距 r₀
+! Na 失去 1 个电子需要 5.14 eV，Cl 得到 1 个电子放出 4.02 eV；单看电子转移要“花费”能量，但正负离子相互吸引放出的能量更多，所以 NaCl 是稳定的。
+
+@slide 13
+Elastic Properties: The Origin of Modulus ||| 弹性性能：模量的起源
+The energy curve (top), when differentiated (eqn. 4.6) gives the force–distance curve (centre) ||| 对能量曲线（上图）求导（式 4.6），得到力—距离曲线（中图）：F = dU/dr
+dF/dr = S ||| 键刚度 S = dF/dr（力—距离曲线在 r₀ 处的斜率）
+Strongly bonded vs weakly bonded: (dF/dr) at r₀ ||| 强键合与弱键合：比较两者在 r₀ 处的斜率 (dF/dr)
+! 核心结论：把原子键看成弹簧，弹簧常数 S₀ = (dF/dr)<sub>r=r₀</sub>。宏观模量 E ≈ S₀ / r₀。键越强，力—距离曲线在 r₀ 处越陡，E 越大。最低点之后 dU/dr 的最大值对应断开键所需的最大力（理论强度）。
+
+@slide 14
+Plastic Properties ||| 塑性性能
+Plastic deformation: dislocation movement in crystalline materials ||| <b>塑性变形</b>：晶体材料中的位错运动
+Movement of dislocation (a)–(c) under shear stress; b = Burgers vector ||| 在切应力作用下位错的运动过程 (a)–(c)；b 为柏氏矢量
+Slip systems in metals and ceramics: BCC metals 48 systems, {110}{112}{123}, <100>; FCC metals 12, {111}, <110>; HCP metals 3, {0001}{11-20}…, <11-20>; MgO, NaCl {110}, <110> ||| 金属与陶瓷中的滑移系：体心立方（BCC）金属 48 个，滑移面 {110}{112}{123}、滑移方向 <100>；面心立方（FCC）金属 12 个，滑移面 {111}、滑移方向 <110>；密排六方（HCP）金属 3 个，滑移面 {0001} 等、方向 <11-20>；MgO、NaCl：{110}，<110>
+Covalent bonds ||| 共价键（方向性强，位错难以运动）
+Polymers: Thermoplastic & Thermosetting ||| 聚合物：热塑性与热固性（热固性链间有交联）
+! 滑移系越多，金属越容易发生塑性变形：FCC 金属（铝、铜）延性很好；HCP 金属（镁、锌）滑移系少，延性较差。注：幻灯片表中 BCC 的滑移方向印为 <100>，而教材中 BCC 金属的滑移方向通常为 <111>，学习时请注意。
+
+@slide 15
+Fracture/Fatigue/Creep ||| 断裂 / 疲劳 / 蠕变
+Fracture: propagation of cracks through the body ||| <b>断裂</b>：裂纹在材料中扩展
+usually increasing yield strength results in a decrease of toughness ||| 通常屈服强度提高，韧性会下降
+mild steel: moderate yield strength – high toughness ||| 低碳钢：屈服强度中等——韧性高
+ceramics: high yield strength – low toughness ||| 陶瓷：屈服强度高——韧性低
+Fatigue: failure due to a large number of applications of stress (cyclic stress below the yield strength) ||| <b>疲劳</b>：在大量次数的应力作用下发生的失效（循环应力低于屈服强度）
+Problems in metals and polymers, but less of a problem in ceramics ||| 金属和聚合物中问题突出，陶瓷中相对较少
+Creep: plastic deformation at high temperature ||| <b>蠕变</b>：高温下的塑性变形
+melting temperature Tₘ ||| 熔点 Tₘ（以开尔文计）
+metals: creep above 0.3Tₘ (superalloys can reach over 0.7Tₘ) ||| 金属：高于 0.3Tₘ 时发生蠕变（高温合金可在 0.7Tₘ 以上工作）
+ceramics: creep over 0.5Tₘ ||| 陶瓷：高于 0.5Tₘ 时发生蠕变
+polymers: creep over T_g (glass transition temperature) and many polymers creep at room temperatures ||| 聚合物：高于 T_g（玻璃化转变温度）时蠕变，许多聚合物在室温下就会蠕变
+! T/Tₘ 称为<b>同系温度</b>（homologous temperature），温度必须用开尔文（K）计算。
+
+@slide 16
+Thermal Properties ||| 热性能
+• Thermal Expansion ||| • 热膨胀
+(l_f − l₀) / l₀ = α_l (T_f − T₀);  Δl / l₀ = α_l ΔT ||| (l_f − l₀) / l₀ = α_l (T_f − T₀)；Δl / l₀ = α_l ΔT（热应变 = 线膨胀系数 × 温度变化）
+Table 19.1 Tabulation of the Thermal Properties for a Variety of Materials: c_p (J/kg·K), α_l [(°C)⁻¹ × 10⁻⁶], k (W/m·K), L [Ω·W/(K)² × 10⁻⁸] ||| 表 19.1　各种材料的热性能：比热容 c_p（J/kg·K）、线膨胀系数 α_l（×10⁻⁶ /°C）、导热系数 k（W/m·K）、洛伦兹数 L（×10⁻⁸ Ω·W/K²）
+Metals: e.g. Aluminum α 23.6, k 247; Copper 17.0, 398; Iron 11.8, 80; Tungsten 4.5, 178; Invar 1.6, 10 ||| 金属：如铝 α = 23.6、k = 247；铜 17.0、398；铁 11.8、80；钨 4.5、178；殷钢（Invar）1.6、10
+Ceramics: e.g. Alumina 7.6, 39; Fused silica 0.4, 1.4; Soda–lime glass 9.0, 1.7 ||| 陶瓷：如氧化铝 7.6、39；熔融石英 0.4、1.4；钠钙玻璃 9.0、1.7
+Polymers: e.g. Polyethylene 106–198, 0.46–0.50; Nylon 6,6 144, 0.24 ||| 聚合物：如聚乙烯 106–198、0.46–0.50；尼龙 6,6 144、0.24
+! 规律：聚合物 α 最大（弱的范德华键）、陶瓷 α 最小（强键）；金属导热最好（自由电子），聚合物导热最差。Invar（Fe-36Ni）膨胀系数极小，用于精密仪器。
+
+@slide 17
+Thermal Properties ||| 热性能
+• Thermal Expansion ||| • 热膨胀
+(Left) Potential energy vs interatomic distance with vibrational energies E₁…E₅ ||| （左）势能—原子间距曲线及振动能级 E₁…E₅：温度升高，原子振动加剧，平均间距变大 → 热膨胀
+(Right) Modulus of elasticity (GPa) vs temperature for Tungsten, Steel and Aluminum ||| （右）钨、钢、铝的弹性模量随温度的变化：温度升高，模量下降
+! 因为势能曲线不对称（压近比拉远更“难”），振动幅度增大时平均位置向外移，这就是热膨胀的原子起源；同时键变“软”，模量随温度升高而降低，铝在约 400°C 附近下降很快。
+
+@slide 18
+Fracture/Fatigue/Creep ||| 断裂 / 疲劳 / 蠕变
+(SEM fractographs) Notes: (a) Fractograph 6 of sample C, x = 13.03 mm, y = 1.09 mm, s = 0.19 μm; (b) fractograph 20 of sample C, x = 24.00 mm, y = 1.35 mm, s = 0.42 μm ||| （扫描电镜断口照片）注：(a) 试样 C 的第 6 张断口照片，x = 13.03 mm，y = 1.09 mm，s = 0.19 μm；(b) 试样 C 的第 20 张断口照片，x = 24.00 mm，y = 1.35 mm，s = 0.42 μm
+! 照片中平行的条纹是典型的<b>疲劳条带（辉纹）</b>，每一条大致对应一次载荷循环中裂纹前进的距离；s 为条带间距。离裂纹源越远（x 越大），条带间距越大，说明裂纹扩展在加速。
+
+@slide 19
+Density and Corrosion ||| 密度与腐蚀
+Density: determined by the mass and size of the atoms and how they are packed together ||| <b>密度</b>：由原子的质量、大小以及堆垛的紧密程度决定
+1. Ceramics and polymers – light elements (C, O and Si): SiC 2.5 Mg/m³, Nylon 1.0 Mg/m³ ||| 1. 陶瓷和聚合物——由轻元素（C、O、Si）组成：SiC 2.5 Mg/m³，尼龙 1.0 Mg/m³
+2. Metals heavier elements which are tightly packed together – high density: Iron 7.8 Mg/m³ ||| 2. 金属由较重的元素紧密堆垛而成——密度高：铁 7.8 Mg/m³
+Corrosion: A chemical reaction between a material and its environment ||| <b>腐蚀</b>：材料与其所处环境之间的化学反应
+1. Problem with metals (apart from noble metals such as Gold) ||| 1. 金属的主要问题（金等贵金属除外）
+2. Ceramic: more stable especially for oxides ||| 2. 陶瓷：更稳定，尤其是氧化物陶瓷
+3. Polymers can have very good corrosion resistance but depends on chemistry of the polymers ||| 3. 聚合物可以有很好的耐蚀性，但取决于聚合物的化学组成
+! 单位换算：1 Mg/m³ = 1000 kg/m³ = 1 g/cm³。
+
+@slide 20
+Corrosion: Anodic and Cathodic reactions ||| 腐蚀：阳极反应与阴极反应
+Table: Red. ↔ Ox + e⁻ and standard potentials E° (V), from Li ↔ Li⁺ + e⁻ (−3.045) via H₂ ↔ 2H⁺ + 2e⁻ (±0.0000) to HF(aq) ↔ ½F₂ + H⁺ + e⁻ (+3.06) ||| 表：还原态 ↔ 氧化态 + e⁻ 及标准电极电势 E°（V），从 Li ↔ Li⁺ + e⁻（−3.045），经过标准氢电极 H₂ ↔ 2H⁺ + 2e⁻（±0.0000），到 HF(aq) ↔ ½F₂ + H⁺ + e⁻（+3.06）
+(Upper part) Power of reduction increases; Oxidability increases; Metals become ignoble ||| （表上部，E° 越负）还原能力增强；越易被氧化；金属越“贱”（越活泼）
+(Lower part) Metals become noble; Power of oxidation increase; Reductibility increases ||| （表下部，E° 越正）金属越“贵”；氧化能力增强；越易被还原
+Galvanic cell: Anode, Cathode, Ions, Electrolyte ||| 原电池示意：阳极、阴极、离子、电解质
+E_red = E°_red − (RT / zF) ln (a_Red / a_Ox) ||| 能斯特方程：E_red = E°_red − (RT / zF) ln (a_Red / a_Ox)（R 气体常数，T 温度，z 转移电子数，F 法拉第常数，a 活度）
+! 两种金属接触并处于电解质中时，E° 较负的一方作<b>阳极</b>被腐蚀（失电子：M → Mⁿ⁺ + ne⁻），E° 较正的一方作<b>阴极</b>（发生还原，如 O₂ 或 H⁺ 的还原）。图中锈蚀的铁皮、帆船和试管中的铁钉都是腐蚀实例。
+
+@slide 21
+Ellingham Diagram ||| 埃林汉姆图
+Standard Free Energies of formation of oxides (−ΔG° = RT ln p_O₂) kJ mol⁻¹ O₂ vs Temperature (°C); lines e.g. 4Cu + O₂ = 2Cu₂O, 2Ni + O₂ = 2NiO, 2Fe + O₂ = 2FeO, 4/3Al + O₂ = 2/3Al₂O₃, 2Mg + O₂ = 2MgO, 2Ca + O₂ = 2CaO; scales for p_O₂, H₂/H₂O and CO/CO₂ ratios; M = melting point, B = boiling point ||| 氧化物的标准生成自由能（−ΔG° = RT ln p_O₂，kJ/mol O₂）随温度（°C）的变化；图中直线如 4Cu + O₂ = 2Cu₂O、2Ni + O₂ = 2NiO、2Fe + O₂ = 2FeO、4/3Al + O₂ = 2/3Al₂O₃、2Mg + O₂ = 2MgO、2Ca + O₂ = 2CaO；外侧刻度为氧分压 p_O₂、H₂/H₂O 比和 CO/CO₂ 比；M 为熔点，B 为沸点
+! 读图要点：直线越靠下，ΔG° 越负，氧化物越稳定、金属越容易被氧化（Ca、Mg、Al 在下方，Cu、Ni 在上方）。在同一温度下，下方直线对应的金属可以还原上方直线对应的氧化物（如铝热反应：Al 还原 Fe 的氧化物）。
+
+@example 弹性变形计算 Elastic extension of a bar
+Q: A steel bar of diameter 10 mm and length 1.0 m carries a tensile load of 10 kN. Using E(steel) = 207 GPa from Table 6.1, find the stress, strain and extension. What would the extension be for an aluminium bar of the same size (E = 69 GPa)? ||| 一根直径 10 mm、长 1.0 m 的钢杆承受 10 kN 拉力。取表 6.1 中钢的 E = 207 GPa，求应力、应变和伸长量。若换成同尺寸的铝杆（E = 69 GPa），伸长量是多少？
+S: 截面积：A₀ = πd²/4 = π × (0.010 m)² / 4 = 7.854 × 10⁻⁵ m²
+S: 应力：σ = P / A₀ = 10 × 10³ N / 7.854 × 10⁻⁵ m² = 1.273 × 10⁸ Pa = <b>127.3 MPa</b>（低于钢的屈服强度，仍在弹性范围内，可用胡克定律）
+S: 应变：ε = σ / E = 127.3 × 10⁶ / 207 × 10⁹ = <b>6.15 × 10⁻⁴</b>
+S: 伸长量：Δl = ε l₀ = 6.15 × 10⁻⁴ × 1000 mm = <b>0.615 mm</b>
+S: 铝杆：应力相同（127.3 MPa），ε = 127.3 × 10⁶ / 69 × 10⁹ = 1.845 × 10⁻³，Δl = <b>1.85 mm</b>。注意：铝合金的屈服强度一般在 100–500 MPa，需要确认所选铝合金不会屈服。
+A: 钢杆：σ = 127.3 MPa，ε = 6.15 × 10⁻⁴，Δl ≈ 0.62 mm；铝杆 Δl ≈ 1.85 mm，是钢的 3 倍（207/69 = 3），因为在相同应力下伸长量与 E 成反比。
+
+@example 热膨胀与热应力 Thermal expansion
+Q: (a) An aluminium rod 2.0 m long is heated from 20 °C to 120 °C. Using α(Al) = 23.6 × 10⁻⁶ °C⁻¹ (Table 19.1), find the change in length. (b) If the rod is rigidly clamped at both ends so it cannot expand, estimate the thermal stress (E = 69 GPa). ||| (a) 一根长 2.0 m 的铝棒从 20 °C 加热到 120 °C。取表 19.1 中 α(Al) = 23.6 × 10⁻⁶ °C⁻¹，求长度变化。(b) 若铝棒两端被刚性固定、不能膨胀，估算产生的热应力（E = 69 GPa）。
+S: (a) 由 Δl / l₀ = α_l ΔT：ΔT = 120 − 20 = 100 °C
+S: Δl = α_l ΔT l₀ = 23.6 × 10⁻⁶ × 100 × 2000 mm = <b>4.72 mm</b>
+S: (b) 两端固定时，热应变 αΔT 完全被约束，相当于施加了大小相同的压缩弹性应变：ε = −αΔT = −2.36 × 10⁻³
+S: 热应力：σ = Eε = 69 × 10⁹ × (−2.36 × 10⁻³) ≈ <b>−163 MPa</b>（负号表示压应力）
+A: (a) 伸长约 4.7 mm；(b) 约 163 MPa 的压应力——已接近或超过许多铝合金的屈服强度，所以铁轨、管道、桥梁要留伸缩缝。
+
+@example 用同系温度判断蠕变 Creep and homologous temperature
+Q: Using the creep rules on slide 15, decide whether creep must be considered for: (a) an aluminium alloy component at 150 °C (Tₘ ≈ 660 °C); (b) a steel component at 150 °C (Tₘ ≈ 1536 °C); (c) a lead pipe at room temperature, 20 °C (Tₘ ≈ 327 °C). ||| 利用第 15 页的蠕变判据，判断下列情况是否需要考虑蠕变：(a) 150 °C 下工作的铝合金零件（Tₘ ≈ 660 °C）；(b) 150 °C 下工作的钢零件（Tₘ ≈ 1536 °C）；(c) 室温 20 °C 下的铅管（Tₘ ≈ 327 °C）。
+S: 关键：同系温度 T/Tₘ 必须用<b>开尔文</b>计算（K = °C + 273）。金属在 T/Tₘ ＞ 0.3 时需要考虑蠕变。
+S: (a) T = 423 K，Tₘ = 933 K → T/Tₘ = 0.45 ＞ 0.3 → <b>需要考虑蠕变</b>
+S: (b) T = 423 K，Tₘ = 1809 K → T/Tₘ = 0.23 ＜ 0.3 → 一般<b>不需要</b>考虑蠕变
+S: (c) T = 293 K，Tₘ = 600 K → T/Tₘ = 0.49 ＞ 0.3 → <b>室温下就会蠕变</b>（老建筑中的铅管、铅皮屋顶会慢慢下垂）
+A: (a) 需要；(b) 不需要；(c) 需要。同样是 150 °C，对铝是“高温”，对钢却是“低温”，所以“高温”要相对熔点来判断。
+
+@example 电偶腐蚀 Galvanic corrosion
+Q: Using the standard potentials on slide 20 (Zn ↔ Zn²⁺ + 2e⁻: −0.7627 V; Cu ↔ Cu²⁺ + 2e⁻: +0.337 V), find which metal corrodes when zinc and copper are connected in an electrolyte, and the standard cell voltage. Explain why steel is protected by a zinc coating (galvanising). ||| 利用第 20 页的标准电极电势（Zn ↔ Zn²⁺ + 2e⁻：−0.7627 V；Cu ↔ Cu²⁺ + 2e⁻：+0.337 V），判断锌和铜在电解质中连接时哪一个被腐蚀，并求标准电池电压。解释为什么镀锌能保护钢。
+S: E° 较负的金属更“贱”，更容易失去电子 → Zn 为<b>阳极</b>，被腐蚀：Zn → Zn²⁺ + 2e⁻
+S: Cu 为<b>阴极</b>，在其表面发生还原反应（如 Cu²⁺ + 2e⁻ → Cu，或溶解氧/氢离子的还原），铜本身不被腐蚀
+S: 标准电池电压：E°<sub>cell</sub> = E°<sub>阴极</sub> − E°<sub>阳极</sub> = 0.337 − (−0.7627) = <b>1.10 V</b>
+S: 镀锌钢：Zn 的 E°（−0.76 V）比 Fe 更负，即使镀层破损，Zn 仍优先作为阳极被腐蚀，铁作为阴极得到保护——这叫<b>牺牲阳极保护</b>。
+A: 锌被腐蚀，铜受保护；E°<sub>cell</sub> ≈ 1.10 V。镀锌层作为牺牲阳极保护钢。
