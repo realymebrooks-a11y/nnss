@@ -31,6 +31,7 @@ M = 30                                   # page margin (pt)
 TOP, BOTTOM = M + 4, PAGE[1] - 26        # usable band of each page
 GAP = 6                                  # space after each block
 SLIDE_W = 370                            # width of an embedded slide (pt)
+MIN_SLIDE_W = 290                        # narrowest a slide may shrink to fit a page
 
 CSS = f"""
 @font-face {{ font-family: zh; src: url({FONT_FILE}); }}
@@ -205,10 +206,18 @@ class Builder:
 
     def slide(self, lec, k, slide, src):
         sr = src[k - 1].rect
-        h = SLIDE_W * sr.height / sr.width
-        self.ensure(h + 12 + (40 if slide["rows"] or slide["notes"] else 0))
-        x0 = (PAGE[0] - SLIDE_W) / 2
-        box = pymupdf.Rect(x0, self.y + 10, x0 + SLIDE_W, self.y + 10 + h)
+        extra = 12 + (40 if slide["rows"] or slide["notes"] else 0)
+        w = SLIDE_W
+        room = BOTTOM - self.y - extra
+        if self.dev is not None and room < w * sr.height / sr.width:
+            # shrink the slide a little rather than leave the rest of the page empty
+            w = room * sr.width / sr.height
+            if w < MIN_SLIDE_W:
+                w = SLIDE_W
+        h = w * sr.height / sr.width
+        self.ensure(h + extra)
+        x0 = (PAGE[0] - w) / 2
+        box = pymupdf.Rect(x0, self.y + 10, x0 + w, self.y + 10 + h)
         self.stamps.append((self.page - 1, src, k - 1, box, f"Lecture {lec['n']} · Slide {k}"))
         self.y = box.y1 + 5
         body = slide_html(lec, k, slide)
@@ -254,7 +263,10 @@ def main():
     for lec in lectures:
         src = pymupdf.open(os.path.join(ROOT, f"Lecture {lec['n']}.pdf"))
         b.header = f"Lecture {lec['n']}  {lec['title'][0]}  {lec['title'][1]}"
-        b.new_page()
+        if b.dev is None or BOTTOM - b.y < 300:
+            b.new_page()
+        else:
+            b.y += 12
         b.toc.append([1, f"Lecture {lec['n']}  {lec['title'][1]}", b.page])
         b.html(lecture_intro_html(lec))
         keep = [k for k in range(1, len(src) + 1) if k not in lec["skip"]]
