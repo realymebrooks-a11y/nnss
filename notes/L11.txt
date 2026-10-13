@@ -1,0 +1,167 @@
+@lecture 11
+@skip 1-4
+@title Packing of Atoms in Solids (2): Atomic Packing Factor ||| 固体中的原子堆垛（2）：原子堆积因子
+@summary 本讲回顾晶体结构层次和三种常见金属晶体结构，然后定义原子堆积因子 APF = N<sub>atoms</sub>V<sub>atoms</sub>/V<sub>unit cell</sub>，用来衡量晶胞被原子“填满”的程度。依次分析 bcc（8 个最近邻，APF = 0.68）、fcc（12 个最近邻，APF = 0.74）和 hcp（12 个最近邻，APF = 0.74）的堆垛方式，并一步步用几何关系推导 hcp 的 c = 4√(2/3) R 和晶胞体积，得到 APF。
+
+@glossary
+atomic packing ||| 原子堆垛
+atomic packing factor (APF) ||| 原子堆积因子（致密度）
+atomic density ||| 原子密度
+slip plane ||| 滑移面
+nearest neighbours / coordination number ||| 最近邻原子 / 配位数
+alternate layers ||| 交替的原子层
+stacking sequence ABAB / ABCABC ||| 堆垛顺序 ABAB / ABCABC
+equilateral triangle ||| 等边三角形
+centroid ||| 形心（重心）
+regular tetrahedron ||| 正四面体
+base area ||| 底面积
+lattice parameter c ||| 晶格常数 c
+c/a ratio ||| 轴比 c/a
+symmetry ||| 对称性
+
+@slide 5
+Bonding energies (1) ||| 键能（1）（回顾）
+Ball and spring model; atoms in lowest energy state at r₀ ||| 球—弹簧模型；原子在 r₀ 处能量最低
+! 第 5–9 页为第 8、10 讲的回顾，详见第 8 讲 Slide 9 和第 10 讲 Slide 14、15、19、20。
+
+@slide 6
+The structure of metals and ceramics (2) ||| 金属与陶瓷的结构（2）
+~10¹⁵ m⁻³ grains; sub-grains; each grain a crystal; >10⁹ unit cells per crystal; substitutional atoms joined by primary bonds; smaller interstitial atoms between larger atoms ||| 约 10¹⁵ 个/m³ 晶粒；亚晶粒；每个晶粒是一个晶体；每个晶体含 >10⁹ 个晶胞；置换原子由主价键连接；较小的间隙原子位于大原子之间
+
+@slide 7
+Unit cell parameters ||| 晶胞参数
+a, b, c = lattice parameters; α, β, γ = lattice angles; Simple cubic structure ||| a、b、c = 晶格常数；α、β、γ = 晶轴夹角；简单立方结构
+
+@slide 8
+Crystal structures – Metals ||| 晶体结构 —— 金属
+bcc: W, Cr, α-Fe (strong / hard); fcc: Cu, Al, Ni, γ-Fe (ductile); hcp: Zn, Ti, Mg ((some) light materials) ||| bcc：W、Cr、α-Fe（强 / 硬）；fcc：Cu、Al、Ni、γ-Fe（韧性好）；hcp：Zn、Ti、Mg（部分为轻质材料）
+
+@slide 9
+Crystal structures – Ceramics ||| 晶体结构 —— 陶瓷
+Far more complex structures; ionic + covalent bonding, very difficult to deform; CsCl, CaTiO₃ ||| 结构复杂得多；离子键 + 共价键，很难变形；CsCl、CaTiO₃
+
+@slide 10
+Learning objectives ||| 学习目标
+• To learn how to characterise the 'density' of different atomic arrangements by their atomic packing factor ||| • 学习如何用原子堆积因子描述不同原子排列的“密集程度”
+
+@slide 11
+Atomic packing ||| 原子堆垛
+• The arrangement of atoms within the crystal structure has a significant influence on their properties and behaviour ||| • 晶体结构中原子的排列方式对材料的性能和行为有重大影响
+• Specifically, the arrangement of atoms determines how many slip planes there are and therefore how easily slip may occur ||| • 具体来说，原子排列决定了有多少个<b>滑移面</b>，从而决定滑移发生的难易程度
+• Atomic packing therefore describes: ||| • 因此，原子堆垛描述的是：
+– The arrangement of alternate layers of atoms within the crystal structure ||| – 晶体结构中交替原子层的排列方式
+– A measure of how 'full' of atoms the unit cell is, or the atomic density of the material ||| – 晶胞被原子“填满”的程度，即材料的原子密度
+– Can be characterised by the atomic packing factor, APF = N_atoms V_atoms / V_unit cell ||| – 可以用<b>原子堆积因子</b>表示：APF = N_atoms V_atoms / V_unit cell（晶胞中原子总体积 / 晶胞体积）
+
+@slide 12
+Atomic packing – bcc structures ||| 原子堆垛 —— bcc 结构
+• Two layers of four atoms (A) sandwich layers of single atoms (B) ||| • 两层各 4 个原子的 A 层夹着单个原子的 B 层
+• Atoms along a line passing through the centre atom 'touch' ||| • 沿穿过中心原子的直线（体对角线）上的原子相互“接触”
+• Atoms in alternate 'A' layers do not touch ||| • 交替的 A 层中原子彼此不接触
+• Each atom has 8 neighbours ||| • 每个原子有 <b>8</b> 个最近邻原子
+
+@slide 13
+Atomic packing factor – bcc ||| 原子堆积因子 —— bcc
+APF = N_atoms V_atoms / V_unit cell ||| APF = N_atoms V_atoms / V_unit cell
+N_atoms = 8(1/8) + 1(1) = 2 ||| N_atoms = 8 × 1/8 + 1 × 1 = 2
+V_atoms = (4/3)πR³ ||| 每个原子体积 V_atoms = (4/3)πR³
+V_unit cell = a³ = (64 / 3√3) R³ ||| 晶胞体积 V_unit cell = a³ = (64 / 3√3) R³
+∴ APF = π√3 / 8 = 0.68 ||| ∴ APF = π√3 / 8 = 0.68
+(Diagram) 1/8 atom at each corner, 1 atom at centre; triangle: 4R, a, √(2a²) ||| （图）每个顶角 1/8 个原子，体心 1 个原子；直角三角形：斜边 4R（体对角线），两直角边 a 和 √(2a²)（面对角线）
+! 由直角三角形：(4R)² = a² + 2a² = 3a² → a = 4R/√3 → a³ = 64R³/(3√3)。APF = 2 × (4/3)πR³ / (64R³/3√3) = (8π/3) × (3√3/64) = π√3/8 ≈ 0.680。即 bcc 晶胞中 68% 被原子占据，32% 是空隙。
+
+@slide 14
+Atomic packing – fcc structures ||| 原子堆垛 —— fcc 结构
+• Single atoms (A) lie in the centre of alternating layers of 6 atoms (B, C) ||| • 单个原子（A）位于由 6 个原子组成的交替层（B、C）的中心
+• Atoms touch all adjacent atoms ||| • 原子与所有相邻原子<b>都接触</b>
+• Each atom has 12 neighbours ||| • 每个原子有 <b>12</b> 个最近邻原子
+! 沿体对角线方向看，fcc 是 A-B-C-A 三层循环堆垛的密排面（{111} 面）。
+
+@slide 15
+Atomic packing factor – fcc ||| 原子堆积因子 —— fcc
+APF = N_atoms V_atoms / V_unit cell; N_atoms = [box]; V_atoms = (4/3)πR³; V_unit cell = a³ = [box]; ∴ APF = [box] ||| APF = N_atoms V_atoms / V_unit cell；N_atoms = ［空框］；V_atoms = (4/3)πR³；V_unit cell = a³ = ［空框］；∴ APF = ［空框］
+(Diagram) [box] atom at corners, [box] atom on faces; 2R; triangle with legs a, a and hypotenuse [box] ||| （图）顶角［空框］个原子，面心［空框］个原子；2R；直角三角形两直角边为 a、a，斜边为［空框］
+! 空框答案：顶角 1/8 个原子、面心 1/2 个原子；斜边 = 4R（面对角线）。N_atoms = 8 × 1/8 + 6 × 1/2 = 4；由 a² + a² = (4R)² 得 a = 2√2 R，V_unit cell = a³ = 16√2 R³；APF = 4 × (4/3)πR³ / (16√2 R³) = π/(3√2) ≈ <b>0.74</b>。
+
+@slide 16
+Atomic packing – hcp structures ||| 原子堆垛 —— hcp 结构
+• Three atoms (B) lie in the centre of alternating layers of 7 atoms (A) ||| • 3 个原子（B）位于由 7 个原子组成的交替层（A）的中心
+• Atoms touch all adjacent atoms ||| • 原子与所有相邻原子都接触
+• Each atom has 12 neighbours ||| • 每个原子有 12 个最近邻原子
+
+@slide 17
+Atomic packing factor – hcp (1) ||| 原子堆积因子 —— hcp（1）
+APF = N_atoms V_atoms / V_unit cell ||| APF = N_atoms V_atoms / V_unit cell
+N_atoms = 4(1/12) + 4(1/6) + 1(1) = 2 ||| N_atoms = 4 × 1/12 + 4 × 1/6 + 1 × 1 = 2（取完整六棱柱晶胞的 1/3，即菱形底面的棱柱）
+V_atoms = (4/3)πR³ ||| V_atoms = (4/3)πR³
+V_unit cell = A_base(c) = a² cos(30°) c ||| V_unit cell = 底面积 × c = a² cos30° × c
+α = β = 90°, γ = 120° ||| α = β = 90°，γ = 120°
+! 菱形底面：两边长 a、夹角 120°，面积 = a² sin120° = a² cos30° = (√3/2) a²。锐角顶点（60°）的原子算 1/12，钝角顶点（120°）的原子算 1/6。
+
+@slide 18
+Atomic packing factor – hcp (2) ||| 原子堆积因子 —— hcp（2）
+N_atoms = 2; V_atoms = (4/3)πR³; WV = ?; Distance between T and V? TV = ? ||| N_atoms = 2；V_atoms = (4/3)πR³；WV = ？；T 与 V 之间的距离？TV = ？
+(Diagram) Tetrahedron T, U, X-base and V the central-layer atom; W = centroid of base triangle ||| （图）底层三个原子 T、U 及第三个原子构成等边三角形，中间层原子 V 位于其正上方，形成正四面体；W 为底面三角形的形心
+
+@slide 19
+Atomic packing factor – hcp (3) ||| 原子堆积因子 —— hcp（3）
+WV = c/2;  TV = a = 2R ||| WV = c/2；TV = a = 2R（中间层原子与底层原子相切）
+Find TW: TW = ?; TX = ?; ∴ TW = ? ||| 求 TW：TW = ？；TX = ？；∴ TW = ？
+(Triangle) T–X with angle 30°, hypotenuse a to U ||| （三角形）T 到 X，夹角 30°，斜边 a 指向 U
+! 空格答案：X 为对边中点，TX = a cos30° = (√3/2)a；形心 W 把中线分成 2:1，所以 TW = (2/3) TX = a/√3。
+
+@slide 20
+Atomic packing factor – hcp (4) ||| 原子堆积因子 —— hcp（4）
+WV = c/2; TV = a = 2R; TW = (1/√3)a ||| WV = c/2；TV = a = 2R；TW = (1/√3)a
+(c/2)² = a² − ((1/√3)a)² ||| 勾股定理：(c/2)² = a² − ((1/√3)a)²
+⇒ c = √(8/3) a ||| ⇒ c = √(8/3) a ≈ 1.633a（理想轴比）
+∴ c = 4√(2/3) R ||| ∴ c = 4√(2/3) R
+
+@slide 21
+Atomic packing factor – hcp (5) ||| 原子堆积因子 —— hcp（5）
+N_atoms = 2; V_atoms = (4/3)πR³; V_unit cell = a²c cos30°; a = 2R; c = 4√(2/3) R ||| N_atoms = 2；V_atoms = (4/3)πR³；V_unit cell = a²c cos30°；a = 2R；c = 4√(2/3) R
+⇒ V_uc = (?)(?)(?);  ∴ V_uc = ???R³ ||| ⇒ V_uc = (？)(？)(？)；∴ V_uc = ？？？R³
+! 空格答案：V_uc = (2R)² × 4√(2/3) R × (√3/2) = 4R² × 4√(2/3)R × (√3/2) = 8√2 R³。
+
+@slide 22
+Atomic packing factor – hcp (6) ||| 原子堆积因子 —— hcp（6）
+N_atoms = 2; V_atoms = (4/3)πR³; V_uc = 8√2 R³ ||| N_atoms = 2；V_atoms = (4/3)πR³；V_uc = 8√2 R³
+APF = N_atoms V_atoms / V_unit cell = ?((4/3)πR³) / ? ; ∴ APF = ??? ||| APF = N_atoms V_atoms / V_unit cell = ？×（(4/3)πR³）/ ？；∴ APF = ？？？
+! 空格答案：APF = 2 × (4/3)πR³ / (8√2 R³) = π/(3√2) ≈ <b>0.74</b>，与 fcc 完全相同——两者都是理想密排结构。
+
+@slide 23
+Tips for calculating APF for hcp ||| 计算 hcp 的 APF 的技巧
+• Work from one-third (2 atoms) of the total unit cell (6 atoms) – The central atom overlaps this reduced cell, but can still be considered as a whole as parts of external atoms intrude in ||| • 只取完整六棱柱晶胞（6 个原子）的<b>三分之一</b>（2 个原子）来计算——中间层原子虽然有一部分伸出这个小晶胞，但外部原子也有部分伸进来，因此仍可按 1 个完整原子计
+• To calculate lattice parameter c from geometry, remove all unnecessary atoms and bonds (leaving 4 atom positions only) recognising that half of the remaining base forms an equilateral triangle ||| • 用几何关系求晶格常数 c 时，<b>去掉所有不需要的原子和键</b>（只留 4 个原子位置），并注意剩下的底面的一半是一个等边三角形
+• Remember that base atoms are touching (a = 2R) and that base atoms touch the central atom ||| • 记住：<b>底面原子相互接触</b>（a = 2R），而且<b>底面原子与中间层原子接触</b>
+
+@slide 24
+Summary ||| 小结
+• The packing of crystalline structures influences behaviour – the atomic density and symmetry are key factors ||| • 晶体结构的堆垛方式影响材料行为——<b>原子密度</b>和<b>对称性</b>是关键因素
+
+@slide 25
+Concepts and terminology ||| 概念与术语
+• Atoms: Substitutional, Interstitial • Unit cell • Crystal • Sub-grain • Grain • Crystallographic structure: bcc, fcc, hcp • Atomic packing factor ||| • 原子：置换原子、间隙原子 • 晶胞 • 晶体 • 亚晶粒 • 晶粒 • 晶体结构：bcc、fcc、hcp • 原子堆积因子
+
+@example 简单立方的 APF APF of simple cubic
+Q: Calculate the APF of the simple cubic structure (atoms only at the corners, touching along the cube edge), and compare it with bcc and fcc. ||| 计算简单立方结构（原子只在顶角，沿立方体棱边相切）的 APF，并与 bcc、fcc 比较。
+S: N_atoms = 8 × 1/8 = 1
+S: 原子沿棱边相切：a = 2R → V_unit cell = a³ = 8R³
+S: APF = 1 × (4/3)πR³ / 8R³ = π/6 ≈ <b>0.52</b>
+S: 比较：简单立方 0.52 ＜ bcc 0.68 ＜ fcc = hcp 0.74；配位数分别为 6、8、12。
+A: APF ≈ 0.52。简单立方空隙多、很不稳定，常见金属中只有钋（Po）采用这种结构。堆积越密、配位数越大的结构，能量越低。
+
+@example fcc 的 APF 完整推导 Full derivation of the fcc APF
+Q: Fill in all boxes of slide 15 and calculate the APF of fcc. Then use it to find the fraction of empty space in a 1 cm³ block of copper. ||| 填写第 15 页所有空框，计算 fcc 的 APF，并求 1 cm³ 铜块中空隙所占的体积。
+S: 顶角原子 1/8 个，面心原子 1/2 个 → N_atoms = 8 × 1/8 + 6 × 1/2 = <b>4</b>
+S: 原子沿面对角线相切：a² + a² = (4R)² → a = 2√2 R → V_unit cell = a³ = (2√2)³R³ = <b>16√2 R³</b>
+S: APF = 4 × (4/3)πR³ / (16√2 R³) = (16π/3) / (16√2) = <b>π/(3√2) ≈ 0.740</b>
+S: 1 cm³ 铜中原子占 0.74 cm³，空隙占 1 − 0.74 = 0.26 cm³。
+A: APF = 0.74；空隙约 0.26 cm³（26%）。注意 APF 与原子半径 R 无关——它只由结构的几何决定，所以所有 fcc 金属的 APF 都是 0.74。
+
+@example 真实 hcp 金属的轴比与 APF Real hcp metals
+Q: For ideal hcp, c/a = √(8/3) = 1.633. Magnesium has a = 0.3209 nm, c = 0.5211 nm; zinc has a = 0.2665 nm, c = 0.4947 nm. Calculate c/a for each and comment. ||| 理想 hcp 的轴比 c/a = √(8/3) = 1.633。镁的 a = 0.3209 nm，c = 0.5211 nm；锌的 a = 0.2665 nm，c = 0.4947 nm。分别计算 c/a 并讨论。
+S: 镁：c/a = 0.5211 / 0.3209 = <b>1.624</b>，非常接近理想值 1.633 → 几乎是理想密排。
+S: 锌：c/a = 0.4947 / 0.2665 = <b>1.856</b>，明显大于理想值 → 密排层之间的距离被“拉长”了。
+S: 对锌而言，底面原子相切（a = 2R），但层间原子不再接触，所以晶胞体积变大，APF 小于 0.74：APF ≈ 0.74 × 1.633 / 1.856 ≈ 0.65。
+A: Mg 的 c/a ≈ 1.624（接近理想），Zn 的 c/a ≈ 1.856（偏离较大）。真实 hcp 金属的 c/a 偏离理想值，会影响哪些滑移面最容易开动，这也是 hcp 金属延性差异很大的原因之一（第 10 讲 Slide 19）。

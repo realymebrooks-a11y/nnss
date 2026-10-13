@@ -1,0 +1,117 @@
+@lecture 7
+@skip 1-3,9
+@title Practice: Stress–Strain Curves, Definitions and Young's Modulus Data ||| 练习：应力应变曲线、基本定义与杨氏模量数据
+@summary 本讲是练习课：画出典型韧性金属的名义应力—名义应变曲线并标注各特征量；给出弹性变形、塑性变形和屈服的定义，并讨论为什么设计中通常用屈服应力而不是抗拉强度；总结第 6 讲（脆性与韧性材料、球—弹簧模型、工程与真应力应变）；最后布置任务：查找各类陶瓷、金属、聚合物和复合材料的杨氏模量并绘制柱状图。
+
+@glossary
+nominal stress / nominal strain ||| 名义应力 / 名义应变
+failure stress ||| 失效（断裂）应力
+strain to failure ||| 断裂应变（失效应变）
+yield stress ||| 屈服应力
+tensile strength ||| 抗拉强度
+elastic region / plastic region ||| 弹性区 / 塑性区
+elastic deformation ||| 弹性变形
+plastic deformation ||| 塑性变形
+yield ||| 屈服
+proportional to applied stress ||| 与外加应力成正比
+permanently deformed ||| 永久变形
+initial / instantaneous dimensions ||| 初始尺寸 / 瞬时尺寸
+test piece ||| 试样
+bar chart ||| 柱状图
+alkali halides ||| 碱金属卤化物
+cermet ||| 金属陶瓷
+melamine / alkyd ||| 三聚氰胺树脂 / 醇酸树脂
+safety factor ||| 安全系数
+
+@slide 4
+Practice time! ||| 练习时间！
+• Draw a graph of nominal stress vs nominal strain for a typical ductile metal ||| • 画出典型<b>韧性</b>金属的名义应力—名义应变曲线
+• Label the following: – Failure stress and strain to failure – Yield stress – Tensile strength – Elastic and plastic regions ||| • 标出：– <b>失效应力</b>和<b>断裂应变</b> – <b>屈服应力</b> – <b>抗拉强度</b> – <b>弹性</b>区和<b>塑性</b>区
+• Define the terms elastic, plastic and yield ||| • 给出<b>弹性</b>、<b>塑性</b>和<b>屈服</b>的定义
+• Why is yield stress rather than tensile strength typically used in design? ||| • 为什么设计中通常使用屈服应力而不是抗拉强度？
+(5) ||| （5 分钟）
+
+@slide 5
+Nominal stress vs nominal strain for a ductile metal ||| 韧性金属的名义应力—名义应变曲线
+• Draw a graph of nominal stress vs nominal strain for a typical ductile metal • Label the following: – Failure stress and strain to failure – Yield stress – Tensile strength – Elastic and plastic regions • Define the terms elastic, plastic and yield • Why is yield stress rather than tensile strength typically used in design? ||| • 画出典型韧性金属的名义应力—名义应变曲线 • 标出：– 失效应力和断裂应变 – 屈服应力 – 抗拉强度 – 弹性区和塑性区 • 给出弹性、塑性和屈服的定义 • 为什么设计中通常使用屈服应力而不是抗拉强度？
+! 参考答案（曲线）：原点出发的直线段（斜率 E）为弹性区；直线终点为屈服应力 σ_y；之后进入塑性区，曲线上升到最高点即抗拉强度 σ_TS；然后颈缩、曲线下降，在 X 点断裂，对应失效应力 σ_f 和断裂应变 ε_f。可参照第 6 讲 Slide 13、21 的图。
+! 为什么用屈服应力：一旦超过 σ_y，零件就会产生永久变形，尺寸和配合被破坏，零件已经“失效”了，即使还没断。σ_TS 之后又会发生颈缩和不稳定变形。所以设计按 σ_y 并取安全系数，保证零件始终处于弹性范围内。
+
+@slide 6
+Definitions ||| 定义
+• Elastic deformation is when… – A material is deformed proportional to an applied stress, but returns to its original shape when the stress is removed ||| • <b>弹性变形</b>是指……——材料的变形与外加应力<b>成正比</b>，去除应力后能恢复原来的形状
+• Plastic deformation is when… – A material is permanently deformed due to an applied stress ||| • <b>塑性变形</b>是指……——材料在外加应力作用下发生<b>永久变形</b>
+• Yield: – The point at which a material ceases to behave elastically, beyond which it will behave plastically ||| • <b>屈服</b>：——材料<b>不再表现为弹性</b>的那一点，超过该点材料将表现为塑性
+
+@slide 7
+Summary ||| 小结
+• Brittle materials have a single, linear elastic region to failure ||| • 脆性材料只有一个线弹性区，直到失效
+• Ductile materials undergo elastic deformation before yielding followed by plastic deformation before failure ||| • 韧性材料先弹性变形，屈服后再塑性变形，最后失效
+• We can model the stiffness of materials by a 'ball and spring' model of atomic attraction ||| • 可以用原子间吸引的“球—弹簧”模型来描述材料的刚度
+• Engineering or Nominal stress/strain is based on the initial dimensions of a test piece ||| • 工程（名义）应力/应变以试样的<b>初始尺寸</b>为基础
+• True stress/strain is based on the instantaneous dimensions of the test piece at any point in time ||| • 真应力/应变以试样在任一时刻的<b>瞬时尺寸</b>为基础
+
+@slide 8
+Concepts and terminology ||| 概念与术语
+• Stress-strain curves: – Brittle and ductile materials • Stiffness: – Hooke's Law – Young's modulus • Linear elasticity • Engineering / nominal stress and strain • True stress and strain ||| • 应力—应变曲线：– 脆性材料和韧性材料 • 刚度：– 胡克定律 – 杨氏模量 • 线弹性 • 工程 / 名义应力和应变 • 真应力和应变
+
+@slide 10
+Hooke's Law, Young's Modulus… …and the longest derivation in history! ||| 胡克定律、杨氏模量……以及史上“最长”的推导！（第 6 讲回顾）
+F = kx; σ = kx/A; σ = (kL/A)ε ⇒ kL/A = σ/ε; E = Stress (σ) / Strain (ε) ||| F = kx；σ = kx/A；σ = (kL/A)ε ⇒ kL/A = σ/ε；E = 应力 σ / 应变 ε
+! 第 10–15 页为第 6 讲的回顾，详细对照见第 6 讲 Slide 14、15、18–21。
+
+@slide 11
+Linear elastic behaviour ||| 线弹性行为
+• Ball and spring model of elasticity • Material in tension – bonds stretched and atoms move apart • Material in compression – bonds compressed and atoms move closer together ||| • 弹性的球—弹簧模型 • 受拉——键被拉长，原子远离 • 受压——键被压缩，原子靠近
+
+@slide 12
+Engineering stress and strain ||| 工程应力与应变
+σ_n = F / A₀ (ORIGINAL area); ε_n = ΔL / L₀ (ORIGINAL length) ||| σ_n = F / A₀（原始截面积）；ε_n = ΔL / L₀（原始长度）
+
+@slide 13
+True stress and strain (1) ||| 真应力与真应变（1）
+ε_t = ∫ dl/l = ln(L_i/L₀) = ln(1 + ε_n) ||| ε_t = ∫ dl/l = ln(L_i/L₀) = ln(1 + ε_n)
+
+@slide 14
+True stress and strain (2) ||| 真应力与真应变（2）
+σ_t = F / A_i (INSTANTANEOUS area); A_i/A₀ = L₀/L_i ⇒ σ_t = σ_n (1 + ε_n) ||| σ_t = F / A_i（瞬时截面积）；A_i/A₀ = L₀/L_i ⇒ σ_t = σ_n (1 + ε_n)
+
+@slide 15
+Deformation of ductile materials ||| 韧性材料的变形
+σ_y, σ_TS, Uniform elongation, Necking; Total strain ε = ε_e + ε_p = σ_y/E + ε_p ||| 屈服应力、抗拉强度、均匀伸长、颈缩；总应变 ε = ε_e + ε_p = σ_y/E + ε_p
+
+@slide 16
+Task! ||| 任务！
+• Search Young's modulus of various ceramics, metals, polymers and composites such as ||| • 查找各种陶瓷、金属、聚合物和复合材料的杨氏模量，例如：
+Ceramics: diamond, WC, Al₂O₃, SiC, Si₃N₄, MgO, ZrO₂, Silica, soda glass, alkali halides, cement, concrete, graphite, ice ||| 陶瓷：金刚石、碳化钨、氧化铝、碳化硅、氮化硅、氧化镁、氧化锆、石英玻璃、钠钙玻璃、碱金属卤化物、水泥、混凝土、石墨、冰
+Metals: Osmium, tungsten, molybdenum, chromium, nickel, iron+steel, copper, titanium, aluminium, zinc, tin, magnesium, lead ||| 金属：锇、钨、钼、铬、镍、铁和钢、铜、钛、铝、锌、锡、镁、铅
+Polymers: Alkydes, melamines, PMMA, polystyrene, nylon, epoxy, polypropylene, rubbers, PVC, foamed polymers ||| 聚合物：醇酸树脂、三聚氰胺树脂、PMMA（有机玻璃）、聚苯乙烯、尼龙、环氧树脂、聚丙烯、橡胶、PVC、泡沫聚合物
+Composites: Cermets, CFRP's, fibreglass, GFRP's, woods ||| 复合材料：金属陶瓷、碳纤维增强塑料、玻璃钢、玻璃纤维增强塑料、木材
+• Draw a bar chart data for Young's modulus of ceramics, metals, polymers and composites. ||| • 把陶瓷、金属、聚合物和复合材料的杨氏模量数据画成柱状图。
+! 提示：模量跨越约 6 个数量级（橡胶约 0.01 GPa，金刚石约 1000 GPa），柱状图的纵轴应使用<b>对数坐标</b>，否则聚合物在图上几乎看不见。参考数据见本讲例题 2。
+
+@example 由拉伸试验数据求力学性能 Properties from tensile-test data
+Q: An aluminium alloy specimen (A₀ = 50.0 mm², L₀ = 50.0 mm) is tested in tension. In the linear part, a load of 5.00 kN gives an extension of 0.0714 mm. The 0.2% offset yield load is 12.5 kN, the maximum load is 15.0 kN, and the extension at fracture (after the specimen is unloaded) is 7.50 mm. Find E, σ_y, σ_TS and the strain to failure (ductility). ||| 一个铝合金试样（A₀ = 50.0 mm²，L₀ = 50.0 mm）做拉伸试验。在线性段，5.00 kN 载荷产生 0.0714 mm 的伸长；0.2% 残余变形屈服载荷为 12.5 kN；最大载荷为 15.0 kN；断裂后（卸载后）的伸长量为 7.50 mm。求 E、σ_y、σ_TS 和断裂应变（延性）。
+S: 线性段：σ = 5000 / 50.0 = 100 MPa；ε = 0.0714 / 50.0 = 1.428 × 10⁻³
+S: 杨氏模量：E = σ/ε = 100 / 1.428 × 10⁻³ = 7.0 × 10⁴ MPa = <b>70 GPa</b>
+S: 屈服应力：σ_y = 12 500 / 50.0 = <b>250 MPa</b>
+S: 抗拉强度：σ_TS = 15 000 / 50.0 = <b>300 MPa</b>（最大载荷除以<b>原始</b>面积——名义值）
+S: 断裂应变：ε_f = 7.50 / 50.0 = 0.15 = <b>15%</b>（断后伸长率，是塑性应变）
+A: E = 70 GPa，σ_y = 250 MPa，σ_TS = 300 MPa，延性 15%。设计时若安全系数取 1.5，许用应力 = 250 / 1.5 ≈ 167 MPa（以屈服应力为基础）。
+
+@example 各类材料杨氏模量参考值（任务答案） Typical Young's moduli for the task
+Q: Give approximate typical values of Young's modulus for representative materials from each class in the Task (slide 16), and comment on the ranking. ||| 给出第 16 页任务中各类代表性材料杨氏模量的大致典型值，并说明其排序规律。
+S: <b>陶瓷</b>（GPa，约值）：金刚石 ≈ 1000；WC ≈ 450–650；SiC ≈ 450；Al₂O₃ ≈ 390；Si₃N₄ ≈ 300；MgO ≈ 250；ZrO₂ ≈ 160–240；石英玻璃 ≈ 94；钠钙玻璃 ≈ 69；混凝土 ≈ 30–50；石墨 ≈ 27；冰 ≈ 9
+S: <b>金属</b>：锇 ≈ 550；钨 ≈ 406；钼 ≈ 324；铬 ≈ 289；镍 ≈ 214；铁和钢 ≈ 196–210；铜 ≈ 124；钛 ≈ 116；铝 ≈ 69；锡 ≈ 47；镁 ≈ 41–45；铅 ≈ 14
+S: <b>聚合物</b>：醇酸树脂 ≈ 14–17；三聚氰胺 ≈ 6–7；PMMA ≈ 3.4；聚苯乙烯 ≈ 3–3.4；尼龙 ≈ 2–4；环氧 ≈ 2.6–3；聚丙烯 ≈ 0.9；橡胶 ≈ 0.01–0.1；泡沫聚合物 ≈ 0.001–0.01
+S: <b>复合材料</b>：金属陶瓷 ≈ 400–530；CFRP ≈ 70–200；GFRP ≈ 7–45；木材（顺纹）≈ 9–16
+S: 规律：陶瓷（共价/离子键）＞ 金属（金属键）＞ 聚合物（链间范德华键）；复合材料介于其组分之间，取决于纤维含量和方向。熔点越高的材料，模量通常也越高。
+A: 以上数值来自常用教材数据表（如 Ashby & Jones），不同来源略有差异，作图时注明来源即可。画图时用对数纵轴，并按材料族分组着色。
+
+@example 判断材料是否已屈服 Elastic or plastic?
+Q: A steel wire (E = 210 GPa, σ_y = 400 MPa, diameter 2.0 mm, length 3.0 m) carries 1.5 kN. Is the deformation elastic or plastic? What is its extension, and what happens when the load is removed? ||| 一根钢丝（E = 210 GPa，σ_y = 400 MPa，直径 2.0 mm，长 3.0 m）承受 1.5 kN 的载荷。其变形是弹性还是塑性？伸长多少？卸载后会怎样？
+S: A = π × 2.0²/4 = 3.14 mm²；σ = 1500 / 3.14 = <b>477 MPa</b>
+S: σ = 477 MPa ＞ σ_y = 400 MPa → 已经<b>屈服</b>，发生了塑性变形。
+S: 此时无法只用胡克定律求总伸长（还需要塑性段的应力—应变曲线）。弹性部分：ε_e = 477 / 210 000 = 2.27 × 10⁻³，对应 ΔL_e = 2.27 × 10⁻³ × 3000 = 6.8 mm——卸载后这部分会恢复。
+S: 卸载后：弹性伸长 6.8 mm 回弹，塑性伸长保留，钢丝变长了。
+A: 塑性变形（477 MPa ＞ 400 MPa）。卸载后回弹约 6.8 mm，但会留下永久伸长。为保持弹性，载荷应低于 400 × 3.14 ≈ 1.26 kN（再除以安全系数）。

@@ -1,0 +1,84 @@
+@lecture 13
+@skip 1-4
+@title Rule of Mixtures (2) ||| 混合法则（2）
+@summary 本讲复习第 12 讲的混合法则：等应变（平行于纤维）给出模量上限 E<sub>c</sub> = E<sub>f</sub>V<sub>f</sub> + E<sub>m</sub>(1 − V<sub>f</sub>)，等应力（垂直于纤维）给出模量下限 E<sub>c</sub> = 1/[V<sub>f</sub>/E<sub>f</sub> + (1 − V<sub>f</sub>)/E<sub>m</sub>]；讨论各向异性、取向因子和层合；最后总结：金属、陶瓷以及低于 T<sub>G</sub> 的玻璃态聚合物的模量反映键的刚度，高于 T<sub>G</sub> 的聚合物模量低得多，复合材料的模量是各组分模量的加权平均。
+
+@glossary
+rule of mixtures ||| 混合法则
+upper limit / lower limit ||| 上限 / 下限
+parallel / perpendicular to fibres ||| 平行于纤维 / 垂直于纤维
+same strain / same stress ||| 相同应变 / 相同应力
+weighted average ||| 加权平均
+volume fraction of fibres V_f ||| 纤维体积分数 V_f
+anisotropy ||| 各向异性
+orientation factor η_O ||| 取向因子 η_O
+glassy polymer ||| 玻璃态聚合物
+leathery / rubbery / viscous ||| 皮革态 / 橡胶态 / 黏流态
+mass fraction / volume fraction ||| 质量分数 / 体积分数
+
+@slide 5
+Rule of mixtures (1) ||| 混合法则（1）
+• Estimating the modulus of composites (upper limit): – Subject composite to a known stress, parallel to the fibre direction – As fibres and matrix are bonded, they stretch by the same amount – e.g. they have the same strain, ε_n – Assuming equal proportions of fibres and matrix, σ = (σ_f + σ_m)/2 ||| • 估算复合材料模量（上限）：– 沿平行于纤维方向施加已知应力 – 纤维与基体粘结在一起，伸长量相同，即应变 ε_n 相同 – 假设纤维与基体各占一半：σ = (σ_f + σ_m)/2
+! 第 5–12 页与第 12 讲 Slide 21–28 相同，详细讲解和例题见第 12 讲。
+
+@slide 6
+Rule of mixtures (2) ||| 混合法则（2）
+• In equal proportions, σ = (σ_f + σ_m)/2 • In un-equal proportions, σ = V_f σ_f + (1 − V_f)σ_m – V_f = volume fraction of fibres • Since σ = Eε_n: σ = [E_f V_f + E_m(1 − V_f)] ε_n ||| • 各占一半：σ = (σ_f + σ_m)/2 • 比例不等：σ = V_f σ_f + (1 − V_f)σ_m —— V_f = 纤维体积分数 • 由于 σ = Eε_n：σ = [E_f V_f + E_m(1 − V_f)] ε_n
+
+@slide 7
+Rule of mixtures (3) ||| 混合法则（3）
+• As E_composite = σ/ε_n: E_composite = E_f V_f + E_m(1 − V_f) • Upper estimate for the composite modulus – Need to consider loading perpendicular to fibres ||| • 由 E_composite = σ/ε_n：E_composite = E_f V_f + E_m(1 − V_f) • 复合材料模量的上限估计 —— 还需考虑垂直于纤维的加载
+
+@slide 8
+Rule of mixtures (4) ||| 混合法则（4）
+• Estimating the modulus of composites (lower limit): – Subject composite to a known stress, perpendicular to the fibre direction – Same stress, weighted nominal strain – In equal proportions, ε_n = (ε_n,f + ε_n,m)/2 ||| • 估算复合材料模量（下限）：– 沿垂直于纤维方向施加已知应力 – 应力相同，应变按比例加权 – 各占一半：ε_n = (ε_n,f + ε_n,m)/2
+
+@slide 9
+Rule of mixtures (5) ||| 混合法则（5）
+• In un-equal proportions, ε_n = V_f ε_n,f + (1 − V_f) ε_n,m • Since σ = Eε_n: ε_n = [V_f/E_f + (1 − V_f)/E_m] σ ||| • 比例不等：ε_n = V_f ε_n,f + (1 − V_f) ε_n,m • 由于 σ = Eε_n：ε_n = [V_f/E_f + (1 − V_f)/E_m] σ
+
+@slide 10
+Rule of mixtures (6) ||| 混合法则（6）
+• As E_composite = σ/ε_n: E_composite = 1/[V_f/E_f + (1 − V_f)/E_m] • Lower estimate for the composite modulus ||| • 由 E_composite = σ/ε_n：E_composite = 1/[V_f/E_f + (1 − V_f)/E_m] • 复合材料模量的下限估计
+
+@slide 11
+Rule of mixtures (7) ||| 混合法则（7）
+• Fibre-reinforced composites are anisotropic: Different strength depending on loading direction • Particulate composites are isotropic; (Chart) composite modulus between E_m and E_f vs volume fraction: upper (parallel), lower (perpendicular), particulate data in between ||| • 纤维增强复合材料是各向异性的：加载方向不同，强度不同 • 颗粒复合材料是各向同性的；（图）复合材料模量在 E_m 与 E_f 之间随体积分数变化：上限（平行）、下限（垂直），颗粒复合材料数据介于两者之间
+
+@slide 12
+Rule of mixtures (8) ||| 混合法则（8）
+• Alignment 'efficiency' – Warning: Transverse properties can be worse than un-reinforced matrix! – Orientation factor η_O, e.g. E_c = η_O E_f V_f + E_m(1 − V_f) (2D random η_O = 3/8; 3D random η_O = 1/5) • Overcoming anisotropy: Laminating ||| • 排列“效率”——警告：横向性能可能比未增强的基体还差！——取向因子 η_O，如 E_c = η_O E_f V_f + E_m(1 − V_f)（二维随机 η_O = 3/8；三维随机 η_O = 1/5）• 克服各向异性：层合
+
+@slide 13
+Summary ||| 小结
+• The moduli of metals, ceramics and glassy polymers below T_G reflect the stiffness of the bonds which link the atoms. ||| • 金属、陶瓷以及低于 T_G 的玻璃态聚合物的模量，反映的是连接原子的<b>键的刚度</b>。
+• Glasses and glassy polymers above T_G are leathers, rubbers or viscous liquids, and have much lower moduli. ||| • 高于 T_G 时，玻璃和玻璃态聚合物会变成皮革态、橡胶态或黏性液体，模量<b>低得多</b>。
+• Composites have moduli which are a weighted average of those of their components. ||| • 复合材料的模量是其各组分模量的<b>加权平均</b>。
+
+@slide 14
+Concepts and terminology ||| 概念与术语
+• Stress-strain curves: Brittle and ductile materials • Stiffness: Hooke's Law, Young's modulus • Linear elasticity • Engineering / nominal stress and strain • True stress and strain ||| • 应力—应变曲线：脆性与韧性材料 • 刚度：胡克定律、杨氏模量 • 线弹性 • 工程 / 名义应力和应变 • 真应力和应变
+
+@example 上下限与载荷分配 Bounds and load sharing
+Q: A unidirectional composite contains 40 vol% glass fibres (E_f = 72 GPa) in epoxy (E_m = 3 GPa). (a) Find E_c parallel and perpendicular to the fibres. (b) When loaded parallel to the fibres, what fraction of the total load is carried by the fibres? ||| 单向复合材料含 40%（体积）玻璃纤维（E_f = 72 GPa），基体为环氧（E_m = 3 GPa）。(a) 求平行和垂直于纤维方向的 E_c；(b) 沿纤维方向加载时，纤维承担总载荷的百分之几？
+S: (a) 平行（上限）：E_c = 72 × 0.4 + 3 × 0.6 = 28.8 + 1.8 = <b>30.6 GPa</b>
+S: 垂直（下限）：1/E_c = 0.4/72 + 0.6/3 = 0.00556 + 0.2 = 0.2056 → E_c = <b>4.86 GPa</b>
+S: (b) 等应变时，各组分应力 σ_f = E_f ε，σ_m = E_m ε。载荷与“应力 × 面积”成正比，面积比等于体积比：
+S: 纤维承担的比例 = E_f V_f / [E_f V_f + E_m(1 − V_f)] = 28.8 / 30.6 = <b>94%</b>
+A: E_∥ ≈ 30.6 GPa，E_⊥ ≈ 4.9 GPa；纤维虽只占 40% 体积，却承担约 94% 的载荷——这就是“增强”的含义。
+
+@example 由质量分数换算体积分数 Mass fraction to volume fraction
+Q: A CFRP is made with 65 wt% carbon fibre (ρ_f = 1.80 Mg m⁻³, E_f = 230 GPa) and 35 wt% epoxy (ρ_m = 1.20 Mg m⁻³, E_m = 3 GPa). Find V_f, the composite density and the longitudinal modulus. ||| 某 CFRP 含 65%（质量）碳纤维（ρ_f = 1.80 Mg m⁻³，E_f = 230 GPa）和 35%（质量）环氧（ρ_m = 1.20 Mg m⁻³，E_m = 3 GPa）。求 V_f、复合材料密度和纵向模量。
+S: 混合法则使用的是<b>体积分数</b>，而生产中常给出质量分数，需要先换算。取 1 kg 复合材料：
+S: 纤维体积 = 0.65 / 1.80 = 0.3611 L；基体体积 = 0.35 / 1.20 = 0.2917 L；总体积 = 0.6528 L
+S: V_f = 0.3611 / 0.6528 = <b>0.553</b>
+S: 密度：ρ_c = 1 kg / 0.6528 L = <b>1.53 Mg m⁻³</b>（检验：1.80 × 0.553 + 1.20 × 0.447 = 1.53 ✓）
+S: 纵向模量：E_c = 230 × 0.553 + 3 × 0.447 = 127.2 + 1.3 = <b>128.5 GPa</b>
+A: V_f ≈ 0.55，ρ_c ≈ 1.53 Mg m⁻³，E_∥ ≈ 128 GPa；比刚度 E/ρ ≈ 84，约为钢的 3 倍。
+
+@example 橡胶在 T_G 上下的模量 Rubber above and below T_G
+Q: A car tyre rubber has T_G ≈ −70 °C. Using the summary on slide 13 and Fig. 6.2 (Lecture 12), estimate its modulus at room temperature and at −100 °C, and explain the difference. Why must rubber seals be chosen with T_G well below the service temperature? ||| 某轮胎橡胶的 T_G ≈ −70 °C。根据第 13 页小结和第 12 讲图 6.2，估计它在室温和 −100 °C 下的模量并解释差别。为什么橡胶密封件的 T_G 必须远低于使用温度？
+S: 室温（20 °C）＞ T_G：范德华键已“熔化”，只有少量共价交联点起作用 → 橡胶态，E ≈ <b>0.001–0.01 GPa</b>（1–10 MPa）。
+S: −100 °C ＜ T_G：范德华键重新起作用，分子链被“冻结” → 玻璃态，E ≈ <b>1–3 GPa</b>，约高出 3 个数量级，材料变硬变脆。
+S: 密封件依靠橡胶的大弹性变形紧贴密封面。如果使用温度低于 T_G，橡胶变得又硬又脆，无法变形填满缝隙，就会泄漏甚至开裂。
+A: 室温约 1–10 MPa，−100 °C 约 1–3 GPa。1986 年“挑战者号”航天飞机失事的直接原因，就是低温下固体火箭助推器的 O 形橡胶密封圈失去弹性。

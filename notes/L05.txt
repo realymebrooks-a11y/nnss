@@ -1,0 +1,187 @@
+@lecture 5
+@skip 1-3
+@title The Materials Selection Process: Translation, Screening, Ranking and Refining ||| 选材流程：转化、筛选、排序与细化
+@summary 本讲系统讲解选材四步法。第 1 步“转化”：把设计要求写成功能、约束、目标和自由变量（以功率电子散热器为例）；第 2 步“筛选”：用约束条件的上下限排除不合格材料；第 3 步“排序”：由功能、约束、目标、自由变量组合得到材料性能指数，并通过“液压缸拉杆”案例推导成本最低的指数 M = C<sub>m</sub>ρ/σ<sub>f</sub>；第 4 步“细化”：利用声誉、先例、可获得性、案例研究、市场数据等补充信息做出最终选择。
+
+@glossary
+function ||| 功能
+constraint ||| 约束条件
+objective ||| 目标
+free variable ||| 自由变量
+heat sink ||| 散热器
+power electronics ||| 功率电子器件
+electrical insulator ||| 电绝缘体
+thermal conductor ||| 导热体
+electrical resistivity ||| 电阻率
+maximum service temperature ||| 最高使用温度
+screening limit ||| 筛选界限
+material performance index ||| 材料性能指数
+tie / beam / shaft / column ||| 拉杆 / 梁 / 轴 / 柱
+stiffness specified / strength specified ||| 规定刚度 / 规定强度
+fatigue limit ||| 疲劳极限
+geometry specified ||| 规定几何尺寸
+minimum cost / minimise mass ||| 成本最低 / 质量最小
+maximum energy storage ||| 最大储能
+minimum eco-impact ||| 环境影响最小
+hydraulic cylinder ||| 液压缸
+tie rod ||| 拉杆（螺杆）
+axial load ||| 轴向载荷
+yield / fast fracture ||| 屈服 / 快速断裂
+failure function ||| 失效函数
+objective function ||| 目标函数
+cost per unit mass C_m ||| 单位质量成本 C_m
+reputation / precedents / availability ||| 声誉 / 先例 / 可获得性
+case studies / market data ||| 案例研究 / 市场数据
+
+@slide 4
+Step 1 – Translation ||| 第 1 步 —— 转化
+Design requirements → Function • What does the component do? ||| 设计要求 → <b>功能</b>：• 零件是做什么的？
+Constraints • What essential conditions must be met? ||| <b>约束</b>：• 必须满足哪些基本条件？
+Objectives • What needs to be maximised or minimised? ||| <b>目标</b>：• 什么需要最大化或最小化？
+Free variables • Which design variables are free? ||| <b>自由变量</b>：• 哪些设计变量可以自由选择？
+
+@slide 5
+Translation example ||| 转化示例
+• Heat sink for power electronics: – Describe function – Identify constraints – Translate into criteria ||| • 功率电子器件的散热器：– 描述功能 – 找出约束 – 转化为判据
+Function • Absorb heat and convey away from chips ||| 功能 • 吸收芯片产生的热量并将其导走
+Constraints • Operate at 200°C • Be a good electrical insulator • Be a good thermal conductor • Lightweight ||| 约束 • 能在 200°C 下工作 • 是良好的电绝缘体 • 是良好的导热体 • 质量轻
+Image from: Ashby, M. F., (2011), Materials Selection in Mechanical Design ||| 图片来源：Ashby, M. F.（2011），《机械设计中的材料选择》
+
+@slide 6
+Translation example (continued) ||| 转化示例（续）
+Constraints: Operate at 200°C → Max. service temperature > 200°C ||| 约束：在 200°C 下工作 → 最高使用温度 > 200°C
+Be a good electrical insulator → Resistivity > 10²⁰ μΩ cm ||| 良好的电绝缘体 → 电阻率 > 10²⁰ μΩ·cm
+Be a good thermal conductor → Thermal conductivity > 100 W/(m K) ||| 良好的导热体 → 导热系数 > 100 W/(m·K)
+Lightweight → Density < 4 g/cm³ (Mg/m³) ||| 质量轻 → 密度 < 4 g/cm³（Mg/m³）
+Free variables • Any suitable material / any process ||| 自由变量 • 任何合适的材料 / 任何工艺
+Objectives ||| 目标
+! 转化的关键是把定性的要求（“导热好”“轻”）变成可以查表比较的<b>定量判据</b>（λ > 100 W/(m·K)、ρ < 4 Mg/m³）。注：幻灯片中“Resistivity > 1020”实际为 10²⁰ μΩ·cm（上标格式丢失）。
+
+@slide 7
+Step 2 – Screening ||| 第 2 步 —— 筛选
+• There are typically minimum and maximum acceptable limits that define material constraints ||| • 材料约束通常由可接受的最小值和最大值界限确定
+• We can therefore rule out materials outside of these… ||| • 因此可以排除超出这些界限的材料……
+(Charts) Max service temperature (K): eliminate < 200 °C; Thermal conductivity vs Electrical resistivity: eliminate R < 10²⁰ μΩ cm and λ < 100 W/(m K) ||| （图）最高使用温度（K）图：排除 < 200 °C 的材料；导热系数—电阻率图：排除 R < 10²⁰ μΩ·cm 和 λ < 100 W/(m·K) 的材料
+! 图中红色区域为被淘汰区。电阻率条件淘汰了所有金属（导电），导热条件淘汰了聚合物、泡沫和大部分复合材料，剩下的只有少数导热陶瓷（如 AlN、BeO 等）。
+
+@slide 8
+Materials selection process (2) ||| 选材流程（2）
+1 – Translation: Express design requirements as constraints and objectives ||| 1 —— 转化：把设计要求表达为约束条件和目标
+2 – Screening: Eliminate materials based on constraints and objectives ||| 2 —— 筛选：根据约束条件和目标淘汰材料
+3 – Ranking: Rank materials against metrics describing best performance ||| 3 —— 排序：按描述最佳性能的指标对材料排序
+4 – Supporting information: Use additional information to refine selection ||| 4 —— 补充信息：利用更多信息完善选择
+
+@slide 9
+Step 3 – Ranking materials ||| 第 3 步 —— 材料排序
+• How can we robustly rank materials for a given design problem? ||| • 对于给定的设计问题，如何可靠地对材料排序？
+• Any combination of function, constraints, objectives and free variables leads to a material performance index ||| • 功能、约束、目标和自由变量的任何一种组合都会得到一个<b>材料性能指数</b>
+• These can be used to quantify the relative performance of one material against another for a given design problem ||| • 利用它可以<b>定量</b>比较不同材料在给定设计问题中的相对性能
+
+@slide 10
+Ranking by indices ||| 用指数排序
+Functions: Tie, Beam, Shaft, Column ||| 功能：拉杆、梁、轴、柱
+Constraints: Stiffness specified, Strength specified, Fatigue limit, Geometry specified ||| 约束：规定刚度、规定强度、疲劳极限、规定几何尺寸
+Objective: Minimum cost, Minimise mass, Maximum energy storage, Minimum eco-impact ||| 目标：成本最低、质量最小、储能最大、环境影响最小
+Index: e.g. Beam + Stiffness specified + Minimise mass → M = ρ / E<sup>1/2</sup> ||| 指数：例如 梁 + 规定刚度 + 质量最小 → M = ρ / E<sup>1/2</sup>（越小越好）
+Image adapted from: Ashby, M.F., (2011), Materials Selection in Mechanical Design ||| 图片改编自：Ashby, M.F.（2011），《机械设计中的材料选择》
+! 注意这里指数写成 ρ/E<sup>1/2</sup>（越小越好），与第 4 讲 E<sup>1/2</sup>/ρ（越大越好）互为倒数，本质相同。
+
+@slide 11
+Example – Hydraulic cylinder tie rods (1) ||| 例题 —— 液压缸拉杆（1）
+• In high-pressure cylinders, high strength steel tie rods carry the axial load generated by the internal pressure – this can be very high in industrial systems! ||| • 在高压液压缸中，由高强度钢制成的拉杆承受内部压力产生的轴向载荷——在工业系统中这一载荷可能非常大！
+Double-acting hydraulic cylinder (Thornton, 2006); 12 kN ||| 双作用液压缸（Thornton，2006）；12 kN
+
+@slide 12
+Example – Hydraulic cylinder tie rods (2) ||| 例题 —— 液压缸拉杆（2）
+• Constraints: ||| • 约束：
+– Sustain axial load (12 kN) resulting from cylinder pressure (strong) ||| – 承受缸内压力产生的 12 kN 轴向载荷（<b>强度</b>）
+– Fit connections on existing end blocks and cylinders ||| – 与现有端盖和缸体的连接相匹配
+– Required for large scale industrial use (low cost) ||| – 用于大规模工业生产（<b>低成本</b>）
+• Free variables: ||| • 自由变量：
+– Any material made by any manufacturing process ||| – <b>任何材料</b>、<b>任何制造工艺</b>
+– Tie rods can be of any diameter (within reason!) ||| – 拉杆可以是<b>任意直径</b>（在合理范围内！）
+• Objectives: ||| • 目标：
+– Sustain 12 kN load without failure by yield or fracture ||| – 承受 12 kN 载荷而不发生<b>屈服或断裂</b>
+– Maintain threaded and bolted connections to end blocks ||| – 保持与端盖的螺纹和螺栓连接
+– Minimise cost ||| – <b>成本最低</b>
+
+@slide 13
+Example – Hydraulic cylinder tie rods (3) ||| 例题 —— 液压缸拉杆（3）
+Failure function • Avoid failure by yielding or fast fracture • Both depend on staying below a 'critical' stress • Failure strength (σ_f) must be greater than applied stress: F/A < σ_f   (1) ||| <b>失效</b>函数 • 避免屈服或快速断裂 • 两者都要求应力保持在某个“临界”应力以下 • 失效强度 σ_f 必须大于外加应力：F/A < σ_f　　(1)
+Objective function • Assume cost solely based on material used • Therefore we need to minimise mass (m): m = ALρ • Considering material cost per unit mass (C_m): C = C_m m = C_m ALρ   (2) ||| <b>目标</b>函数 • 假设成本只取决于所用材料 • 因此需要使质量 m 最小：m = ALρ • 考虑单位质量材料成本 C_m：C = C_m m = C_m ALρ　　(2)
+The free variable (A) can now be used to combine functions. ||| 现在可以用自由变量 A 把两个函数结合起来。
+
+@slide 14
+Example – Hydraulic cylinder tie rods (4) ||| 例题 —— 液压缸拉杆（4）
+– Failure function: F/A < σ_f (1);  – Objective function: C = C_m ALρ (2) ||| – 失效函数：F/A < σ_f　(1)；– 目标函数：C = C_m ALρ　(2)
+• Combine by using the free variable (A): C = C_m ALρ = [box to fill in] ||| • 用自由变量 A 结合：C = C_m ALρ = ［空框，课堂填写］
+• Performance index is based on material properties: C = [box to fill in] ||| • 性能指数只取决于材料性能：C = ［空框，课堂填写］
+We want to minimise cost and density, while maximising strength ||| 我们希望成本和密度最小，同时强度最大
+! 空框答案：由 (1) 得 A > F/σ_f，代入 (2)：C = C_m L F ρ / σ_f = (F L) × [C_m ρ / σ_f]。方括号外为设计项（F、L 已定），方括号内为材料项。
+
+@slide 15
+Example – Hydraulic cylinder tie rods (5) ||| 例题 —— 液压缸拉杆（5）
+Table (data from Ashby, 2011): Material; Cost (£ kg⁻¹); Density (kg m⁻³); Failure strength (MPa); Index, M ||| 表（数据来自 Ashby，2011）：材料；成本（英镑/kg）；密度（kg m⁻³）；失效强度（MPa）；指数 M
+Medium carbon steels: 0.44–0.48; 7800–7900; 305–900 (yield) ||| 中碳钢：0.44–0.48；7800–7900；305–900（屈服）
+Aluminium alloys: 0.98–1.11; 2500–2900; 30–500 (yield) ||| 铝合金：0.98–1.11；2500–2900；30–500（屈服）
+Carbon-fibre reinforced plastic: 26–29; 1500–1600; 550–1050 (tensile) ||| 碳纤维增强塑料：26–29；1500–1600；550–1050（拉伸）
+Bamboo: 0.91–1.37; 600–800; 35–44 (tensile) ||| 竹子：0.91–1.37；600–800；35–44（拉伸）
+• Material performance index (smaller is better): M = [box to fill in] ||| • 材料性能指数（<b>越小越好</b>）：M = ［空框，课堂填写］
+! 空框答案：M = C_m ρ / σ_f。表中 Index 列的计算见本讲例题 1。
+
+@slide 16
+Step 4 – Refining selection ||| 第 4 步 —— 细化选择
+• Steps 1 to 3 do not usually produce a single option for a material to use ||| • 第 1–3 步通常不会只得到唯一一种材料
+• Need additional information to refine the short-list and make a final design choice: ||| • 需要<b>补充信息</b>来缩小候选名单并做出最终设计选择：
+– Reputation (i.e. of material consistency, producer or supplier) ||| – <b>声誉</b>（材料质量的稳定性、生产商或供应商的信誉）
+– Precedents (i.e. has it been used for a similar application before?) ||| – <b>先例</b>（以前是否用于类似场合？）
+– Availability (i.e. can it be sourced in the required volumes / time?) ||| – <b>可获得性</b>（能否按所需数量和时间采购到？）
+• This additional information can take many forms: ||| • 补充信息可以有多种形式：
+– Case studies (e.g. articles, journals, reports) ||| – <b>案例研究</b>（如文章、期刊、报告）
+– Market data (e.g. material price changes) ||| – <b>市场数据</b>（如材料价格变化）
+– Social-political-economic circumstances! ||| – <b>社会、政治、经济</b>形势！
+
+@slide 17
+Summary ||| 小结
+• To enable us to select the 'best' material for a particular application, we need to apply a structured selection methodology ||| • 要为特定应用选出“最好”的材料，必须采用结构化的<b>选材方法</b>
+• The 'best' material can be defined by a number of factors: ||| • “最好”的材料可以由多种因素来定义：
+– Physical (strength, stiffness, toughness etc.) ||| – <b>物理</b>因素（强度、刚度、韧性等）
+– Economic (cost, manufacturing considerations etc.) ||| – <b>经济</b>因素（成本、制造方面的考虑等）
+– Political (availability – who own it) ||| – <b>政治</b>因素（可获得性——资源掌握在谁手中）
+• By translating our design requirements, screening, ranking and refining our materials choice, we can usually identify a suitable candidate for a particular application ||| • 通过<b>转化</b>设计要求、<b>筛选</b>、<b>排序</b>和<b>细化</b>，通常可以为特定应用找到合适的候选材料
+
+@slide 18
+Concepts and terminology ||| 概念与术语
+• Materials Selection: Translating, Screening, Ranking, Refining ||| • 选材：转化、筛选、排序、细化
+• Translating: Functions, Constraints, Free variables, Objectives ||| • 转化：功能、约束、自由变量、目标
+• Ranking: Material Performance Index, Failure function, Objective function ||| • 排序：材料性能指数、失效函数、目标函数
+• Refining: Additional information ||| • 细化：补充信息
+
+@example 计算拉杆的性能指数并排序 Completing the tie-rod index table
+Q: Using the mid-range values of the table on slide 15, calculate the index M = C_m ρ / σ_f for each material and rank them for the cheapest tie rod. ||| 取第 15 页表中各数据范围的中值，计算每种材料的指数 M = C_m ρ / σ_f，并按“最便宜的拉杆”排序。
+S: 中值：中碳钢 C_m = 0.46 £/kg，ρ = 7850 kg/m³，σ_f = 602.5 MPa；铝合金 1.045，2700，265；CFRP 27.5，1550，800；竹子 1.14，700，39.5。
+S: 中碳钢：M = 0.46 × 7850 / 602.5 = 3611 / 602.5 ≈ <b>5.99</b>
+S: 铝合金：M = 1.045 × 2700 / 265 = 2822 / 265 ≈ <b>10.6</b>
+S: CFRP：M = 27.5 × 1550 / 800 = 42 625 / 800 ≈ <b>53.3</b>
+S: 竹子：M = 1.14 × 700 / 39.5 = 798 / 39.5 ≈ <b>20.2</b>
+S: （单位：£·kg⁻¹·kg·m⁻³/MPa，只用于比较。）M 越小越好。
+S: 范围检验：中碳钢最好情况 0.44 × 7800 / 900 = 3.8，最差情况 0.48 × 7900 / 305 = 12.4；即使最差也优于 CFRP 和竹子。
+A: 排序：中碳钢（≈6）＞ 铝合金（≈11）＞ 竹子（≈20）＞ CFRP（≈53）。中碳钢最便宜，这正是工业上用高强度钢做拉杆的原因。CFRP 虽然比强度高，但单价约为钢的 60 倍。
+
+@example 确定拉杆直径 Sizing the tie rod
+Q: For the 12 kN tie rod made of medium carbon steel with σ_f = 600 MPa, find the minimum diameter, and the diameter if a safety factor of 2 is applied. What is the material cost of a 0.5 m long rod (ρ = 7850 kg m⁻³, C_m = 0.46 £ kg⁻¹)? ||| 12 kN 拉杆采用 σ_f = 600 MPa 的中碳钢，求最小直径；若取安全系数 2，直径为多少？长 0.5 m 的拉杆材料成本是多少（ρ = 7850 kg m⁻³，C_m = 0.46 £ kg⁻¹）？
+S: 由失效函数 F/A < σ_f：A_min = F / σ_f = 12 000 N / 600 × 10⁶ Pa = 2.0 × 10⁻⁵ m² = 20 mm²
+S: d_min = √(4A/π) = √(4 × 20 / π) = <b>5.05 mm</b>
+S: 安全系数 2：许用应力 300 MPa，A = 40 mm²，d = √(4 × 40 / π) = <b>7.14 mm</b>
+S: 质量（取 A = 40 mm²）：m = A L ρ = 40 × 10⁻⁶ × 0.5 × 7850 = 0.157 kg；成本 = 0.157 × 0.46 ≈ <b>£0.072</b>
+A: d_min ≈ 5.1 mm；取安全系数 2 后 d ≈ 7.1 mm（实际会选用标准螺纹规格，如 M8）；每根材料成本约 7 便士。
+
+@example 散热器的筛选 Screening a heat-sink material
+Q: Apply the screening limits of slide 6 (T_max > 200 °C, resistivity > 10²⁰ μΩ cm, λ > 100 W/(m K), ρ < 4 Mg m⁻³) to these candidates (typical values): copper (λ 400, ρ 8.9, conductor); aluminium alloy (λ 150, ρ 2.7, conductor); alumina Al₂O₃ (λ 30, ρ 3.9, insulator); aluminium nitride AlN (λ 150, ρ 3.3, insulator, T_max > 1000 °C); PTFE (λ 0.25, ρ 2.2, insulator, T_max ≈ 250 °C). ||| 用第 6 页的筛选界限（T_max > 200 °C，电阻率 > 10²⁰ μΩ·cm，λ > 100 W/(m·K)，ρ < 4 Mg m⁻³）筛选下列候选材料（典型值）：铜（λ 400，ρ 8.9，导体）；铝合金（λ 150，ρ 2.7，导体）；氧化铝 Al₂O₃（λ 30，ρ 3.9，绝缘体）；氮化铝 AlN（λ 150，ρ 3.3，绝缘体，T_max > 1000 °C）；PTFE（λ 0.25，ρ 2.2，绝缘体，T_max ≈ 250 °C）。
+S: 逐条检查，任何一条不满足即淘汰：
+S: 铜：导电（不绝缘）✗，且 ρ = 8.9 > 4 ✗ → 淘汰
+S: 铝合金：导电 ✗ → 淘汰（尽管导热好又轻）
+S: 氧化铝：绝缘 ✓、轻 ✓、耐温 ✓，但 λ = 30 < 100 ✗ → 淘汰
+S: PTFE：绝缘 ✓、轻 ✓、耐温 ✓，但 λ = 0.25 ≪ 100 ✗ → 淘汰
+S: 氮化铝：绝缘 ✓、λ = 150 ✓、ρ = 3.3 ✓、耐温 ✓ → <b>通过</b>
+A: 只有 AlN 通过筛选。这与实际一致：AlN 陶瓷基板广泛用于功率电子散热。如果有多种材料通过，再进入第 3 步（排序）和第 4 步（细化）。

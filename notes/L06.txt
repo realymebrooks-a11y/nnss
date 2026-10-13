@@ -1,0 +1,164 @@
+@lecture 6
+@skip 1-4
+@title The Elastic Moduli: Hooke's Law, Engineering and True Stress–Strain ||| 弹性模量：胡克定律、工程应力应变与真应力应变
+@summary 本讲先回顾选材方法和液压缸拉杆例题的指数结果，然后讨论弹性：理想脆性材料与韧性材料的应力—应变曲线；从胡克定律推导应力、应变和杨氏模量；用“球—弹簧”模型解释线弹性；以塔科马海峡大桥为例说明刚度不足的后果；最后区分工程（名义）应力应变与真应力应变，推导 ε<sub>t</sub> = ln(1 + ε<sub>n</sub>)、σ<sub>t</sub> = σ<sub>n</sub>(1 + ε<sub>n</sub>)，并比较两条曲线。
+
+@glossary
+elastic modulus ||| 弹性模量
+brittle / ductile material ||| 脆性材料 / 韧性材料
+fracture stress σ_f / fracture strain ε_f ||| 断裂应力 σ_f / 断裂应变 ε_f
+yield stress σ_y ||| 屈服应力 σ_y
+tensile strength σ_TS ||| 抗拉强度 σ_TS
+elastic strain ε_e / plastic strain ε_p ||| 弹性应变 ε_e / 塑性应变 ε_p
+total strain ||| 总应变
+Hooke's law ||| 胡克定律
+stiffness k ||| 刚度 k
+extension x ||| 伸长量 x
+linear elastic behaviour ||| 线弹性行为
+ball and spring model ||| 球—弹簧模型
+tension / compression ||| 拉伸 / 压缩
+girder / I-beam ||| 大梁 / 工字梁
+cross-wind / drag ||| 横风 / 阻力（风阻）
+uniaxial tensile test ||| 单轴拉伸试验
+engineering (nominal) stress / strain ||| 工程（名义）应力 / 应变
+true stress / true strain ||| 真应力 / 真应变
+original area A₀ / length L₀ ||| 原始截面积 A₀ / 原始长度 L₀
+instantaneous area A_i ||| 瞬时截面积 A_i
+constant volume ||| 体积不变
+necking / uniform elongation ||| 颈缩 / 均匀伸长
+
+@slide 5
+Why do we need a selection methodology? ||| 为什么需要选材方法？（第 4 讲回顾）
+• Material properties vary enormously: e.g. Order of magnitude difference between weakest and strongest ferrous alloys ||| • 材料性能差异极大：例如最弱和最强的铁基合金相差一个数量级
+• Multiple factors complicate design choices: – Function – loading, environment, design life etc. – Cost – availability of raw materials and manufacturing processes – Time – production deadlines and required manufacturing volumes ||| • 多种因素使设计选择更复杂：– 功能——载荷、环境、设计寿命等 – 成本——原材料的可获得性和制造工艺 – 时间——生产期限和所需产量
+(Chart) Yield strength (elastic limit) (MPa) of ferrous alloys; Image created using CES Edupack 2011 ||| （图）各种铁基合金的屈服强度（弹性极限，MPa）；图由 CES Edupack 2011 生成
+
+@slide 6
+Trade-offs must be made! ||| 必须进行权衡！
+Griff on the scales ||| （照片）站在秤上的豚鼠 “Griff”
+
+@slide 7
+Materials selection process (1) ||| 选材流程（1）
+1 – Translation: Express design requirements as constraints and objectives; 2 – Screening: Eliminate materials based on constraints and objectives; 3 – Ranking: Rank materials against metrics describing best performance; 4 – Supporting information: Use additional information to refine selection ||| 1 —— 转化：把设计要求表达为约束和目标；2 —— 筛选：根据约束和目标淘汰材料；3 —— 排序：按描述最佳性能的指标排序；4 —— 补充信息：利用更多信息完善选择
+
+@slide 8
+Step 1 – Translation ||| 第 1 步 —— 转化
+Function • What does the component do?  Constraints • What essential conditions must be met?  Objectives • What needs to be maximised or minimised?  Free variables • Which design variables are free? ||| 功能 • 零件做什么？ 约束 • 必须满足哪些基本条件？ 目标 • 什么需要最大化或最小化？ 自由变量 • 哪些设计变量可以自由选择？
+
+@slide 9
+Example – Hydraulic cylinder tie rods (5) ||| 例题 —— 液压缸拉杆（5）
+• Material performance index (smaller is better): M = C_m ρ / σ_f ||| • 材料性能指数（<b>越小越好</b>）：M = C_m ρ / σ_f
+Medium carbon steels: Index Best: 4, Worst: 12 ||| 中碳钢：指数 最好 4，最差 12
+Aluminium alloys: Best: 5, Worst: 107 ||| 铝合金：最好 5，最差 107
+Carbon-fibre reinforced plastic: Best: 37, Worst: 84 ||| 碳纤维增强塑料：最好 37，最差 84
+Bamboo: Best: 12, Worst: 31 ||| 竹子：最好 12，最差 31
+Data from: Ashby, M. F., (2011), Materials Selection in Mechanical Design ||| 数据来源：Ashby, M. F.（2011），《机械设计中的材料选择》
+! 计算方法：“最好”取最低成本、最低密度、最高强度；“最差”反之。例如铝合金最好 = 0.98 × 2500 / 500 ≈ 4.9，最差 = 1.11 × 2900 / 30 ≈ 107。最好的铝合金与中碳钢相当，但铝合金强度范围太宽，结果很不确定；中碳钢在最差情况下也只有 12，最可靠。
+
+@slide 10
+Learning objectives ||| 学习目标
+• Review stress-strain curves for ideal brittle and ductile materials ||| • 回顾理想脆性材料和韧性材料的应力—应变曲线
+• Understand the origins of linear elastic behaviour, from Hooke's Law to Young's Modulus and the 'ball and spring' model ||| • 理解线弹性行为的起源：从胡克定律到杨氏模量，以及“球—弹簧”模型
+• Learn and appreciate the difference between 'Engineering' stress/strain and 'True' stress/strain ||| • 学习并理解“工程”应力/应变与“真”应力/应变的区别
+
+@slide 11
+Mechanical properties ||| 力学性能
+• Influencing factors: Atoms; Bonds; Crystals; Grain structure ||| • 影响因素：原子；键；晶体；晶粒结构
+• Manipulated by: Heat treatments (alloys); Making composites; Making foams ||| • 调控手段：热处理（合金）；制成复合材料；制成泡沫
+
+@slide 12
+Deformation of brittle materials ||| 脆性材料的变形
+(Graph) σ vs ε: elastic behaviour to failure; X Fracture at (ε_f, σ_f) ||| （图）σ—ε 曲线：一直保持弹性直到失效；在 (ε_f, σ_f) 处断裂（X）
+! 理想脆性材料（陶瓷、玻璃）：应力—应变曲线是一条直线，没有塑性变形，到断裂应力 σ_f 时突然断裂。
+
+@slide 13
+Deformation of ductile materials ||| 韧性材料的变形
+(Graph) Elastic and plastic regions; slope = E; σ_y, σ_TS; ε_e, ε_p; X Fracture ||| （图）弹性区和塑性区；斜率 = E；屈服应力 σ_y、抗拉强度 σ_TS；弹性应变 ε_e、塑性应变 ε_p；X 处断裂
+Total strain, ε = ε_e + ε_p = σ_y/E + ε_p ||| 总应变 ε = ε_e + ε_p = σ_y/E + ε_p
+! 卸载时弹性应变 ε_e 可以恢复（沿斜率 E 的直线返回），塑性应变 ε_p 永久保留。
+
+@slide 14
+Hooke's Law, Young's Modulus… …and the longest derivation in history! ||| 胡克定律、杨氏模量……以及史上“最长”的推导！
+• Hooke's Law (1678): "ut tensio, sic vis" – Hooke, 1660 ||| • 胡克定律（1678）：“ut tensio, sic vis”（拉丁语：“伸长多少，力就多大”）——胡克，1660
+– Force (F) = Stiffness (k) × Extension (x) ||| – 力 F = 刚度 k × 伸长量 x
+• Divide through by Area (A) to develop Stress (σ): σ = kx / A ||| • 两边除以面积 A，得到<b>应力</b> σ：σ = kx / A
+• Multiply and divide by Length (L) to develop Strain (ε): σ = (kL/A) ε ⇒ kL/A = σ/ε ||| • 乘以并除以长度 L，得到<b>应变</b> ε：σ = (kL/A) ε ⇒ kL/A = σ/ε
+• Young's Modulus (1807): Elastic Modulus (E) = Stress (σ) / Strain (ε) ||| • 杨氏模量（1807）：弹性模量 E = 应力 σ / 应变 ε
+! 关键结论：E = kL/A。刚度 k 与零件尺寸有关（长杆软、粗杆硬），而 E 只与材料有关——这就是为什么要定义应力和应变。
+
+@slide 15
+Linear elastic behaviour ||| 线弹性行为
+• Ball and spring model of elasticity: ||| • 弹性的“球—弹簧”模型：
+• Material in tension – bonds stretched and atoms move apart ||| • 材料受拉——键被拉长，原子相互远离
+• Material in compression – bonds compressed and atoms move closer together ||| • 材料受压——键被压缩，原子相互靠近
+Illustration adapted from: Gordon, J.E., (1978), Structures or Why Things Don't Fall Down ||| 插图改编自：Gordon, J.E.（1978），《结构：或者为什么东西不会倒下》
+
+@slide 16
+Structural engineering (c.1940) ||| 结构工程（约 1940 年）
+• Tacoma Narrows Bridge, Washington: – 5939ft (1810m) long, 2800ft (853m) span – 39ft (12m) wide ||| • 美国华盛顿州塔科马海峡大桥：– 全长 5939 英尺（1810 m），主跨 2800 英尺（853 m）– 宽 39 英尺（12 m）
+• Narrow girders: – Solid I-beam section steel – 8ft (2.4m) deep ||| • 窄的大梁：– 实心工字形截面钢梁 – 高 8 英尺（2.4 m）
+
+@slide 17
+What might have saved the bridge? ||| 什么能挽救这座桥？
+(Newspaper sketch) University of Washington engineers' wind-tunnel model: proposed holes in girder so wind would flow through, or curved outriggers to divert wind ||| （报纸插图）华盛顿大学工程师的风洞模型试验：建议在大梁上开孔让风穿过，或加装弧形导流板使风改向
+• Insufficient stiffness in the direction of the cross-winds… ||| • 横风方向的<b>刚度不足</b>……
+• …alternatively the design was such that the drag on the cross-section was too high ||| • ……或者说，这种截面设计受到的<b>风阻</b>太大
+! 1940 年该桥在约 64 km/h 的风中发生剧烈扭转振动而坍塌。实心的窄工字梁像一块“挡风板”，桥面又细又柔，扭转刚度太低。教训：刚度（E 和截面形状）与强度同样重要。
+
+@slide 18
+Engineering stress and strain ||| 工程应力与应变
+• In uniaxial tensile testing, the applied force creates a stress that results in strain (elongation) of the material ||| • 在单轴拉伸试验中，外力产生应力，应力使材料产生应变（伸长）
+– Stress, σ_n = Force / ORIGINAL area = F / A₀ ||| – 应力 σ_n = 力 / <b>原始</b>截面积 = F / A₀
+– Strain, ε_n = Change in length / ORIGINAL length = ΔL / L₀ ||| – 应变 ε_n = 长度变化 / <b>原始</b>长度 = ΔL / L₀
+• Engineering or nominal stress/strain calculated from the original dimensions of the part ||| • <b>工程</b>（<b>名义</b>）应力/应变按零件的<b>原始尺寸</b>计算
+
+@slide 19
+True stress and strain (1) ||| 真应力与真应变（1）
+• True tensile strain is given as: – Strain, ε_t = ∫ from L₀ to L_i of dl/l = ln(L_i/L₀) ||| • 真拉伸应变：– ε_t = ∫<sub>L₀</sub><sup>L_i</sup> dl/l = ln(L_i/L₀)
+• As: – ε_n = (L_i − L₀)/L₀ ⇒ L_i/L₀ = 1 + ε_n ||| • 因为：– ε_n = (L_i − L₀)/L₀ ⇒ L_i/L₀ = 1 + ε_n
+– ε_t = ln(1 + ε_n) ||| – <b>ε_t = ln(1 + ε_n)</b>
+! 真应变是把每一小段伸长 dl 都除以“当时的长度” l 再累加，所以要积分。小应变时 ln(1 + ε_n) ≈ ε_n，两者几乎相等。
+
+@slide 20
+True stress and strain (2) ||| 真应力与真应变（2）
+• True stress is calculated from the instantaneous area at any load: – Stress, σ_t = Force / INSTANTANEOUS area = F / A_i ||| • 真应力按任一载荷下的<b>瞬时截面积</b>计算：– σ_t = 力 / 瞬时截面积 = F / A_i
+• Neglecting volume change during plastic deformation: – A_i / A₀ = L₀ / L_i ||| • 忽略塑性变形时的体积变化（A_i L_i = A₀ L₀）：– A_i / A₀ = L₀ / L_i
+– σ_t = F/A_i = F L_i / (L₀ A₀) ⇒ σ_t = σ_n (L_i / L₀) ||| – σ_t = F/A_i = F L_i / (L₀ A₀) ⇒ σ_t = σ_n (L_i / L₀)
+– σ_t = σ_n (1 + ε_n) ||| – <b>σ_t = σ_n (1 + ε_n)</b>
+! 注意：体积不变假设只在<b>颈缩前</b>（均匀伸长阶段）成立；颈缩后变形集中在局部，需要直接测量颈部截面积。
+
+@slide 21
+Deformation of ductile materials ||| 韧性材料的变形
+(Graph) σ_y, σ_TS; Uniform elongation | Necking; slope = E; Total strain ε = ε_e + ε_p = σ_y/E + ε_p ||| （图）屈服应力 σ_y、抗拉强度 σ_TS；均匀伸长 | 颈缩；斜率 = E；总应变 ε = ε_e + ε_p = σ_y/E + ε_p
+
+@slide 22
+Comparison ||| 比较
+ε_t = ln(1 + ε_n);  σ_t = σ_n(1 + ε_n) ||| ε_t = ln(1 + ε_n)；σ_t = σ_n(1 + ε_n)
+• Engineering curve: – Drop in stress due to rapid onset of necking – Larger scale necking follows ||| • 工程曲线：– 由于颈缩迅速出现，应力下降 – 随后发生更大范围的颈缩
+• True curve: – Continuous increase in stress and strain – Instantaneous values considered ||| • 真应力曲线：– 应力和应变持续上升 – 采用的是瞬时值
+! 工程曲线在 UTS 之后“下降”只是假象：承载截面在变小，而计算仍用原始面积。材料本身仍在加工硬化，所以真应力一直上升。
+
+@example 工程应力应变与真应力应变的换算 Engineering vs true stress and strain
+Q: A tensile specimen has original diameter 10.0 mm and gauge length 50.0 mm. At a load of 20.0 kN the gauge length is 55.0 mm (before necking). Calculate the engineering stress and strain, the true stress and strain, and the instantaneous cross-sectional area. ||| 拉伸试样原始直径 10.0 mm，标距 50.0 mm。在 20.0 kN 载荷下标距变为 55.0 mm（尚未颈缩）。求工程应力、工程应变、真应力、真应变和瞬时截面积。
+S: 原始面积：A₀ = π × 10²/4 = 78.54 mm²
+S: 工程应力：σ_n = F/A₀ = 20 000 N / 78.54 mm² = <b>254.6 MPa</b>（N/mm² = MPa）
+S: 工程应变：ε_n = (55.0 − 50.0)/50.0 = <b>0.100</b>
+S: 真应变：ε_t = ln(1 + ε_n) = ln 1.100 = <b>0.0953</b>
+S: 真应力：σ_t = σ_n(1 + ε_n) = 254.6 × 1.100 = <b>280.1 MPa</b>
+S: 瞬时面积（体积不变）：A_i = A₀ L₀/L_i = 78.54 × 50/55 = <b>71.4 mm²</b>；检验：F/A_i = 20 000/71.4 = 280.1 MPa ✓
+A: σ_n = 254.6 MPa，ε_n = 0.100；σ_t = 280.1 MPa，ε_t = 0.0953；A_i = 71.4 mm²。真应力比工程应力高约 10%，真应变略小于工程应变。
+
+@example 卸载后的永久变形 Permanent strain after unloading
+Q: A steel bar (E = 200 GPa, σ_y = 300 MPa) is loaded beyond yield to a stress of 350 MPa, where the total strain is 0.0100. It is then unloaded completely. Using ε = ε_e + ε_p, find the permanent strain. How much would a 2.00 m long bar be permanently lengthened? ||| 一根钢杆（E = 200 GPa，σ_y = 300 MPa）被加载超过屈服点，到达 350 MPa 时总应变为 0.0100，然后完全卸载。利用 ε = ε_e + ε_p 求永久应变。长 2.00 m 的钢杆会永久伸长多少？
+S: 卸载沿斜率为 E 的直线返回，恢复的是当时的弹性应变：ε_e = σ/E = 350 / 200 000 = 0.00175
+S: 永久（塑性）应变：ε_p = ε − ε_e = 0.0100 − 0.00175 = <b>0.00825</b>
+S: 永久伸长：ΔL = ε_p L = 0.00825 × 2000 mm = <b>16.5 mm</b>
+A: 永久应变 0.00825，2 m 长的杆永久伸长 16.5 mm；卸载时只回弹了 0.00175 × 2000 = 3.5 mm。
+
+@example 从键刚度估算杨氏模量 Young's modulus from the ball-and-spring model
+Q: Using the ball-and-spring model with Hooke's law relation E = kL/A, show that for one bond E ≈ S₀/r₀, where S₀ is the bond stiffness and r₀ the atomic spacing. Estimate E for a metal with S₀ = 50 N m⁻¹ and r₀ = 0.25 nm, and for a polymer whose chains are held by van der Waals bonds with S₀ ≈ 1 N m⁻¹, r₀ ≈ 0.4 nm. ||| 利用球—弹簧模型和胡克定律关系 E = kL/A，说明对单个键有 E ≈ S₀/r₀（S₀ 为键刚度，r₀ 为原子间距）。估算 S₀ = 50 N m⁻¹、r₀ = 0.25 nm 的金属的 E，以及链间靠范德华键结合（S₀ ≈ 1 N m⁻¹，r₀ ≈ 0.4 nm）的聚合物的 E。
+S: 取一个原子“柱”：长度 L = r₀（一个键长），承担的截面积 A ≈ r₀²，弹簧刚度 k = S₀。
+S: 代入 E = kL/A：E ≈ S₀ × r₀ / r₀² = <b>S₀ / r₀</b>
+S: 金属：E ≈ 50 / 0.25 × 10⁻⁹ = 2.0 × 10¹¹ Pa = <b>200 GPa</b>（与钢的实测值相当）
+S: 聚合物：E ≈ 1 / 0.4 × 10⁻⁹ = 2.5 × 10⁹ Pa = <b>2.5 GPa</b>（与第 2 讲中尼龙的 2–4 GPa 相当）
+A: E ≈ S₀/r₀；金属约 200 GPa，靠范德华键结合的聚合物约 2.5 GPa。模量相差近百倍，根源在于键刚度不同。

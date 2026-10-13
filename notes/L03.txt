@@ -1,0 +1,188 @@
+@lecture 3
+@skip 1-3
+@title Structure–Property–Processing and Materials Selection Charts ||| 结构—性能—加工关系与材料选择图
+@summary 本讲区分“结构敏感”和“结构不敏感”的性能，阐明加工、结构、性能三者之间的关系；介绍材料性能数据库网站和 Ashby 材料性能图（模量—密度、强度—密度、热膨胀—导热），并从原子层面解释不同材料族性能差异的原因及调控方法；最后通过“轻而强的悬臂梁”案例，推导出材料指数 C = σ<sub>f</sub><sup>1/2</sup>/ρ，展示如何用材料指数选材。
+
+@glossary
+structure-sensitive property ||| 结构敏感性能
+structure-insensitive property ||| 结构不敏感性能
+microstructure ||| 显微组织
+composition ||| 成分
+heat treatment ||| 热处理
+Ashby diagram / property chart ||| Ashby 图 / 材料性能图
+modulus–density chart ||| 模量—密度图
+strength–density chart ||| 强度—密度图
+guide lines for minimum mass design ||| 最小质量设计的导引线
+lattice resistance ||| 晶格阻力
+plastic shear ||| 塑性剪切
+strengthening mechanism ||| 强化机制
+foam ||| 泡沫材料
+fracture toughness ||| 断裂韧性
+specific heat ||| 比热容
+wear resistance ||| 耐磨性
+age-hardening alloy ||| 时效硬化合金
+work-hardening ||| 加工硬化
+cantilever beam ||| 悬臂梁
+bending moment M ||| 弯矩 M
+second moment of area I ||| 截面惯性矩 I
+failure strength σ_f ||| 失效强度 σ_f
+material index ||| 材料指数
+design-fixed vs material-dependent terms ||| 设计固定项与材料相关项
+
+@slide 4
+Properties of Engineering Materials ||| 工程材料的性能
+MATERIALS — Mechanical: elastic, plastic, fracture/fatigue, creep; Thermal: thermal expansion, thermal conductivity, heat capacity, melting points, transition temperature; Environmental: recycling, energy consumption; Other: feel, look; Physical: optical, magnetic, electrical; Chemical: corrosion, oxidation; Functional Materials ||| 材料 —— 力学：弹性、塑性、断裂/疲劳、蠕变；热学：热膨胀、导热、热容、熔点、转变温度；环境：回收、能耗；其他：手感、外观；物理：光学、磁学、电学；化学：腐蚀、氧化；功能材料
+How do we design materials to get the most out of them? ||| 我们如何设计材料，才能把材料的潜力发挥到最大？
+
+@slide 5
+Structure-Property-Processing Relationship ||| 结构—性能—加工关系
+a. Structure sensitive properties ||| a. 结构敏感性能
+Properties sensitive to microstructures of the materials (not only the composition, but also the microstructures and how the materials have been processed) ||| 对材料显微组织敏感的性能（不仅取决于成分，还取决于显微组织以及材料的加工方式）
+Strength, ductility, fracture toughness, fatigue + creep properties, corrosion + wear resistance ||| 强度、延性、断裂韧性、疲劳和蠕变性能、耐腐蚀和耐磨性能
+b. Structure insensitive properties ||| b. 结构不敏感性能
+Properties insensitive (<5%) to microstructures of the materials: Elastic properties, thermal expansion coefficient, specific heat ||| 对显微组织不敏感（变化 <5%）的性能：弹性性能、热膨胀系数、比热容
+! 记忆方法：结构不敏感的性能主要由<b>原子键合和原子种类</b>决定（只要成分不变，怎么加工都差不多）；结构敏感的性能则与<b>缺陷、晶粒、位错、析出相</b>等显微组织有关，可以通过加工和热处理大幅改变。
+
+@slide 6
+The three-part relationship between structure, properties and processing ||| 结构、性能与加工三者之间的关系
+Processing Method; Materials Structure; Materials Properties ||| 加工方法；材料结构；材料性能
+Materials structure is controlled by the composition and how it is processed ||| 材料结构由成分及加工方式控制
+Properties of materials reflect their microstructure ||| 材料性能反映其显微组织
+Processing involves shaping engineering products and devices, while simultaneously providing the materials properties required by the design ||| 加工既要把材料制成工程产品和器件的形状，同时又要赋予材料设计所要求的性能
+Understand how processing history controls microstructure and properties ||| 理解加工历史如何控制显微组织和性能
+
+@slide 7
+Materials Property web sites ||| 材料性能网站
+MatWeb: http://www.matweb.com/index.asp ||| MatWeb 材料数据库：http://www.matweb.com/index.asp
+Goodfellow: http://www.goodfellow.com/csp/active/gfMaterials.csp ||| Goodfellow 材料供应商数据：http://www.goodfellow.com/csp/active/gfMaterials.csp
+Doitpoms: http://www.doitpoms.ac.uk/tlplib/index.php ||| DoITPoMS 教学资源库：http://www.doitpoms.ac.uk/tlplib/index.php
+Matter: http://www.matter.org.uk/universities.htm ||| Matter 学习资源：http://www.matter.org.uk/universities.htm
+I cannot begin to tell you how good these last two in particular are! ||| 尤其是最后两个网站，好得我都不知道该怎么形容！
+
+@slide 8
+Materials Selection ||| 选材
+• There are hundreds of thousands of different materials ||| • 材料有几十万种
+• Far too many for anyone to remember! ||| • 多到任何人都记不住！
+• So how do we choose the best material for a particular design? ||| • 那么，如何为特定设计选出最好的材料？
+• Ashby diagrams ||| • Ashby 图（材料性能图）
+
+@slide 9
+Material property-charts: modulus - density ||| 材料性能图：模量—密度
+Young's modulus E (GPa) vs Density (Mg/m³), log–log axes; bubbles: Ceramics, Composites, Woods, Metals, Polymers, Foams, Elastomers ||| 纵轴杨氏模量 E（GPa），横轴密度（Mg/m³），均为对数坐标；各材料族的区域：陶瓷、复合材料、木材、金属、聚合物、泡沫、弹性体
+! 每一类材料在图上占据一个“气泡”区域。同一族材料聚在一起，说明性能主要由键合类型和原子堆垛决定。模量跨越约 5 个数量级（0.01–1000 GPa），密度跨越约 3 个数量级。
+
+@slide 10
+Mechanical properties ||| 力学性能
+Young's modulus – Density chart (with guide lines E/ρ, E<sup>1/2</sup>/ρ, E<sup>1/3</sup>/ρ for minimum mass design, and longitudinal wave speed lines) ||| 杨氏模量—密度图（附最小质量设计导引线 E/ρ、E<sup>1/2</sup>/ρ、E<sup>1/3</sup>/ρ，以及纵波波速线）
+Why the differences? • Atom size and weight • Bonds as (linear) springs • Spring constant for various bond types. ||| 为什么有差异？• 原子大小和质量 • 把键看成（线性）弹簧 • 不同键型的弹簧常数不同
+Manipulating properties • Making composites • Making foams ||| 如何调控性能：• 制成复合材料 • 制成泡沫
+! 密度由原子质量和堆垛决定；模量由键刚度决定（第 2 讲 E ≈ S₀/r₀）。复合材料可以把高模量纤维和轻基体结合；泡沫则同时大幅降低密度和模量，填补图上左下角的空白。
+
+@slide 11
+Mechanical properties ||| 力学性能
+Strength–Density chart (Metal and Polymers: Yield Strength; Ceramics and Glasses: Compressive Strength; Elastomers: Tensile Tear Strength; Composites: Tensile Failure); guide lines σ/ρ = C, σ<sup>2/3</sup>/ρ = C, σ<sup>1/2</sup>/ρ = C ||| 强度—密度图（金属和聚合物：屈服强度；陶瓷和玻璃：抗压强度；弹性体：拉伸撕裂强度；复合材料：拉伸破坏强度）；导引线 σ/ρ = C、σ<sup>2/3</sup>/ρ = C、σ<sup>1/2</sup>/ρ = C
+Why the differences? • Lattice resistance to plastic shear • Different bond types ||| 为什么有差异？• 晶格对塑性剪切的阻力 • 键型不同
+Manipulating properties • Metallic strengthening mechanism • Making composites • Making foams • Microstructure/processing ||| 如何调控性能：• 金属强化机制 • 制成复合材料 • 制成泡沫 • 显微组织 / 加工
+! 与模量图相比，同一族材料的强度范围宽得多（例如金属可跨 2–3 个数量级），因为强度是结构敏感性能，可以通过合金化、热处理等手段大幅提高。
+
+@slide 12
+Thermal properties ||| 热性能
+T-expansion – T-conductivity chart: Thermal expansion α (μstrain/K) vs Thermal conductivity λ (W/m·K); contours λ/α (W/m); "Large thermal strain mismatch" / "Small thermal strain mismatch" ||| 热膨胀—导热图：纵轴热膨胀系数 α（μ应变/K），横轴导热系数 λ（W/m·K）；斜线为 λ/α（W/m）等值线；“热应变失配大” / “热应变失配小”
+Why the differences? • Bonds as non-linear springs • 10% expansion at melting point, so expansion goes inversely as Tₘ incr. • Thermal energy as atom vibration, propagates as waves, scattered by obstacles ||| 为什么有差异？• 把键看成非线性弹簧 • 材料到熔点时大约膨胀 10%，所以熔点越高，膨胀系数越小 • 热能以原子振动的形式存在，以波的形式传播，并被障碍物散射
+Manipulating properties • High conductivity: purity • Low conductivity: obstacles and foams ||| 如何调控性能：• 高导热：提高纯度 • 低导热：引入障碍物（散射）或做成泡沫
+! “熔化时约膨胀 10%”给出一个经验关系：α × Tₘ ≈ 常数，即 α ∝ 1/Tₘ。所以钨（Tₘ 高）膨胀小，聚合物（软化温度低）膨胀大。
+
+@slide 13
+A TOOL for Materials selection ||| 选材工具
+• Materials that are light and stiff? (Young's modulus – Density chart) ||| • 既轻又刚的材料？（看杨氏模量—密度图左上方）
+• Materials with low expansion? with high conductivity? (T-expansion – T-conductivity chart) ||| • 低膨胀的材料？同时还要高导热？（看热膨胀—导热图右下方）
+• Develops a perspective ||| • 帮助建立对各类材料性能的整体认识
+! 图中红色三角形/方框圈出的就是满足要求的候选区域：E 大、ρ 小的区域在模量—密度图的左上方；α 小、λ 大的区域在热膨胀—导热图的右下方。
+
+@slide 14
+Structure Sensitivity ||| 结构敏感性
+Is yield stress, σ_y, sensitive or insensitive to structure? ||| 屈服应力 σ_y 对结构敏感还是不敏感？
+Is density, ρ, sensitive or insensitive to structure? ||| 密度 ρ 对结构敏感还是不敏感？
+(Chart) Strength–Density ||| （图）强度—密度图
+! 答案：σ_y <b>结构敏感</b>——同一种金属，退火态和冷加工态的屈服强度可以相差数倍，在图上表现为很长的“气泡”；ρ <b>结构不敏感</b>——同一种材料的密度在图上几乎是一条竖线。
+
+@slide 15
+Structure Sensitivity in Metals ||| 金属中的结构敏感性
+Table 1.6 Properties of the Generic Metals: Density (Mg m⁻³), Young's Modulus (GN m⁻²), Yield Strength (MN m⁻²), Tensile Strength (MN m⁻²), Ductility, Fracture Toughness (MN m⁻³ᐟ²), Melting Temperature (K), Specific Heat (J kg⁻¹K⁻¹), Thermal Conductivity (W m⁻¹K⁻¹), Thermal Expansion Coefficient (MK⁻¹) ||| 表 1.6　常用金属的性能：密度（Mg m⁻³）、杨氏模量（GN m⁻²）、屈服强度（MN m⁻²）、抗拉强度（MN m⁻²）、延性、断裂韧性（MN m⁻³ᐟ²）、熔点（K）、比热容（J kg⁻¹K⁻¹）、导热系数（W m⁻¹K⁻¹）、热膨胀系数（MK⁻¹ = 10⁻⁶ K⁻¹）
+Rows: Iron, Mild steel, High-carbon steel, Low-alloy steels, High-alloy steels, Cast irons, Copper, Brasses, Bronzes, Nickel, Monels, Superalloys, Aluminum, 1000/2000/5000/7000 Series, Casting alloys, Titanium, Ti-6Al4V, Zinc, Lead–tin solder, Diecasting alloy ||| 行：纯铁、低碳钢、高碳钢、低合金钢、高合金钢、铸铁、铜、黄铜、青铜、镍、蒙乃尔合金、高温合金、铝、1000/2000/5000/7000 系铝合金、铸造铝合金、钛、Ti-6Al-4V、锌、铅锡焊料、压铸合金
+! 看表中颜色：红色列（密度、模量、比热、热膨胀）在同一类金属中几乎不变——结构不敏感；绿色列（屈服强度、抗拉强度、延性、断裂韧性）变化范围很大，例如高碳钢屈服强度 350–1600 MN m⁻²——结构敏感。
+
+@slide 16
+Structure Sensitivity in Metals ||| 金属中的结构敏感性
+Structure insensitive (+/- 5%): density, elastic moduli, thermal expansion coefficient, specific heat, Poisson's ratio ||| <b>结构不敏感</b>（±5%）：密度、弹性模量、热膨胀系数、比热容、泊松比
+Structure sensitive: yield strength, hardness, tensile strength, ductility, fracture toughness, creep strength and fatigue strength, corrosion resistance, wear resistance, thermal conductivity, electrical conductivity ||| <b>结构敏感</b>：屈服强度、硬度、抗拉强度、延性、断裂韧性、蠕变强度和疲劳强度、耐腐蚀性、耐磨性、导热性、导电性
+! 注意：导热和导电在这里归为结构敏感——杂质和缺陷会散射电子和声子，因此纯度、冷加工都会明显影响金属的导电/导热性能（对应第 12 页“高导热：纯度”）。
+
+@slide 17
+Controlling Structure ||| 控制结构
+Structure can be controlled by changing composition, processing and heat treatment ||| 可以通过改变成分、加工和热处理来控制结构
+Table 1.4 Generic Aluminum-Based Metals: Metal; Typical Composition (wt%); Typical Uses ||| 表 1.4　常用铝基金属：金属；典型成分（质量%）；典型用途
+1000 Series unalloyed Al: >99 Al — Weak but ductile and a good electrical conductor: power transmission lines, cooking foil ||| 1000 系工业纯铝：Al >99 —— 强度低但延性好，导电性好：输电线、烹饪用铝箔
+2000 Series major additive Cu: Al + 4 Cu + Mg, Si, Mn — Strong age-hardening alloy: aircraft skins, spars, forgings, rivets ||| 2000 系（主加铜）：Al + 4Cu + Mg、Si、Mn —— 高强度时效硬化合金：飞机蒙皮、翼梁、锻件、铆钉
+3000 Series major additive Mn: Al + 1 Mn — Moderate strength, ductile, excellent corrosion resistance: roofing sheet, cooking pans, drinks can bodies ||| 3000 系（主加锰）：Al + 1Mn —— 中等强度，延性好，耐蚀性优良：屋面板、炊具、饮料罐罐身
+5000 Series major additive Mg: Al + 3 Mg 0.5 Mn — Strong work-hardening weldable plate: pressure vessels, ship superstructures ||| 5000 系（主加镁）：Al + 3Mg + 0.5Mn —— 高强度、可加工硬化、可焊接的板材：压力容器、船舶上层建筑
+6000 Series major additives Mg + Si: Al + 0.5 Mg 0.5 Si — Moderate-strength age-hardening alloy: anodized extruded sections, e.g., window frames ||| 6000 系（主加镁和硅）：Al + 0.5Mg + 0.5Si —— 中等强度时效硬化合金：阳极氧化挤压型材，如窗框
+7000 Series additives Zn + Mg: Al + 6 Zn + Mg, Cu, Mn — Strong age-hardening alloy: aircraft forgings, spars, lightweight railway carriage shells ||| 7000 系（加锌和镁）：Al + 6Zn + Mg、Cu、Mn —— 高强度时效硬化合金：飞机锻件、翼梁、轻量化铁路车厢壳体
+Casting alloys: Al + 11 Si — Sand and die castings ||| 铸造合金：Al + 11Si —— 砂型铸件和压铸件
+Aluminum–lithium alloys: Al + 3 Li — Low density and good strength: aircraft skins and spars ||| 铝锂合金：Al + 3Li —— 密度低、强度好：飞机蒙皮和翼梁
+
+@slide 18
+Processing Method ↔ Materials Structure ↔ Materials Properties ||| 加工方法 ↔ 材料结构 ↔ 材料性能（三者两两相互影响）
+
+@slide 19
+Selection of Engineering Materials ||| 工程材料的选择
+Case study 1: Design of a strong light beam: ||| 案例 1：设计一根轻而强的梁
+Select a material which gives the minimum weight for a given design strength (assuming that b and L are determined by other aspects of design, but we are free to change d to carry the design force F_D without failing) ||| 选择一种材料，使梁在满足给定设计强度的前提下<b>质量</b>最小（假设宽度 b 和长度 L 由设计的其他方面确定，而高度 d 可以自由调整，使梁承受设计载荷 F_D 而不失效）
+(Diagram) Cantilever of length L, rectangular section b × d, end load F_D ||| （图）长度为 L 的悬臂梁，矩形截面 b × d，自由端受载荷 F_D
+
+@slide 20
+Maximum bending moment? ||| 最大弯矩在哪里？
+Maximum bending moment is at the root: M = F_D L   (1) ||| 最大弯矩在根部（固定端）：M = F_D L　　(1)
+Maximum stress σ_max on the top surface of the beam at the root: σ_max = M y_max / I   (2) ||| 根部梁上表面的最大应力：σ_max = M y_max / I　　(2)
+I – the centroidal moment of the rectangular cross section: I = bd³/12   (3) ||| I —— 矩形截面对形心轴的惯性矩：I = bd³/12　　(3)
+
+@slide 21
+Material will fail if stress exceeds σ_f for the material. Inserting (1) and (3) into (2) gives: ||| 若应力超过材料的 σ_f，材料就会失效。把 (1)、(3) 代入 (2) 得：
+σ_max = M y_max / I = F_D L × (d/2) / (bd³/12) = 6F_D L / bd² < σ_f ||| σ_max = M y_max / I = F_D L ×（d/2）/（bd³/12）= 6F_D L / bd² < σ_f
+We can now rearrange this to give an expression for a given material, for the minimum depth without failure, d: d = √(6F_D L / σ_f b) ||| 整理后得到某种材料不失效所需的最小高度 d：d = √(6F_D L / σ_f b)
+The mass of the beam is given by: m = ρLbd = ρLb √(6F_D L / σ_f b) = Lb √(6F_D L / b) × (ρ / √σ_f) ||| 梁的质量为：m = ρLbd = ρLb √(6F_D L / σ_f b) = Lb √(6F_D L / b) × (ρ / √σ_f)
+Fixed by design | Materials properties! ||| 前一部分由设计确定 | 后一部分是材料性能！
+
+@slide 22
+m = ρLbd = ρLb √(6F_D L / σ_f b) = Lb √(6F_D L / b) × ρ/√σ_f (Fixed by design × Materials properties) ||| m = ρLbd = Lb √(6F_D L / b) × ρ/√σ_f（设计固定项 × 材料性能项）
+If the remaining design parameters are fixed, then to minimise mass we need to minimise the ratio: ρ / √σ_f ||| 若其余设计参数都已固定，要使质量最小，就要使比值 ρ / √σ_f 最小
+i.e. we seek to maximise √σ_f / ρ = C ||| 即要使 √σ_f / ρ = C 最大
+Where C is our material index ||| 其中 C 就是我们的<b>材料指数</b>
+The best materials are those with the largest values of the materials index ||| 材料指数最大的材料就是最好的材料
+! 方法要点：① 写出目标函数（质量 m）；② 用约束条件（不失效）消去可自由变化的尺寸（d）；③ 把 m 分成“设计固定项 × 材料项”；④ 材料项的倒数即为材料指数。在 Ashby 强度—密度图上，σ<sup>1/2</sup>/ρ = C 是斜率为 2 的直线（log σ = 2 log ρ + 常数），越靠左上方的材料越好。
+
+@example 用材料指数为轻质梁排序 Ranking materials with the index √σ_f / ρ
+Q: Using Table 1.6 (take mid-range yield strengths): mild steel σ_f = 220 MPa, ρ = 7.9 Mg m⁻³; high-carbon steel σ_f = 1000 MPa, ρ = 7.8; 7000-series Al σ_f = 500 MPa, ρ = 2.8; Ti-6Al4V σ_f = 850 MPa, ρ = 4.4. Rank them for the strong light beam of Case study 1, and find how much lighter the best beam is than a mild-steel beam. ||| 利用表 1.6（屈服强度取范围中值）：低碳钢 σ_f = 220 MPa，ρ = 7.9 Mg m⁻³；高碳钢 σ_f = 1000 MPa，ρ = 7.8；7000 系铝合金 σ_f = 500 MPa，ρ = 2.8；Ti-6Al-4V σ_f = 850 MPa，ρ = 4.4。按案例 1 的“轻而强的梁”对它们排序，并求最好的梁比低碳钢梁轻多少。
+S: 材料指数 C = √σ_f / ρ（单位 MPa<sup>1/2</sup> /(Mg m⁻³)），C 越大越好。
+S: 低碳钢：C = √220 / 7.9 = 14.83 / 7.9 = <b>1.88</b>
+S: 高碳钢：C = √1000 / 7.8 = 31.62 / 7.8 = <b>4.05</b>
+S: 7000 系铝：C = √500 / 2.8 = 22.36 / 2.8 = <b>7.99</b>
+S: Ti-6Al-4V：C = √850 / 4.4 = 29.15 / 4.4 = <b>6.63</b>
+S: 由第 22 页，m ∝ ρ/√σ_f = 1/C。所以质量比 m<sub>低碳钢</sub> / m<sub>7000铝</sub> = C<sub>7000铝</sub> / C<sub>低碳钢</sub> = 7.99 / 1.88 ≈ 4.25。
+A: 排序：7000 系铝（7.99）＞ Ti-6Al-4V（6.63）＞ 高碳钢（4.05）＞ 低碳钢（1.88）。铝合金梁的质量只有低碳钢梁的约 1/4.25 ≈ 24%。注意：钛合金虽然强度最高，但密度较大；而对梁来说强度只以 1/2 次方起作用，所以密度更重要。
+
+@example 悬臂梁的尺寸与质量 Sizing the cantilever
+Q: A cantilever of length L = 1.0 m and width b = 50 mm must carry F_D = 2.0 kN at its tip. Find the minimum depth d and the mass for (a) 7000-series aluminium (σ_f = 500 MPa, ρ = 2800 kg m⁻³) and (b) mild steel (σ_f = 220 MPa, ρ = 7900 kg m⁻³). ||| 一根长 L = 1.0 m、宽 b = 50 mm 的悬臂梁，自由端需承受 F_D = 2.0 kN。分别求 (a) 7000 系铝合金（σ_f = 500 MPa，ρ = 2800 kg m⁻³）和 (b) 低碳钢（σ_f = 220 MPa，ρ = 7900 kg m⁻³）所需的最小高度 d 和梁的质量。
+S: 由第 21 页：d = √(6F_D L / σ_f b)，m = ρLbd。统一用 SI 单位：F_D = 2000 N，L = 1.0 m，b = 0.05 m。
+S: 6F_D L / b = 6 × 2000 × 1.0 / 0.05 = 2.4 × 10⁵ N/m
+S: (a) 铝：d = √(2.4 × 10⁵ / 500 × 10⁶) = √(4.8 × 10⁻⁴) = 0.0219 m = <b>21.9 mm</b>；m = 2800 × 1.0 × 0.05 × 0.0219 = <b>3.07 kg</b>
+S: (b) 钢：d = √(2.4 × 10⁵ / 220 × 10⁶) = √(1.091 × 10⁻³) = 0.0330 m = <b>33.0 mm</b>；m = 7900 × 1.0 × 0.05 × 0.0330 = <b>13.0 kg</b>
+S: 检验：13.0 / 3.07 ≈ 4.25，与例题 1 中材料指数之比完全一致。
+A: 铝梁 d ≈ 21.9 mm，m ≈ 3.1 kg；钢梁 d ≈ 33.0 mm，m ≈ 13.0 kg。钢梁需要更高，且重约 4 倍。
+
+@example 判断结构敏感性 Structure-sensitive or insensitive?
+Q: The 1000-series and 7000-series aluminium alloys in Table 1.6 have almost the same density (2.7 vs 2.8 Mg m⁻³) and the same Young's modulus (71 GN m⁻²), but yield strengths of 28–165 MN m⁻² and 350–600 MN m⁻² respectively. Explain this, and classify: density, Young's modulus, yield strength, hardness, fracture toughness, specific heat, electrical conductivity. ||| 表 1.6 中 1000 系和 7000 系铝合金的密度几乎相同（2.7 和 2.8 Mg m⁻³），杨氏模量也相同（71 GN m⁻²），但屈服强度分别为 28–165 和 350–600 MN m⁻²。请解释，并对下列性能分类：密度、杨氏模量、屈服强度、硬度、断裂韧性、比热容、电导率。
+S: 密度和模量由<b>原子种类与键合</b>决定。两种合金的基体都是铝原子构成的 FCC 晶格，少量合金元素对原子平均质量和键刚度影响很小 → 几乎不变（±5% 以内）。
+S: 屈服强度取决于<b>位错运动的难易程度</b>。7000 系含 Zn、Mg 等元素，经时效处理后析出细小的硬质析出相，强烈阻碍位错运动（第 1 讲 Slide 27）；同一合金在退火态、冷加工态下强度也不同，所以范围很宽。
+S: 分类：结构不敏感 —— 密度、杨氏模量、比热容；结构敏感 —— 屈服强度、硬度、断裂韧性、电导率（杂质和缺陷散射电子）。
+A: 弹性模量和密度结构不敏感，强度结构敏感；因此要提高刚度只能换材料或改变截面形状，而要提高强度则可以通过合金化和热处理实现。

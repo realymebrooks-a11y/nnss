@@ -1,0 +1,149 @@
+@lecture 10
+@skip 1-4
+@title Packing of Atoms in Solids (1): Crystal Structures ||| 固体中的原子堆垛（1）：晶体结构
+@summary 本讲在回顾键合（第 8 讲）之后，从宏观到微观介绍金属与陶瓷的结构层次：材料 → 晶粒/亚晶粒 → 晶胞 → 原子；定义晶胞参数（a、b、c 和 α、β、γ）；介绍三种最常见的晶体结构——体心立方（bcc）、面心立方（fcc）、密排六方（hcp）——及其代表金属；引出原子堆积因子（APF）的概念；最后指出陶瓷的晶体结构更复杂（如 CsCl、CaTiO₃），因而很难变形。
+
+@glossary
+crystal / crystalline ||| 晶体 / 晶态的
+unit cell ||| 晶胞
+lattice / lattice structure ||| 晶格 / 晶格结构
+lattice parameters a, b, c ||| 晶格常数 a、b、c
+lattice angles α, β, γ ||| 晶轴夹角 α、β、γ
+grain / sub-grain ||| 晶粒 / 亚晶粒
+grain boundary ||| 晶界
+single crystal / polycrystalline ||| 单晶 / 多晶
+substitutional atom ||| 置换原子
+interstitial atom ||| 间隙原子
+simple cubic ||| 简单立方
+body-centred cubic (bcc) ||| 体心立方
+face-centred cubic (fcc) ||| 面心立方
+hexagonal close-packed (hcp) ||| 密排六方
+close-packed ||| 密排的
+hard-ball model ||| 硬球模型
+atomic radius R ||| 原子半径 R
+atomic packing factor (APF) ||| 原子堆积因子（致密度）
+α-iron (ferrite) / γ-iron (austenite) ||| α 铁（铁素体）/ γ 铁（奥氏体）
+caesium chloride / calcium titanate ||| 氯化铯 / 钛酸钙
+
+@slide 5
+Bonding energies (1) ||| 键能（1）
+Ball and spring model; atoms in lowest energy state at r₀; U = potential energy of bond ||| 球—弹簧模型；原子在 r₀ 处能量最低；U = 键的势能
+! 第 5–11 页为第 8 讲的回顾，详细对照见第 8 讲 Slide 9–24。
+
+@slide 6
+Ionic bonding (1) ||| 离子键（1）
+Electrostatic attraction between ions (Na⁺ + Cl⁻ → NaCl); non-directional, alternating +ve / −ve ||| 离子间静电吸引（Na⁺ + Cl⁻ → NaCl）；无方向性，正负离子交替排列
+
+@slide 7
+Covalent bonding ||| 共价键
+Sharing of electron orbitals (diamond, SiC, W/Mo/Ta, hydrocarbon chains); highly directional ||| 共享电子轨道（金刚石、SiC、W/Mo/Ta、碳氢链）；方向性很强
+
+@slide 8
+Metallic bonding ||| 金属键
+Mobile electrons around fixed metal cations; highest electrical conductivity; completely non-directional ||| 自由电子环绕固定的金属阳离子；导电性最高；完全无方向性
+
+@slide 9
+Van der Waals forces ||| 范德华力
+Dipolar attraction between uncharged atoms; enables liquefaction of N₂, O₂, He, H₂ ||| 不带电原子之间的偶极吸引；使 N₂、O₂、He、H₂ 能够液化
+
+@slide 10
+Hydrogen bonding ||| 氢键
+Only with N, O or F; essential for solid polymers and keeping water liquid (e.g. nylon 6,6) ||| 只与 N、O、F 形成；对固态聚合物至关重要，也使水保持液态（如尼龙 6,6）
+
+@slide 11
+Bonding types and properties ||| 键型与性能
+Ceramics: large bond energy, stiff, strong, brittle; Metals: variable, conductive; Polymers: low stiffness and strength, covalent + secondary bonding ||| 陶瓷：键能大，刚、强、脆；金属：键能不一，导电导热；聚合物：刚度和强度低，共价键 + 次价键
+
+@slide 12
+Learning objectives ||| 学习目标
+• To learn the common crystallographic structures of metals (and some ceramics): – Body-centred cubic (bcc) – Face-centred cubic (fcc) – Hexagonal close-packed (hcp) ||| • 学习金属（及部分陶瓷）的常见晶体结构：– 体心立方（bcc）– 面心立方（fcc）– 密排六方（hcp）
+• To become familiar with typical examples of metals and ceramics that possess these structures ||| • 熟悉具有这些结构的典型金属和陶瓷
+• To learn how to characterise the 'density' of different atomic arrangements by their atomic packing factor ||| • 学习如何用<b>原子堆积因子</b>描述不同原子排列的“密集程度”
+
+@slide 13
+The structure of metals and ceramics (1) ||| 金属与陶瓷的结构（1）
+Material (10⁰ m³) — Bulk properties: E, σ_y, Tₘ, α, λ… ||| 材料（约 1 m³）—— 宏观性能：E、σ_y、Tₘ、α、λ……
+Grains / crystals (~10¹⁵ per m³) — Microstructure: grain boundaries and precipitates; Sub-grains, single crystal or polycrystalline ||| 晶粒 / 晶体（每 m³ 约 10¹⁵ 个）—— 显微组织：晶界和析出相；亚晶粒，单晶或多晶
+Unit cells (>10⁹ per crystal) — Lattice structure; Atomic bonds; Atoms (2 – 6 per unit cell) ||| 晶胞（每个晶体中 >10⁹ 个）—— 晶格结构；原子键；原子（每个晶胞 2–6 个）
+
+@slide 14
+The structure of metals and ceramics (2) ||| 金属与陶瓷的结构（2）
+• Metals/ceramics are made up of a number (~10¹⁵ m⁻³) of grains ||| • 金属/陶瓷由大量晶粒组成（约 10¹⁵ 个/m³）
+• Grains are typically imperfect and are themselves typically made up of a number of sub-grains ||| • 晶粒通常并不完美，本身一般又由若干亚晶粒组成
+• Each grain can be considered as a crystal; an ordered configuration of atoms ||| • 每个晶粒可以看作一个晶体，即原子的有序排列
+• Each crystal contains a number (>10⁹) of unit cells with the same lattice structure and orientation ||| • 每个晶体包含大量（>10⁹ 个）晶格结构和取向都相同的晶胞
+• Each unit cell contains a number of main / primary / substitutional atoms that are connected by primary bonds ||| • 每个晶胞含有若干由主价键连接的主原子 / 基体原子 / 置换原子
+• Each unit cell may also contain a number of smaller secondary / interstitial atoms in between larger atoms ||| • 晶胞中还可能含有若干较小的次要原子 / 间隙原子，位于大原子之间的空隙中
+
+@slide 15
+Unit cell parameters ||| 晶胞参数
+a, b, c = lattice parameters; α, β, γ = lattice angles ||| a、b、c = 晶格常数（晶胞棱长）；α、β、γ = 晶轴之间的夹角
+Simple cubic structure: atoms at the corners of the unit cell ||| 简单立方结构：原子位于晶胞的各个顶点
+! 立方晶系：a = b = c，α = β = γ = 90°；六方晶系：a = b ≠ c，α = β = 90°，γ = 120°。
+
+@slide 16
+Body-centred cubic (bcc) ||| 体心立方（bcc）
+• Unit cell: The smallest repeating unit needed to describe the complete extended structure of a crystal (through repetition and translation) ||| • <b>晶胞</b>：通过重复和平移即可描述整个晶体结构的最小重复单元
+R = atomic radius; a = lattice parameter; Single crystal – Hard-ball model; Unit cell; multiple unit cells ||| R = 原子半径；a = 晶格常数；单晶——硬球模型；晶胞；多个晶胞
+! bcc：8 个顶点 + 1 个体心。原子沿<b>体对角线</b>相切：√3 a = 4R。每个晶胞含 8 × 1/8 + 1 = <b>2</b> 个原子。
+
+@slide 17
+Face-centred cubic (fcc) ||| 面心立方（fcc）
+• Close-packed: A unit cell with the theoretical maximum atomic packing factor – APF = (N_atoms V_atoms) / V_unit cell ||| • <b>密排</b>：具有理论最大原子堆积因子的晶胞——APF =（原子数 × 每个原子体积）/ 晶胞体积
+R = atomic radius; a = lattice parameter; Single crystal – Hard-ball model ||| R = 原子半径；a = 晶格常数；单晶——硬球模型
+! fcc：8 个顶点 + 6 个面心。原子沿<b>面对角线</b>相切：√2 a = 4R。每个晶胞含 8 × 1/8 + 6 × 1/2 = <b>4</b> 个原子。APF 的计算见第 11 讲。
+
+@slide 18
+Hexagonal close-packed (hcp) ||| 密排六方（hcp）
+• Close-packed: A unit cell with the theoretical maximum atomic packing factor – APF = (N_atoms V_atoms) / V_unit cell ||| • 密排：具有理论最大原子堆积因子的晶胞——APF =（原子数 × 每个原子体积）/ 晶胞体积
+a, c = lattice parameters; α = β = 90°, γ = 120° ||| a、c = 晶格常数；α = β = 90°，γ = 120°
+! fcc 和 hcp 都是密排结构，APF 都等于 0.74（理论最大值），区别只在密排原子层的堆垛顺序：fcc 为 ABCABC…，hcp 为 ABAB…。
+
+@slide 19
+Crystal structures – Metals ||| 晶体结构 —— 金属
+• bcc: Tungsten (W), Chromium (Cr), α-Iron (ferrite) — Strong / hard materials ||| • bcc：钨（W）、铬（Cr）、α 铁（铁素体）——<b>强 / 硬</b>的材料
+• fcc: Copper (Cu), Aluminium (Al), Nickel (Ni), γ-Iron (austenite) — Ductile materials ||| • fcc：铜（Cu）、铝（Al）、镍（Ni）、γ 铁（奥氏体）——<b>韧性好</b>的材料
+• hcp: Zinc (Zn), Titanium (Ti), Magnesium (Mg) — (Some) light materials ||| • hcp：锌（Zn）、钛（Ti）、镁（Mg）——（部分）<b>轻质</b>材料
+! 联系第 2 讲 Slide 14：fcc 有 12 个滑移系且滑移面为密排面，位错易运动 → 延性好；hcp 室温下有效滑移系少 → 延性较差。
+
+@slide 20
+Crystal structures – Ceramics ||| 晶体结构 —— 陶瓷
+• Ceramics have far more complex structures ||| • 陶瓷的结构要<b>复杂</b>得多
+• With a mixture of ionic and covalent bonding (high bond energies) they are very difficult to deform ||| • 由于同时含有<b>离子键</b>和<b>共价键</b>（键能高），陶瓷很难变形
+Caesium Chloride: Cs⁺ + Cl⁻ → CsCl ||| 氯化铯：Cs⁺ + Cl⁻ → CsCl
+Calcium Titanate: Ca²⁺ + TiO₃²⁻ → CaTiO₃ ||| 钛酸钙：Ca²⁺ + TiO₃²⁻ → CaTiO₃（钙钛矿结构）
+
+@slide 21
+Summary ||| 小结
+• Metals and ceramics have crystalline structures, formed of crystals made up of unit cells of ionically, covalently (in ceramics) or metallically (in metals) bonded atoms ||| • 金属和陶瓷具有晶体结构：晶体由晶胞组成，晶胞中的原子以离子键、共价键（陶瓷）或金属键（金属）结合
+• Many metals and ceramics have one of three crystallographic structures: – Body-centred cubic (bcc) – Face-centred cubic (fcc) – Hexagonal close-packed (hcp) ||| • 许多金属和陶瓷具有以下三种晶体结构之一：– 体心立方（bcc）– 面心立方（fcc）– 密排六方（hcp）
+
+@slide 22
+Concepts and terminology ||| 概念与术语
+• Atoms: – Substitutional – Interstitial • Unit cell • Crystal • Sub-grain • Grain • Crystallographic structure: – bcc – fcc – hcp ||| • 原子：– 置换原子 – 间隙原子 • 晶胞 • 晶体 • 亚晶粒 • 晶粒 • 晶体结构：– 体心立方 – 面心立方 – 密排六方
+
+@example 每个晶胞中的原子数 Atoms per unit cell
+Q: Count the number of atoms belonging to one unit cell for (a) simple cubic, (b) bcc, (c) fcc, and (d) the hexagonal prism cell of hcp (12 corner atoms, 2 face-centre atoms, 3 atoms inside). ||| 计算下列晶胞所含的原子数：(a) 简单立方；(b) bcc；(c) fcc；(d) hcp 的六棱柱晶胞（12 个顶角原子、2 个底面中心原子、3 个内部原子）。
+S: 原则：位于顶点的原子被相邻的 8 个立方晶胞共享，算 1/8；位于面上的算 1/2；位于晶胞内部的算 1；六棱柱的顶角原子被 6 个晶胞共享，算 1/6。
+S: (a) 简单立方：8 × 1/8 = <b>1</b>
+S: (b) bcc：8 × 1/8 + 1 = <b>2</b>
+S: (c) fcc：8 × 1/8 + 6 × 1/2 = 1 + 3 = <b>4</b>
+S: (d) hcp：12 × 1/6 + 2 × 1/2 + 3 = 2 + 1 + 3 = <b>6</b>
+A: 简单立方 1，bcc 2，fcc 4，hcp（六棱柱晶胞）6。这些数就是第 11 讲计算 APF 时的 N_atoms。
+
+@example 晶格常数与原子半径 Lattice parameter from atomic radius
+Q: Derive the relation between the lattice parameter a and the atomic radius R for bcc and fcc. Hence find a for α-iron (bcc, R = 0.124 nm) and copper (fcc, R = 0.128 nm). ||| 推导 bcc 和 fcc 中晶格常数 a 与原子半径 R 的关系，并求 α 铁（bcc，R = 0.124 nm）和铜（fcc，R = 0.128 nm）的 a。
+S: <b>bcc</b>：原子沿体对角线相切，体对角线长 = R + 2R + R = 4R；立方体体对角线 = √3 a → √3 a = 4R → <b>a = 4R/√3</b>
+S: <b>fcc</b>：原子沿面对角线相切，面对角线长 = 4R；面对角线 = √2 a → √2 a = 4R → <b>a = 4R/√2 = 2√2 R</b>
+S: α 铁：a = 4 × 0.124 / 1.732 = <b>0.286 nm</b>
+S: 铜：a = 2 × 1.414 × 0.128 = <b>0.362 nm</b>
+A: bcc：a = 4R/√3；fcc：a = 2√2 R。α-Fe 的 a ≈ 0.286 nm，Cu 的 a ≈ 0.362 nm，与 X 射线测得的值（0.2866 nm、0.3615 nm）吻合。
+
+@example 由晶体结构计算密度 Density from crystal structure
+Q: Calculate the theoretical density of copper (fcc, a = 0.3615 nm, molar mass 63.55 g mol⁻¹) and α-iron (bcc, a = 0.2866 nm, 55.85 g mol⁻¹). Avogadro's number N_A = 6.022 × 10²³ mol⁻¹. ||| 计算铜（fcc，a = 0.3615 nm，摩尔质量 63.55 g/mol）和 α 铁（bcc，a = 0.2866 nm，55.85 g/mol）的理论密度。阿伏伽德罗常数 N_A = 6.022 × 10²³ mol⁻¹。
+S: 密度 = 晶胞中原子的质量 / 晶胞体积：ρ = n M / (a³ N_A)，n 为每个晶胞的原子数。
+S: 铜：n = 4；a³ = (0.3615 × 10⁻⁷ cm)³ = 4.724 × 10⁻²³ cm³
+S: ρ = 4 × 63.55 / (4.724 × 10⁻²³ × 6.022 × 10²³) = 254.2 / 28.45 = <b>8.94 g cm⁻³</b>
+S: α 铁：n = 2；a³ = (0.2866 × 10⁻⁷ cm)³ = 2.354 × 10⁻²³ cm³
+S: ρ = 2 × 55.85 / (2.354 × 10⁻²³ × 6.022 × 10²³) = 111.7 / 14.18 = <b>7.88 g cm⁻³</b>
+A: Cu ≈ 8.94 g/cm³（实测 8.96），Fe ≈ 7.88 g/cm³（实测 7.87）。这说明密度由原子质量和堆垛方式决定（第 2 讲 Slide 19），而且是结构不敏感的性能（第 3 讲）。

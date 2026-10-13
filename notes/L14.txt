@@ -1,0 +1,189 @@
+@lecture 14
+@skip 1-3
+@title Yield Strength, Tensile Strength, Hardness and Ductility; Introduction to Creep ||| 屈服强度、抗拉强度、硬度与延性；蠕变简介
+@summary 本讲讨论晶体材料的失效方式（塑性变形、断裂、疲劳、氧化腐蚀、磨损），引入原子尺度和连续体尺度的概念；从切应力出发推导 τ = σ sin2θ/2，在 θ = 45° 时取最大值，得到剪切屈服强度 τ<sub>y</sub> = σ<sub>y</sub>/2，并解释韧性多晶体的 45° 滑移与“杯锥状”断口；推导颈缩开始的条件 dσ<sub>t</sub>/dε<sub>t</sub> = σ<sub>t</sub>，即 dσ<sub>n</sub>/dε<sub>n</sub> = 0（名义应力—应变曲线的最高点），比较低碳钢、铝合金和聚乙烯的颈缩行为；最后介绍蠕变的定义、影响因素和需要考虑蠕变的四类设计。
+
+@glossary
+yield strength / tensile strength ||| 屈服强度 / 抗拉强度
+hardness / ductility ||| 硬度 / 延性
+low temperature yielding ||| 低温屈服
+high temperature creep ||| 高温蠕变
+brittle / ductile fracture ||| 脆性断裂 / 韧性断裂
+fatigue / slow crack growth ||| 疲劳 / 裂纹缓慢扩展
+oxidation / corrosion / wear ||| 氧化 / 腐蚀 / 磨损
+length scale ||| 尺度
+atomistic / continuum ||| 原子尺度 / 连续体（宏观）尺度
+plastic flow ||| 塑性流动
+shear stress τ ||| 切应力 τ
+shear yield strength τ_y ||| 剪切屈服强度 τ_y
+slip plane ||| 滑移面
+single crystal / polycrystal ||| 单晶 / 多晶
+'cup and cone' fracture ||| “杯锥状”断口
+shear fracture ||| 剪切断口
+plastic instability ||| 塑性失稳
+necking ||| 颈缩
+strain (work) hardening ||| 应变硬化（加工硬化）
+volume conservation ||| 体积不变
+creep ||| 蠕变
+time-dependent deformation ||| 与时间相关的变形
+displacement- / rupture- / relaxation- / buckling-limited design ||| 受位移 / 断裂 / 应力松弛 / 屈曲限制的设计
+pre-tension bolt ||| 预紧螺栓
+
+@slide 4
+Learning objectives ||| 学习目标
+• Understand the concept of length scales with regards to different perspectives on material properties: – Atomistic – Continuum ||| • 从不同视角理解材料性能的“尺度”概念：– 原子尺度 – 连续体尺度
+• Learn to describe and derive the requirements for macroscopic plastic flow by considering the effects of shear stress on a microscopic level ||| • 通过分析微观层面切应力的作用，描述并推导宏观塑性流动的条件
+• To describe the reasons why necking occurs in ductile materials and the origins of plastic instability ||| • 说明韧性材料发生颈缩的原因以及塑性失稳的根源
+• To learn about the fundamentals of high temperature deformation or creep of materials ||| • 学习材料高温变形（蠕变）的基本原理
+
+@slide 5
+How do crystalline materials fail? ||| 晶体材料如何失效？
+• Plastic deformation – Low temperature yielding – High temperature creep ||| • <b>塑性变形</b> —— 低温屈服 —— 高温蠕变
+• Fracture – Brittle fractures – Ductile fractures ||| • <b>断裂</b> —— 脆性断裂 —— 韧性断裂
+• Fatigue – Slow crack growth leading to fracture ||| • <b>疲劳</b> —— 裂纹缓慢扩展最终导致断裂
+• Oxidation and Corrosion – Loss of material due to reactions with O₂, and O₂ + H₂O ||| • <b>氧化与腐蚀</b> —— 与 O₂ 以及 O₂ + H₂O 反应造成材料损失
+• Wear – All of the above, with relative motion between parts! ||| • <b>磨损</b> —— 以上各种机制兼而有之，再加上零件之间的相对运动！
+
+@slide 6
+Length scales ||| 尺度
+• Range of distances (of a few orders of magnitude) over which distinct theories apply ||| • 某一理论适用的距离范围（跨几个数量级）
+• In materials: – Atomistic is approximately 10⁻¹⁰ m – Continuum is >10⁻⁷ m… maybe… ||| • 在材料中：– 原子尺度约为 10⁻¹⁰ m – 连续体尺度 >10⁻⁷ m……大概吧……
+• The 'rules' which apply depend on the scale being considered ||| • 适用的“规则”取决于所考虑的尺度
+Question – Which of the following systems is more 'closely packed': The Earth and The Moon? A hydrogen atom (1p + 1e)? ||| 问题 —— 下面哪个体系更“紧密”：地球和月球？还是氢原子（1 个质子 + 1 个电子）？
+! 答案：地月系统更“紧密”。地月距离约为地球半径的 60 倍；而氢原子中电子与质子的距离（约 5 × 10⁻¹¹ m）约为质子半径（约 10⁻¹⁵ m）的 5 万倍。原子内部几乎是“空”的——“硬球模型”只是在原子尺度上的一种近似。
+
+@slide 7
+Continuum plastic flow ||| 连续体塑性流动
+• Continuum – non-atomistic; macroscopic behaviour ||| • 连续体 —— 非原子尺度；<b>宏观</b>行为
+• Plastic flow occurs by shearing: ||| • 塑性流动通过<b>剪切</b>发生：
+– Dislocations move when τ_slip plane > τ_y⊥ of a single crystal ||| – 当滑移面上的切应力 τ 超过单晶的剪切屈服强度 τ_y⊥ 时，位错开始运动
+– Averaged over all grain orientations and slip planes, it can be related to the yield strength of a polycrystalline material: σ_y ≈ 3τ_y⊥ ||| – 对所有晶粒取向和滑移面取平均，可以把它与多晶材料的屈服强度联系起来：σ_y ≈ 3τ_y⊥
+• However, need shear yield strength of a polycrystalline material – i.e. shear resistance averaged over all grain orientations and slip planes ||| • 但我们需要的是多晶材料的<b>剪切屈服强度</b>——即对所有晶粒取向和滑移面取平均的剪切抗力
+
+@slide 8
+Shearing (1) ||| 剪切（1）
+• Slip planes within a loaded structure can often be identified or guessed: – Preferred slip planes (i.e. close-packed planes) ||| • 受载结构中的滑移面通常可以确定或推测：– 优先滑移面（即密排面）
+• Failure load can therefore be calculated by requiring stress exceeds shear yield strength: – τ_y = σ_y / 2 ||| • 因此可以通过“应力超过剪切屈服强度”来计算失效载荷：– τ_y = σ_y / 2
+• Proof…? ||| • 证明……？
+
+@slide 9
+Shearing (2) ||| 剪切（2）
+• Tensile force 90° to plane: – F_T = F cos θ ||| • 垂直于截面的拉力分量：– F_T = F cos θ
+• Shear force parallel to plane: – F_S = F sin θ ||| • 平行于截面的剪力分量：– F_S = F sin θ
+• Area of tensile plane: – A_T = πr² ||| • 横截面（受拉面）面积：– A_T = πr²
+• Area of shear plane (ellipse): – A_S = πar ||| • 斜截面（椭圆）面积：– A_S = πar
+
+@slide 10
+Shearing (3) ||| 剪切（3）
+• F_T = F cos θ; F_S = F sin θ; A_T = πr²; A_S = πar ||| • F_T = F cos θ；F_S = F sin θ；A_T = πr²；A_S = πar
+• Relate a to r: – a = r / cos θ – ⇒ A_S = A_T / cos θ ||| • a 与 r 的关系：– a = r / cos θ – ⇒ A_S = A_T / cos θ
+• Shear stress: – τ = F_S / A_S = F sin θ cos θ / A_T – ⇒ τ = σ sin θ cos θ = σ sin2θ / 2 ||| • 切应力：– τ = F_S / A_S = F sin θ cos θ / A_T – ⇒ τ = σ sin θ cos θ = σ sin2θ / 2
+
+@slide 11
+Shearing (4) ||| 剪切（4）
+• Shear stress: – τ = σ sin θ cos θ = σ sin2θ / 2 ||| • 切应力：– τ = σ sin θ cos θ = σ sin2θ / 2
+• Maximum when θ = 45°: – τ_max = σ/2 – ∴ τ_y = σ_y / 2 ||| • θ = 45° 时取最大值：– τ_max = σ/2 – ∴ <b>τ_y = σ_y / 2</b>
+
+@slide 12
+Shearing of a ductile polycrystal (1) ||| 韧性多晶体的剪切（1）
+• Shear is related to slip ||| • 剪切与滑移相关
+• In a single crystal (A), slip occurs on nearest plane to 45° ||| • 在单晶（A）中，滑移发生在<b>最接近 45°</b> 的滑移面上
+• In a polycrystal (B), slip occurs in multiple grains with different orientations ||| • 在多晶（B）中，滑移在许多取向不同的晶粒中发生
+• The average slip direction is 45° ||| • <b>平均滑移方向为 45°</b>
+Image from: Ashby, M.F., Jones, D.R.H., (2012), Engineering Materials 1 ||| 图片来源：Ashby, M.F., Jones, D.R.H.（2012），《工程材料 1》
+
+@slide 13
+Shearing of a ductile polycrystal (2) ||| 韧性多晶体的剪切（2）
+'Cup and cone' fracture; Shear fracture ||| “杯锥状”断口；剪切断口
+• Results in characteristic fracture surfaces ||| • 形成特征性的断口形貌
+• Whether 'cup and cone' or shear depends on whether material exhibits brittle behaviour in centre ||| • 是“杯锥状”还是剪切断口，取决于材料在中心部位是否表现出脆性行为
+Image from: Kabir, I.R. and Islam, M.A., (2014), Hardened Case Properties and Tensile Behaviours of TMT Steel Bars, American Journal of Mechanical Engineering, Vol. 2, No. 1, p. 8-14 ||| 图片来源：Kabir, I.R. 和 Islam, M.A.（2014），《热机械处理钢筋的硬化层性能与拉伸行为》，美国机械工程杂志，第 2 卷第 1 期，8–14 页
+! 杯锥状断口：颈缩中心处于三向拉应力状态，先形成微孔并聚合成平坦的中心断面（“杯底”），边缘再沿约 45° 的最大切应力方向剪断（“杯壁”）。
+
+@slide 14
+Plastic instability (1) ||| 塑性失稳（1）
+• Why do ductile materials experience necking? ||| • 为什么韧性材料会发生<b>颈缩</b>？
+• When yield strength reached, one of two things can occur: ||| • 达到屈服强度后，可能发生两种情况之一：
+– Strength rises to sustain stress (i.e. strain hardening) ||| – <b>强度升高</b>以承受应力（即应变硬化）
+– Plastic flow (i.e. necking) ||| – <b>塑性流动</b>（即颈缩）
+• Critical condition for necking: – Aσ = F = constant ||| • 颈缩的<b>临界条件</b>：– Aσ = F = 常数
+Image from: Ashby, M.F., Jones, D.R.H., (2012), Engineering Materials 1 (section area A → A − dA, σ → σ + dσ, l → l + dl) ||| 图片来源：Ashby & Jones（2012）《工程材料 1》（截面积 A → A − dA，应力 σ → σ + dσ，长度 l → l + dl）
+
+@slide 15
+Plastic instability (2) ||| 塑性失稳（2）
+• Critical condition for necking: – Aσ = F = constant ||| • 颈缩的临界条件：– Aσ = F = 常数
+• Considering incremental changes: – A dσ + σ dA = 0 – ⇒ dσ/σ = −dA/A ||| • 考虑微小增量：– A dσ + σ dA = 0 – ⇒ dσ/σ = −dA/A
+• Assume volume is conserved: – −dA/A = dl/l = dε – ⇒ dσ/dε = σ ||| • 假设体积不变：– −dA/A = dl/l = dε – ⇒ dσ/dε = σ
+
+@slide 16
+Plastic instability (3) ||| 塑性失稳（3）
+• Assume volume is conserved: −dA/A = dl/l = dε ⇒ dσ/dε = σ ||| • 假设体积不变：−dA/A = dl/l = dε ⇒ dσ/dε = σ
+• This is true stress and strain – working in nominal values: – σ_t = σ_n(1 + ε_n) – ε_t = ln(1 + ε_n) ||| • 这里是<b>真应力和真应变</b>——换成名义值：– σ_t = σ_n(1 + ε_n) – ε_t = ln(1 + ε_n)
+• Differentiating these and substituting in results in: – dσ_n / dε_n = 0 ||| • 对它们求导并代入，得到：– dσ_n / dε_n = 0
+
+@slide 17
+Plastic instability (3) ||| 塑性失稳（3）（手写推导）
+dσ_t/dε_t = σ_t; ε_t = ln(1 + ε_n) ⇒ dε_t = dε_n/(1 + ε_n) ||| dσ_t/dε_t = σ_t；ε_t = ln(1 + ε_n) ⇒ dε_t = dε_n/(1 + ε_n)
+σ_t = σ_n(1 + ε_n) ⇒ dσ_t = (1 + ε_n)dσ_n + σ_n dε_n ||| σ_t = σ_n(1 + ε_n) ⇒ dσ_t = (1 + ε_n)dσ_n + σ_n dε_n
+σ_t dε_t = (1 + ε_n)dσ_n + σ_n dε_n ⇒ σ_n(1 + ε_n) dε_n/(1 + ε_n) = (1 + ε_n)dσ_n + σ_n dε_n ||| σ_t dε_t = (1 + ε_n)dσ_n + σ_n dε_n ⇒ σ_n(1 + ε_n) dε_n/(1 + ε_n) = (1 + ε_n)dσ_n + σ_n dε_n
+σ_n dε_n = (1 + ε_n)dσ_n + σ_n dε_n ⇒ 0 = (1 + ε_n) dσ_n/dε_n ||| σ_n dε_n = (1 + ε_n)dσ_n + σ_n dε_n ⇒ 0 = (1 + ε_n) dσ_n/dε_n
+Because 1 + ε_n > 0, therefore dσ_n/dε_n = 0. ||| 因为 1 + ε_n > 0，所以 dσ_n/dε_n = 0。
+
+@slide 18
+Plastic instability (4) ||| 塑性失稳（4）
+• Condition for necking to start: – dσ_n/dε_n = 0 ||| • 颈缩开始的条件：– dσ_n/dε_n = 0
+• Physically, the onset of non-linearity between nominal stress and strain is work hardening ||| • 从物理上看，名义应力与应变之间出现非线性，是<b>加工硬化</b>造成的
+• Different materials have different capacities for work hardening… ||| • 不同材料的加工硬化能力不同……
+(Graph) σ_y, σ_TS; Uniform elongation | Necking; dσ_n/dε_n = 0 at σ_TS ||| （图）σ_y、σ_TS；均匀伸长 | 颈缩；在 σ_TS 处 dσ_n/dε_n = 0
+! 结论：颈缩恰好从名义应力—应变曲线的<b>最高点</b>（抗拉强度 σ_TS）开始。在此之前，加工硬化使强度的增加足以弥补截面积的减小；之后硬化跟不上截面缩小，变形集中于局部 → 颈缩。
+
+@slide 19
+Plastic instability (5) ||| 塑性失稳（5）
+• Mild steel is able to flow significantly before necking ||| • 低碳钢在颈缩前能发生显著的塑性流动
+• Aluminium work hardens rapidly and therefore necks easily ||| • 铝的加工硬化很快（饱和得早），因此容易颈缩
+• Polyethylene necks easily, but in a stable fashion ||| • 聚乙烯容易颈缩，但颈缩是<b>稳定</b>的
+(Graph) σ_n vs ε_n for Mild steel, Aluminium alloy, Polyethylene ||| （图）低碳钢、铝合金、聚乙烯的名义应力—名义应变曲线
+! 聚乙烯的“稳定颈缩”：颈缩区的分子链被拉直取向后强度大幅提高，颈缩区不再继续变细，而是沿试样“传播”，可以产生几百% 的伸长（冷拉）。
+
+@slide 20
+What is creep? ||| 什么是蠕变？
+• Slow, irreversible deformation: ||| • 缓慢、不可逆的变形：
+– Occurs at stress levels below yield strength ||| – 在<b>低于屈服强度</b>的应力水平下发生
+– Occurs at high temperatures (> 0.3Tₘ for metals; > 0.4Tₘ for ceramics) ||| – 在高温下发生（金属 > 0.3Tₘ；陶瓷 > 0.4Tₘ）
+• 'Accumulative' process: – Deformation is time-dependent ||| • “累积”过程：– 变形<b>与时间相关</b>
+• Extent and rate of creep depend on: – Material properties and structure – Exposure time – Temperature – Applied load ||| • 蠕变的程度和速率取决于：– 材料性能和结构 – 暴露时间 – 温度 – 外加载荷
+! 注：第 2 讲 Slide 15 给出陶瓷为 0.5Tₘ，本讲给出 0.4Tₘ——不同来源取值略有不同，意思都是“相对于熔点足够高的温度”。
+
+@slide 21
+Where is creep important? ||| 蠕变在哪些场合重要？
+• Displacement-limited designs: – Precise dimensions / tolerances must be maintained – e.g. turbine blades ||| • <b>受位移限制</b>的设计：– 必须保持精确的尺寸和公差 —— 如涡轮叶片（伸长后会刮擦机匣）
+• Rupture-limited designs: – Fracture must be avoided – e.g. high-pressure pipes ||| • <b>受断裂限制</b>的设计：– 必须避免断裂 —— 如高压管道
+• Stress relaxation-limited designs: – Reduction of tension with time – e.g. pre-tension bolts ||| • <b>受应力松弛限制</b>的设计：– 预紧力随时间下降 —— 如预紧螺栓
+• Buckling-limited designs: – Compressive loading of slender columns – e.g. structural steel ||| • <b>受屈曲限制</b>的设计：– 细长柱受压 —— 如结构钢
+Images from: Ashby, M.F., Jones, D.R.H., (2012), Engineering Materials 1 ||| 图片来源：Ashby & Jones（2012）《工程材料 1》
+
+@example 斜截面上的切应力 Shear stress on an inclined plane
+Q: A steel bar of diameter 10 mm (σ_y = 300 MPa) carries a tensile load of 15 kN. (a) Find the normal tensile stress. (b) Find the shear stress on planes at θ = 30°, 45° and 60° to the cross-section. (c) At what load will the bar yield, and on which plane does slip begin? ||| 一根直径 10 mm 的钢杆（σ_y = 300 MPa）承受 15 kN 拉力。(a) 求横截面上的拉应力；(b) 求与横截面成 θ = 30°、45°、60° 的斜截面上的切应力；(c) 载荷多大时钢杆屈服？滑移从哪个面开始？
+S: (a) A = π × 10²/4 = 78.54 mm²；σ = 15 000 / 78.54 = <b>191 MPa</b>
+S: (b) τ = σ sin2θ / 2：
+S: θ = 30°：τ = 191 × sin60° / 2 = 191 × 0.866 / 2 = <b>82.7 MPa</b>
+S: θ = 45°：τ = 191 × sin90° / 2 = <b>95.5 MPa</b>（最大）
+S: θ = 60°：τ = 191 × sin120° / 2 = <b>82.7 MPa</b>（与 30° 相同，因为 sin2θ 关于 45° 对称）
+S: (c) 屈服条件 τ_max = τ_y = σ_y/2 = 150 MPa，即 σ = 300 MPa → F = 300 × 78.54 = <b>23.6 kN</b>；滑移首先在 45° 斜面上开始。
+A: σ = 191 MPa；τ(30°) = τ(60°) = 82.7 MPa，τ(45°) = 95.5 MPa；23.6 kN 时屈服，沿 45° 面滑移——这就是韧性材料出现 45° 剪切带和杯锥状断口的原因。
+
+@example 由颈缩条件求均匀伸长 Necking strain for a power-law material
+Q: Many metals obey σ_t = K ε_tⁿ in the plastic range (n = strain-hardening exponent). Using the necking condition dσ_t/dε_t = σ_t, show that necking begins at ε_t = n. For a steel with K = 800 MPa and n = 0.20, find the true and nominal strain at necking and the tensile strength σ_TS. ||| 许多金属在塑性阶段服从 σ_t = K ε_tⁿ（n 为应变硬化指数）。利用颈缩条件 dσ_t/dε_t = σ_t，证明颈缩开始于 ε_t = n。对 K = 800 MPa、n = 0.20 的钢，求颈缩时的真应变、名义应变和抗拉强度 σ_TS。
+S: dσ_t/dε_t = nK ε_tⁿ⁻¹；令其等于 σ_t = K ε_tⁿ：nK ε_tⁿ⁻¹ = K ε_tⁿ → <b>ε_t = n</b>
+S: 真应变：ε_t = 0.20；名义应变：ε_n = e^0.20 − 1 = <b>0.221</b>（均匀伸长率约 22%）
+S: 颈缩时真应力：σ_t = 800 × 0.20<sup>0.20</sup> = 800 × 0.7248 = 579.8 MPa
+S: 抗拉强度是名义应力最大值：σ_TS = σ_t / (1 + ε_n) = 579.8 / 1.221 = <b>475 MPa</b>
+A: 颈缩时 ε_t = n = 0.20，ε_n ≈ 0.22，σ_TS ≈ 475 MPa。n 越大（加工硬化能力越强），颈缩越晚、均匀伸长越大——这就是 Slide 19 中低碳钢比铝合金“流动更久”的定量解释。
+
+@example 判断设计属于哪类蠕变问题 Classifying creep-limited designs
+Q: For each component, state whether creep matters (use T/Tₘ in kelvin; Tₘ: Ni superalloy 1600 K, steel 1800 K, Pb 600 K, Al 933 K) and which design limit applies: (a) a gas turbine blade at 1150 °C; (b) a steam pipe in a power station at 565 °C; (c) a lead roof flashing at 20 °C; (d) an aluminium bolt clamping an engine head at 150 °C. ||| 判断下列零件是否需要考虑蠕变（用开尔文计算 T/Tₘ；熔点：镍基高温合金 1600 K，钢 1800 K，铅 600 K，铝 933 K），以及属于哪类受限设计：(a) 1150 °C 的燃气涡轮叶片；(b) 电站中 565 °C 的蒸汽管道；(c) 20 °C 的铅制屋面泛水板；(d) 150 °C 下紧固发动机缸盖的铝螺栓。
+S: (a) T = 1423 K，T/Tₘ = 0.89 → 严重蠕变；尺寸必须保持（叶尖间隙）→ <b>受位移限制</b>（同时也受断裂限制）。
+S: (b) T = 838 K，T/Tₘ = 0.47 → 需考虑蠕变；高压管道不能破裂 → <b>受断裂限制</b>。
+S: (c) T = 293 K，T/Tₘ = 0.49 → 室温即蠕变；铅板在自重下慢慢下垂、变形 → <b>受位移限制</b>。
+S: (d) T = 423 K，T/Tₘ = 0.45 → 需考虑蠕变；螺栓伸长总量固定，蠕变使预紧力随时间下降 → <b>受应力松弛限制</b>（需要定期重新拧紧或改用钢螺栓）。
+A: 四种情况都需要考虑蠕变，分别属于受位移、断裂、位移、应力松弛限制的设计。关键是用 T/Tₘ（开尔文）判断，而不是看摄氏温度的高低。

@@ -1,0 +1,186 @@
+@lecture 12
+@skip 1-4,20
+@title The Physical Basis of Young's Modulus; Composites and the Rule of Mixtures ||| 杨氏模量的物理基础；复合材料与混合法则
+@summary 本讲先回顾 hcp 的 APF 推导，然后从原子键刚度 S₀ = (d²U/dr²)<sub>r₀</sub> 出发推导晶体的杨氏模量 E = S₀/r₀，并给出各种键型的 S₀ 和 E；介绍聚合物模量随共价交联密度和玻璃化转变温度 T<sub>G</sub> 的变化；随后介绍复合材料（基体、纤维增强、颗粒增强）及其各向异性，用等应变和等应力假设推导混合法则的上限 E<sub>c</sub> = E<sub>f</sub>V<sub>f</sub> + E<sub>m</sub>(1 − V<sub>f</sub>) 和下限 E<sub>c</sub> = 1/[V<sub>f</sub>/E<sub>f</sub> + (1 − V<sub>f</sub>)/E<sub>m</sub>]，最后讨论取向因子和层合。
+
+@glossary
+bond stiffness S₀ ||| 键刚度 S₀
+spring constant ||| 弹簧常数
+number of bonds per unit area N ||| 单位面积上的键数 N
+displacement r − r₀ ||| 位移 r − r₀
+cross-link density ||| 交联密度
+glass transition temperature T_G ||| 玻璃化转变温度 T_G
+rubber ||| 橡胶
+heavily cross-linked polymer ||| 高度交联聚合物
+composite ||| 复合材料
+matrix ||| 基体
+fibre-reinforced composite ||| 纤维增强复合材料
+particulate composite ||| 颗粒增强复合材料
+GFRP / CFRP / KFRP ||| 玻璃纤维 / 碳纤维 / 凯夫拉纤维增强塑料
+specific stiffness E/ρ ||| 比刚度 E/ρ
+anisotropic / isotropic ||| 各向异性的 / 各向同性的
+lignin / cellulose ||| 木质素 / 纤维素
+rule of mixtures ||| 混合法则
+volume fraction V_f ||| 体积分数 V_f
+equal strain (iso-strain) ||| 等应变
+equal stress (iso-stress) ||| 等应力
+upper / lower bound ||| 上限 / 下限
+orientation factor η_O ||| 取向因子 η_O
+laminating ||| 层合（铺层）
+
+@slide 5
+Atomic packing factor – hcp (1) ||| 原子堆积因子 —— hcp（1）（第 11 讲回顾）
+N_atoms = 4(1/12) + 4(1/6) + 1(1) = 2; V_unit cell = A_base(c) = a² cos(30°) c ||| N_atoms = 4 × 1/12 + 4 × 1/6 + 1 = 2；V_unit cell = 底面积 × c = a² cos30° × c
+! 第 5–10 页为第 11 讲 hcp 推导的回顾，空格答案见第 11 讲 Slide 19–22：TW = a/√3，c = 4√(2/3)R，V_uc = 8√2 R³，APF = 0.74。
+
+@slide 6
+Atomic packing factor – hcp (2) ||| 原子堆积因子 —— hcp（2）
+N_atoms = 2; V_atoms = (4/3)πR³; WV = ?; Distance between T and V? TV = ? ||| N_atoms = 2；V_atoms = (4/3)πR³；WV = ？；T 与 V 的距离 TV = ？
+
+@slide 7
+Atomic packing factor – hcp (3) ||| 原子堆积因子 —— hcp（3）
+WV = c/2; TV = a = 2R; Find TW: TW = ?, TX = ? ||| WV = c/2；TV = a = 2R；求 TW：TW = ？，TX = ？
+
+@slide 8
+Atomic packing factor – hcp (4) ||| 原子堆积因子 —— hcp（4）
+TW = (1/√3)a; (c/2)² = a² − ((1/√3)a)² ⇒ c = √(8/3) a; ∴ c = 4√(2/3) R ||| TW = (1/√3)a；(c/2)² = a² − ((1/√3)a)² ⇒ c = √(8/3) a；∴ c = 4√(2/3) R
+
+@slide 9
+Atomic packing factor – hcp (5) ||| 原子堆积因子 —— hcp（5）
+V_unit cell = a²c cos30°; a = 2R; c = 4√(2/3)R ⇒ V_uc = (?)(?)(?) = ???R³ ||| V_unit cell = a²c cos30°；a = 2R；c = 4√(2/3)R ⇒ V_uc = (？)(？)(？) = ？？？R³
+
+@slide 10
+Atomic packing factor – hcp (6) ||| 原子堆积因子 —— hcp（6）
+V_uc = 8√2 R³; APF = N_atoms V_atoms / V_unit cell = ?; ∴ APF = ??? ||| V_uc = 8√2 R³；APF = N_atoms V_atoms / V_unit cell = ？；∴ APF = ？？？
+
+@slide 11
+Learning objectives ||| 学习目标
+• To bring together the factors underlying the moduli of materials. ||| • 把决定材料模量的各种因素综合起来。
+
+@slide 12
+Moduli of crystals ||| 晶体的模量
+• Atoms in crystals are held together by bonds which behave like little springs. Stiffness of one of these bonds as S₀ = (d²U/dr²)<sub>r=r₀</sub> ||| • 晶体中的原子由键连接，这些键就像小弹簧。单个键的刚度为 S₀ = (d²U/dr²)<sub>r=r₀</sub>
+• For small strains, spring constant of the bond stays S₀. ||| • 在小应变下，键的弹簧常数保持为 S₀。
+• The force between a pair of atoms, stretched apart to a distance r − r₀ is F = S₀(r − r₀) ||| • 一对原子被拉开 r − r₀ 时，原子间的力为 F = S₀(r − r₀)
+! S₀ 是势能曲线在平衡点 r₀ 处的曲率（二阶导数），也就是力—距离曲线在 r₀ 处的斜率（第 2 讲 Slide 13 中 dF/dr = S）。注：幻灯片原文 “stays 0” 应为 “stays S₀”（下标丢失）。
+
+@slide 13
+Moduli of crystals ||| 晶体的模量
+Fig. 6.1. The method of calculating Young's modulus from the stiffnesses of individual bonds. (Unit area, crossed by 1/r₀² bonds) ||| 图 6.1　由单个键的刚度计算杨氏模量的方法（单位面积被 1/r₀² 个键穿过）
+
+@slide 14
+Moduli of crystals ||| 晶体的模量
+• Now, the total force exerted across unit area, if the two planes are pulled apart a distance (r − r₀) is defined as the stress σ, with σ = NS₀(r − r₀) ||| • 两个原子面被拉开 (r − r₀) 时，单位面积上的总力定义为应力 σ：σ = NS₀(r − r₀)
+• N is the number of bonds/unit area, equal to 1/r₀² (since r₀² is the average area-per atom). Converting displacement (r − r₀) into strain ε_n, by dividing by the initial spacing, r₀, so that σ = (S₀/r₀) ε_n ||| • N 为单位面积上的键数，等于 1/r₀²（因为 r₀² 是每个原子平均占据的面积）。把位移 (r − r₀) 除以初始间距 r₀ 转换为应变 ε_n，得到 σ = (S₀/r₀) ε_n
+
+@slide 15
+Moduli of crystals ||| 晶体的模量
+• Young's modulus, then, is just E = σ/ε_n = S₀/r₀ ||| • 于是杨氏模量就是 E = σ/ε_n = S₀/r₀
+Table 6.1: Bond type; S₀ (N m⁻¹); E (GPa); from eqn. (6.5) (with r₀ = 2.5 × 10⁻¹⁰ m) ||| 表 6.1：键型；S₀（N m⁻¹）；E（GPa），由式 (6.5) 计算（取 r₀ = 2.5 × 10⁻¹⁰ m）
+Covalent, e.g. C–C: 50–180; 200–1000 ||| 共价键，如 C–C：50–180；200–1000
+Metallic, e.g. Cu–Cu: 15–75; 60–300 ||| 金属键，如 Cu–Cu：15–75；60–300
+Ionic, e.g. Na–Cl: 8–24; 32–96 ||| 离子键，如 Na–Cl：8–24；32–96
+H-bond, e.g. H₂O–H₂O: 2–3; 8–12 ||| 氢键，如 H₂O–H₂O：2–3；8–12
+Van der Waals, e.g. Polymers: 0.5–1; 2–4 ||| 范德华键，如聚合物：0.5–1；2–4
+
+@slide 16
+Rubbers and the glass transition temperature ||| 橡胶与玻璃化转变温度
+Fig. 6.2. How Young's modulus increases with increasing density of covalent cross-links in polymers, including rubbers above the glass temperature. Below T_G, the modulus of rubbers increases markedly because the Van der Waals bonds take hold. Above T_G they melt, and the modulus drops. ||| 图 6.2　聚合物的杨氏模量随共价交联密度增大而升高（包括高于玻璃化温度的橡胶）。低于 T_G 时，范德华键起作用，橡胶的模量显著升高；高于 T_G 时，范德华键“熔化”，模量下降。
+(Chart) E (GN m⁻²) vs covalent cross-link density: Diamond (all covalent), heavily cross-linked polymers, epoxy, nylon, alkyds, PMMA, polyethylene, rubbers; lines "All Van der Waals", "Temperature < T_G", "Temperature > T_G" ||| （图）E（GN m⁻²）随共价交联密度的变化：金刚石（全部共价）、高度交联聚合物、环氧、尼龙、醇酸树脂、PMMA、聚乙烯、橡胶；“全部为范德华键”线、“温度 < T_G”、“温度 > T_G”
+! 读图：低于 T_G 时，即使没有交联，范德华键也能给出约 1–4 GPa 的模量；高于 T_G 时，范德华键失效，模量只由少量交联点决定，橡胶的模量可低到 10⁻²–10⁻³ GPa。交联越密，模量越接近金刚石（全部为共价键）。
+
+@slide 17
+Composite ||| 复合材料
+• Composite materials are multi-material… err… materials! ||| • 复合材料是“多材料的”……呃……材料！
+– Composites may be better described as 'structures' rather than materials in their own right ||| – 复合材料与其说是一种材料，不如说是一种“<b>结构</b>”
+– Formed of different constituent parts that are 'fastened' together ||| – 由不同的组分“结合”在一起构成
+• Benefit from the combined material properties of their constituents ||| • 能够获得各组分<b>性能的组合</b>
+• Fibre-reinforced composites are a common example of the benefits of composite structures: – e.g. GFRP (Glass Fibre Reinforced Polymers), CFRP (Carbon Fibre), KFRP (Kevlar Fibre) ||| • <b>纤维增强复合材料</b>是体现复合结构优势的常见例子：– 如 GFRP（玻璃纤维增强聚合物）、CFRP（碳纤维）、KFRP（凯夫拉纤维）
+
+@slide 18
+Composite terminology ||| 复合材料术语
+• Matrix: – 'Bulk' component of the composite structure ||| • <b>基体</b>：– 复合结构中的“主体”组分
+• Fibre-reinforced composites: – 'Supporting' component – long strands, usually specifically oriented ||| • <b>纤维增强</b>复合材料：– “增强”组分为长纤维，通常按特定方向排列
+• Particulate composites (covered elsewhere): – 'Supporting' component – small particles, randomly distributed ||| • <b>颗粒增强</b>复合材料（其他课程讲解）：– “增强”组分为小颗粒，随机分布
+
+@slide 19
+Fibre-reinforced composites ||| 纤维增强复合材料
+• Benefits include modulus much greater than that of their matrices and typically very high specific stiffness (E/ρ) ||| • 优点：模量远高于基体，通常具有非常高的<b>比刚度</b>（E/ρ）
+• Commonly very anisotropic – e.g. wood ||| • 通常是高度<b>各向异性</b>的——例如木材
+E_parallel = 10 GPa; E_perpendicular = 1 GPa; Matrix – Lignin (amorphous polymer); Fibres – Cellulose ||| 平行于纤维 E = 10 GPa；垂直于纤维 E = 1 GPa；基体——木质素（无定形聚合物）；纤维——纤维素
+How do we estimate the strength of composites? ||| 如何估算复合材料的强度（刚度）？
+
+@slide 21
+Rule of mixtures (1) ||| 混合法则（1）
+• Estimating the modulus of composites (upper limit): ||| • 估算复合材料的模量（<b>上限</b>）：
+– Subject composite to a known stress, parallel to the fibre direction ||| – 沿<b>平行</b>于纤维的方向对复合材料施加已知应力
+– As fibres and matrix are bonded, they stretch by the same amount – e.g. they have the same strain, ε_n ||| – 由于纤维与基体粘结在一起，它们伸长量相同——即具有<b>相同的应变</b> ε_n
+– Assuming equal proportions of fibres and matrix, σ = (σ_f + σ_m)/2 ||| – 假设纤维和基体各占<b>一半</b>：σ = (σ_f + σ_m)/2
+
+@slide 22
+Rule of mixtures (2) ||| 混合法则（2）
+• In equal proportions, σ = (σ_f + σ_m)/2 ||| • 各占一半时：σ = (σ_f + σ_m)/2
+• In un-equal proportions, σ = V_f σ_f + (1 − V_f) σ_m – V_f = volume fraction of fibres ||| • 比例不等时：σ = V_f σ_f + (1 − V_f) σ_m —— V_f = 纤维的体积分数
+• Since σ = Eε_n: – σ = [E_f V_f + E_m(1 − V_f)] ε_n ||| • 由于 σ = Eε_n：– σ = [E_f V_f + E_m(1 − V_f)] ε_n
+
+@slide 23
+Rule of mixtures (3) ||| 混合法则（3）
+• σ = [E_f V_f + E_m(1 − V_f)] ε_n ||| • σ = [E_f V_f + E_m(1 − V_f)] ε_n
+• As E_composite = σ/ε_n: – E_composite = E_f V_f + E_m(1 − V_f) ||| • 由于 E_composite = σ/ε_n：– <b>E_composite = E_f V_f + E_m(1 − V_f)</b>
+• Upper estimate for the composite modulus: – Need to consider loading perpendicular to fibres ||| • 这是复合材料模量的<b>上限估计</b>：– 还需要考虑垂直于纤维方向的加载
+
+@slide 24
+Rule of mixtures (4) ||| 混合法则（4）
+• Estimating the modulus of composites (lower limit): ||| • 估算复合材料的模量（<b>下限</b>）：
+– Subject composite to a known stress, perpendicular to the fibre direction ||| – 沿<b>垂直</b>于纤维的方向施加已知应力
+– In this direction, it is reasonable to assume that they share the same stress and therefore have a weighted nominal strain ||| – 在这一方向上，可以合理地假设纤维和基体承受<b>相同的应力</b>，总应变为两者的加权平均
+– In equal proportions, ε_n = (ε_n,f + ε_n,m)/2 ||| – 各占一半时：ε_n = (ε_n,f + ε_n,m)/2
+
+@slide 25
+Rule of mixtures (5) ||| 混合法则（5）
+• In equal proportions, ε_n = (ε_n,f + ε_n,m)/2 ||| • 各占一半时：ε_n = (ε_n,f + ε_n,m)/2
+• In un-equal proportions, ε_n = V_f ε_n,f + (1 − V_f) ε_n,m ||| • 比例不等时：ε_n = V_f ε_n,f + (1 − V_f) ε_n,m
+• Since σ = Eε_n: – ε_n = [V_f/E_f + (1 − V_f)/E_m] σ ||| • 由于 σ = Eε_n：– ε_n = [V_f/E_f + (1 − V_f)/E_m] σ
+
+@slide 26
+Rule of mixtures (6) ||| 混合法则（6）
+• ε_n = [V_f/E_f + (1 − V_f)/E_m] σ ||| • ε_n = [V_f/E_f + (1 − V_f)/E_m] σ
+• As E_composite = σ/ε_n: – E_composite = 1 / [V_f/E_f + (1 − V_f)/E_m] ||| • 由于 E_composite = σ/ε_n：– <b>E_composite = 1 / [V_f/E_f + (1 − V_f)/E_m]</b>
+• Lower estimate for the composite modulus ||| • 这是复合材料模量的<b>下限估计</b>
+
+@slide 27
+Rule of mixtures (7) ||| 混合法则（7）
+(Chart) Composite modulus vs Volume fraction of fibres (0 to 1), from E_m to E_f: Parallel E_c,upper = E_f V_f + E_m(1 − V_f); Perpendicular E_c,lower = 1/[V_f/E_f + (1 − V_f)/E_m]; Particulate data between them; Anisotropy = gap between the curves ||| （图）复合材料模量随纤维体积分数（0 到 1）的变化，从 E_m 到 E_f：平行方向（上限）E_c,upper = E_f V_f + E_m(1 − V_f)；垂直方向（下限）E_c,lower = 1/[V_f/E_f + (1 − V_f)/E_m]；颗粒复合材料的数据位于两者之间；两条曲线之间的差距即为各向异性
+• Fibre-reinforced composites are anisotropic: – Different strength depending on loading direction ||| • 纤维增强复合材料是<b>各向异性</b>的：– 加载方向不同，强度（刚度）不同
+• Particulate composites are isotropic ||| • 颗粒增强复合材料是<b>各向同性</b>的
+
+@slide 28
+Rule of mixtures (8) ||| 混合法则（8）
+• Alignment 'efficiency': – Fibre orientation with respect to loading axis ||| • 排列“效率”：– 纤维方向相对于加载轴的取向
+– Warning: Transverse properties can be worse than un-reinforced matrix! ||| – <b>警告</b>：横向性能甚至可能比未增强的基体还差！
+– We include orientation factor, η_O, e.g. E_c = η_O E_f V_f + E_m(1 − V_f) ||| – 引入<b>取向因子</b> η_O，例如 E_c = η_O E_f V_f + E_m(1 − V_f)
+– (2D random, η_O = 3/8; 3D random, η_O = 1/5) ||| –（二维随机分布 η_O = 3/8；三维随机分布 η_O = 1/5）
+• Overcoming anisotropy: – Laminating so alternate layers have different fibre directions ||| • 克服各向异性：– <b>层合</b>，使相邻层的纤维方向不同（如 0°/90° 或 0°/±45°/90° 铺层）
+
+@example 用混合法则计算 CFRP 的模量 Rule of mixtures for a CFRP
+Q: A unidirectional CFRP contains 60 vol% carbon fibres (E_f = 230 GPa) in epoxy (E_m = 3.0 GPa). Calculate (a) the longitudinal (upper) modulus, (b) the transverse (lower) modulus, and (c) the modulus of a 2D-random mat of the same fibre fraction. ||| 单向 CFRP 含 60%（体积）碳纤维（E_f = 230 GPa），基体为环氧树脂（E_m = 3.0 GPa）。计算 (a) 纵向（上限）模量；(b) 横向（下限）模量；(c) 纤维含量相同的二维随机毡的模量。
+S: V_f = 0.60，1 − V_f = 0.40
+S: (a) 等应变（平行）：E_c = E_f V_f + E_m(1 − V_f) = 230 × 0.60 + 3.0 × 0.40 = 138 + 1.2 = <b>139.2 GPa</b>
+S: (b) 等应力（垂直）：1/E_c = V_f/E_f + (1 − V_f)/E_m = 0.60/230 + 0.40/3.0 = 0.00261 + 0.1333 = 0.1359 GPa⁻¹ → E_c = <b>7.36 GPa</b>
+S: (c) 二维随机，η_O = 3/8：E_c = (3/8) × 230 × 0.60 + 3.0 × 0.40 = 51.75 + 1.2 = <b>52.95 GPa</b>
+A: 纵向约 139 GPa，横向仅约 7.4 GPa（各向异性比约 19:1），二维随机毡约 53 GPa。横向模量几乎完全由软的基体决定——这就是 Slide 28 “横向性能可能很差”的原因。
+
+@example 由键刚度计算模量 Modulus from bond stiffness
+Q: Using E = S₀/r₀ with r₀ = 2.5 × 10⁻¹⁰ m, verify the E range for covalent bonds in Table 6.1 (S₀ = 50–180 N m⁻¹), and find S₀ for a material with E = 70 GPa (aluminium). ||| 利用 E = S₀/r₀（r₀ = 2.5 × 10⁻¹⁰ m），验证表 6.1 中共价键的 E 范围（S₀ = 50–180 N m⁻¹），并求 E = 70 GPa 的材料（铝）的 S₀。
+S: 共价键下限：E = 50 / 2.5 × 10⁻¹⁰ = 2.0 × 10¹¹ Pa = <b>200 GPa</b>
+S: 共价键上限：E = 180 / 2.5 × 10⁻¹⁰ = 7.2 × 10¹¹ Pa = <b>720 GPa</b>（表中写到 1000 GPa，因为金刚石等的 r₀ 更小，约 1.5 × 10⁻¹⁰ m）
+S: 铝：S₀ = E r₀ = 70 × 10⁹ × 2.5 × 10⁻¹⁰ = <b>17.5 N m⁻¹</b>，落在金属键 15–75 N m⁻¹ 的范围内 ✓
+A: 共价键 200–720 GPa（与表中 200–1000 GPa 一致，差别来自 r₀ 的不同）；铝的 S₀ ≈ 17.5 N/m。
+
+@example 设计纤维含量 Choosing the fibre fraction
+Q: A GFRP rod loaded along the fibres must have E ≥ 40 GPa. Glass fibres: E_f = 72 GPa, ρ_f = 2.55 Mg m⁻³; polyester matrix: E_m = 3.5 GPa, ρ_m = 1.2 Mg m⁻³. Find the minimum V_f and the resulting density (densities also follow a rule of mixtures). ||| 一根沿纤维方向受载的 GFRP 杆要求 E ≥ 40 GPa。玻璃纤维：E_f = 72 GPa，ρ_f = 2.55 Mg m⁻³；聚酯基体：E_m = 3.5 GPa，ρ_m = 1.2 Mg m⁻³。求最小 V_f 和相应的密度（密度同样服从混合法则）。
+S: 纵向模量：E_c = E_f V_f + E_m(1 − V_f) = E_m + (E_f − E_m)V_f
+S: 40 = 3.5 + (72 − 3.5)V_f → V_f = 36.5 / 68.5 = <b>0.533</b>
+S: 密度（质量守恒，严格服从混合法则）：ρ_c = ρ_f V_f + ρ_m(1 − V_f) = 2.55 × 0.533 + 1.2 × 0.467 = 1.359 + 0.560 = <b>1.92 Mg m⁻³</b>
+S: 比刚度：E/ρ = 40 / 1.92 ≈ 20.8，与钢（≈ 26）接近，但质量只有钢的约 1/4。
+A: 至少需要约 53% 的玻璃纤维，复合材料密度约 1.92 Mg m⁻³。实际中纤维体积分数很难超过约 65%，因为纤维之间必须有基体包裹。

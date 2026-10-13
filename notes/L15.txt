@@ -1,0 +1,204 @@
+@lecture 15
+@skip 1-3
+@title Creep Mechanisms, Transmission-Line Failure Cases and Introduction to Fracture ||| 蠕变机理、输电线路失效案例与断裂导论
+@summary 本讲先说明蠕变的主要机理是扩散：原子借助空位跳动，高温提供能量，外加应力使原子和空位的流动有了方向，从而产生变形；扩散还可以沿晶界进行；并讨论抗蠕变材料。然后通过输电线路设备（铁塔、导线、金具、绝缘子）的质量问题统计，以及热镀锌铁塔塔脚腐蚀和地线金具磨损两个工程案例，说明腐蚀、磨损等失效在实际中的表现及防护措施。最后引入断裂：断裂的概念、术语、断裂发生的尺度，以及脆性与韧性材料的应力—应变曲线。
+
+@glossary
+diffusion ||| 扩散
+vacancy ||| 空位
+lattice diffusion ||| 晶格扩散（体扩散）
+grain boundary diffusion ||| 晶界扩散
+flux of mass and vacancies ||| 质量流与空位流
+thermal energy ||| 热能
+creep resistant materials ||| 抗蠕变材料
+transmission line ||| 输电线路
+transmission tower ||| 输电铁塔
+wire / conductor ||| 导线
+fittings ||| 金具
+insulator ||| 绝缘子
+substandard weld ||| 焊接不合格
+insulator self-explosion ||| 绝缘子自爆
+hot-dip galvanized steel ||| 热镀锌钢
+tower foot ||| 塔脚
+concrete foundation ||| 混凝土基础
+ground (earth) wire ||| 地线（避雷线）
+wear groove ||| 磨损沟槽
+hanging ring / U-shackle ||| 挂环 / U 形挂环
+fracture ||| 断裂
+crack initiation / propagation ||| 裂纹萌生 / 扩展
+toughness ||| 韧性
+brittle (fast) fracture ||| 脆性（快速）断裂
+ductile (tearing) fracture ||| 韧性（撕裂型）断裂
+premature failure ||| 过早失效
+fracture mechanics ||| 断裂力学
+
+@slide 4
+How does creep happen? ||| 蠕变是如何发生的？
+• One of the main mechanisms of creep is by diffusion: ||| • 蠕变的主要机理之一是<b>扩散</b>：
+– Movement of atoms through the structure of a material ||| – 原子在材料结构中的移动
+– In crystalline materials this is facilitated by vacancies ||| – 在晶体材料中，扩散借助<b>空位</b>进行
+• Each vacancy allows a neighbouring atom to 'jump' between atomic sites ||| • 每个空位都允许相邻的原子在原子位置之间“跳跃”
+• But atoms need a little help… ||| • 但原子需要一点“帮助”……
+
+@slide 5
+Lattice diffusion (1) ||| 晶格扩散（1）
+• Thermal energy allows atoms to move via vacancies ||| • <b>热能</b>使原子能够借助空位移动
+• Under no load, movement is completely random ||| • 不受载荷时，原子的移动是<b>完全随机</b>的
+• No overall change ||| • 宏观上没有变化
+High temperature ||| 高温
+
+@slide 6
+Lattice diffusion (2) ||| 晶格扩散（2）
+• Applied loads add directionality to atomic movements ||| • 外加载荷使原子的移动有了<b>方向性</b>
+• Creates a flux of mass and vacancies ||| • 形成质量流和空位流
+• Results in deformation ||| • 从而产生<b>变形</b>
+σ; High temperature ||| 应力 σ；高温
+! 受拉方向的晶界附近空位较多，原子从受压的面扩散到受拉的面，晶粒沿受拉方向慢慢“拉长”——这就是扩散蠕变。温度越高，扩散越快，蠕变速率呈指数增大。
+
+@slide 7
+Other diffusion paths ||| 其他扩散途径
+• Where else might diffusion occur in polycrystalline materials? ||| • 在多晶材料中，扩散还可能在哪里发生？
+• Grain boundaries! ||| • <b>晶界</b>！
+! 晶界处原子排列混乱、较疏松，扩散比晶粒内部快得多。所以晶粒越细（晶界越多），扩散蠕变越快——这与室温下“细晶强化”正好相反。
+
+@slide 8
+Creep resistant materials ||| 抗蠕变材料
+• What applications require creep resistance? ||| • 哪些应用需要抗蠕变？
+• What kinds of materials can resist creep? ||| • 哪些材料能抵抗蠕变？
+High-pressure turbine blade: 1600°C, 10,000 rpm, extracts 550 kW from gas stream ||| 高压涡轮叶片：1600°C、10,000 转/分，从燃气流中提取 550 kW 功率
+! 抗蠕变的思路：① 选熔点高的材料（降低 T/Tₘ）——如镍基高温合金、陶瓷；② 加入固溶原子和弥散析出相阻碍位错运动；③ 增大晶粒，甚至做成<b>单晶</b>叶片（图中叶片放大部分为单晶，没有晶界），消除晶界扩散和晶界滑动。
+
+@slide 9
+Summary ||| 小结
+• It is important to consider length scales when discussing material properties and behaviour: – Being able to link microscopic and macroscopic behaviour is key ||| • 讨论材料性能和行为时必须考虑<b>尺度</b>：– 能把微观和宏观行为联系起来是关键
+• Plastic flow occurs by shear in polycrystalline materials, with the maximum stress acting at 45° to an applied tensile load ||| • 多晶材料中<b>塑性流动通过剪切发生</b>，最大切应力作用在与拉伸载荷成 45° 的平面上
+• At the onset of yielding, materials behave in one of two ways: – Increasing in strength, due to strain hardening – By displaying plastic instability (i.e. necking) ||| • 开始屈服后，材料有两种表现：– 由于<b>应变硬化</b>而强度提高 – 出现<b>塑性失稳</b>（即颈缩）
+• Creep is the deformation that occurs at high temperatures under relatively low applied stresses – one of the key mechanisms by which it occurs is diffusion ||| • <b>蠕变</b>是在<b>高温</b>和相对<b>较低应力</b>下发生的变形——其关键机理之一是<b>扩散</b>
+
+@slide 10
+Quality problems in transmission line equipment ||| 输电线路设备的质量问题
+• The transmission line equipment, which are the important parts of the power system, play a crucial role on the safe and stable operation of transmission lines. Failures occur at locations such as steel towers, wires, fittings and insulators. ||| • 输电线路设备是电力系统的重要组成部分，对输电线路的安全稳定运行至关重要。失效多发生在钢铁塔、导线、金具和绝缘子等部位。
+• The quality problems derive from four aspects: • Transmission tower • Wire • Fittings • Insulator ||| • 质量问题来自四个方面：• 输电铁塔 • 导线 • 金具 • 绝缘子
+
+@slide 11
+Types of transmission tower problems proportionally distributed ||| 输电铁塔问题类型的比例分布
+Tower crack 34%; Substandard weld 23%; Protective measures not up to standard 20%; Tensile strength not up to standard 12%; Other disqualification 11% ||| 塔材裂纹 34%；焊接不合格 23%；防护措施不达标 20%；抗拉强度不达标 12%；其他不合格 11%
+(Photo) Tensile strength not up to standard — collapsed tower ||| （照片）抗拉强度不达标——倒塌的铁塔
+
+@slide 12
+Types of wire problems proportionally distributed ||| 导线问题类型的比例分布
+Unsatisfactory mechanical properties 33%; Unsatisfactory resistance 20%; Wire break 18%; Wire corrosion 15%; Other disqualification 14% ||| 力学性能不合格 33%；电阻不合格 20%；断线 18%；导线腐蚀 15%；其他不合格 14%
+(Photos) Typical Transmission Line: earth wire, cross arms, damper, spacers, conductors, insulators, tower; Wire corrosion ||| （照片）典型输电线路：地线、横担、防振锤、间隔棒、导线、绝缘子、铁塔；导线腐蚀
+
+@slide 13
+Types of fitting problems proportionally distributed ||| 金具问题类型的比例分布
+Unsatisfactory mech. properties 44%; Resistance test failed 24%; The fittings are unqualified 15%; Insulator bolt loose 8%; (Fittings wear) 9% ||| 力学性能不合格 44%；电阻试验不合格 24%；金具不合格 15%；绝缘子螺栓松动 8%；（金具磨损）9%
+(Photos) Fittings wear; Electrical fittings series ||| （照片）金具磨损；电力金具系列
+
+@slide 14
+Types of insulator problems proportionally distributed ||| 绝缘子问题类型的比例分布
+Unsatisfactory mechanical properties 36%; Unsatisfactory resistance 21%; Insulator self-explosion 19%; The scratches of the shed surface 9%; Penetration and incursion 7%; Other disqualification 8% ||| 力学性能不合格 36%；电阻不合格 21%；绝缘子自爆 19%；伞裙表面划伤 9%；击穿与侵蚀 7%；其他不合格 8%
+(Photo) Insulator corrosion ||| （照片）绝缘子腐蚀
+! 注意：四类设备中，“力学性能不合格”都是占比最大的问题——这正是本课程学习强度、刚度、韧性等力学性能的工程意义。
+
+@slide 15
+Corrosion failure of tower foot for hot galvanized steel transmission tower ||| 热镀锌钢输电铁塔塔脚的腐蚀失效
+Tower is located in the coastal area and village field. ||| 该铁塔位于沿海地区的村庄农田中。
+
+@slide 16
+Corrosion failure of tower foot for hot galvanized steel transmission tower ||| 热镀锌钢输电铁塔塔脚的腐蚀失效
+Tower foot of 220kV line. Tower model 220Z1. Height 17.7m. Mass about 3t. Local corrosion is quite serious. Material has been significantly reduced and become thin. ||| 220 kV 线路的塔脚。塔型 220Z1，塔高 17.7 m，质量约 3 t。局部腐蚀相当严重，材料明显减薄。
+! 原因分析（联系第 2 讲）：沿海空气含盐（Cl⁻），塔脚与混凝土交界处容易积尘、积水、积盐，形成长期潮湿的电解质环境；镀锌层作为牺牲阳极被逐渐消耗，耗尽后钢材本身开始快速腐蚀，截面减薄、承载能力下降。
+
+@slide 17
+Protective measures ||| 防护措施
+• The principle is to interrupt the relevant links that are beneficial to the corrosion process of the tower feet. ||| • 原则是<b>切断</b>有利于塔脚腐蚀过程的相关环节。
+• Apply a protective layer with a thickness of about 1 mm from the upper to lower 50 mm at the connection interface between the tower foot and the concrete foundation, which can isolate the corroded parts from the corrosive medium. ||| • 在塔脚与混凝土基础的连接界面上下各 50 mm 范围内，涂覆约 1 mm 厚的防护层，把易腐蚀部位与腐蚀介质隔离。
+• Make the concrete protective cap beveled to prevent dust from accumulating in the root of the tower. ||| • 把混凝土保护帽做成斜面，防止灰尘在塔脚根部堆积。
+• Keep regular inspections and remove dust and salt accumulations in the tower feet timely. ||| • 定期巡检，及时清除塔脚处积聚的灰尘和盐分。
+• All measures above should have been applied to the towers of some transmission lines for more than one year. ||| • 上述措施已在部分输电线路的铁塔上应用一年以上。
+! 腐蚀需要四个要素：阳极、阴极、电解质、电子通路。防护层隔绝电解质；斜面保护帽和清理防止积水积盐——都是在“切断”腐蚀电池的环节。
+
+@slide 18
+Wear of tower ground wire fittings ||| 铁塔地线金具的磨损
+Tower ground wire fittings wear to form grooves. ||| 铁塔地线金具磨损形成沟槽。
+
+@slide 19
+Wear of tower ground wire fittings ||| 铁塔地线金具的磨损
+• The right angle hanging ring type hanging ring is subjected to the whole surface force, the contact force surface is large, and the movable space between the metal fittings is small, which reduces the collision wear between the two. The structure of the metal fitting is relatively stable and is not easy to wear. ||| • 直角挂环型挂环为整个面受力，接触受力面大，金具之间的活动空间小，减少了两者之间的碰撞磨损。这种金具结构较稳定，不易磨损。
+• The annular type contact surface is small, the hanging ring is a point of force, and the movable space between the metal fittings is large, and the metal fitting structure has defects and is easy to wear. ||| • 环形挂环接触面小，为点受力，金具之间的活动空间大，结构存在缺陷，容易磨损。
+! 道理：接触面积小 → 接触应力（压强）大；活动空间大 → 风振时反复碰撞和滑动。两者叠加，磨损速率大幅增加。
+
+@slide 20
+Wear test method for fittings of transmission line ||| 输电线路金具磨损试验方法
+U-7 hanging ring is worn. Screw wear. ||| U-7 型挂环磨损；螺杆磨损。
+Chinese Standard Tests: GB/T 5075-2001, GB/T 2317.1-2008, GB/T 2314-2008, DL/T 756-2009, DL/T 759-2009 ||| 中国标准试验方法：GB/T 5075-2001、GB/T 2317.1-2008、GB/T 2314-2008、DL/T 756-2009、DL/T 759-2009
+
+@slide 21
+Learning objectives ||| 学习目标
+• Learn about the concepts of fracture and its importance in engineering design ||| • 学习断裂的概念及其在工程设计中的重要性
+• Become familiar with the main mechanisms of fracture, and their fundamental origins: – Brittle (fast) fracture – Ductile (tearing) fracture ||| • 熟悉断裂的主要机制及其根本原因：– 脆性（快速）断裂 – 韧性（撕裂型）断裂
+• Appreciate why materials fail prematurely (i.e. before yielding) and how the structural defects in a material influence its fracture behaviour ||| • 理解材料为什么会<b>过早失效</b>（即在屈服之前），以及材料中的结构缺陷如何影响其断裂行为
+
+@slide 22
+How do crystalline materials fail? ||| 晶体材料如何失效？
+Plastic deformation (low temperature yielding, high temperature creep); Fracture (brittle, ductile); Fatigue (slow crack growth leading to fracture); Oxidation and Corrosion (reactions with O₂, and O₂ + H₂O); Wear (all of the above, with relative motion between parts!) ||| 塑性变形（低温屈服、高温蠕变）；断裂（脆性、韧性）；疲劳（裂纹缓慢扩展导致断裂）；氧化与腐蚀（与 O₂ 及 O₂ + H₂O 反应）；磨损（以上各种机制，再加上零件间的相对运动！）
+
+@slide 23
+Fracture concepts ||| 断裂的概念
+• Fracture: ||| • 断裂：
+– Initiation and rapid propagation of cracks within a material ||| – 材料内部裂纹的<b>萌生</b>和<b>快速扩展</b>
+– Structure no longer sustains any applied loading ||| – 结构不再能承受任何外加载荷
+– Often occurs at nominal stresses/strains below those that the material is expected to sustain – need to understand why this is! ||| – 往往在<b>低于</b>材料预期能承受的名义应力/应变时发生——需要弄清原因！
+• Design against fracture: ||| • 防断裂设计：
+– Crack-free materials? Very difficult to produce ||| – 无裂纹的材料？很难生产
+– Therefore, we design for non-propagation or controlled propagation of cracks – this links in with fatigue behaviour ||| – 因此设计时要保证裂纹<b>不扩展</b>或<b>可控地扩展</b>——这与疲劳行为相关
+– Need to select materials with sufficient toughness ||| – 需要选择具有足够<b>韧性</b>的材料
+
+@slide 24
+Fracture jargon ||| 断裂术语
+• Materials may be: – Strong – Stiff – Tough – Ductile – Brittle… ||| • 材料可以是：– 强的 – 刚的 – 韧的 – 延性好的 – 脆的……
+• Components may fail by: ||| • 零件可能的失效方式：
+– Inelastic deformation – i.e. by yielding or creep ||| – <b>非弹性变形</b>——即屈服或蠕变
+– Fracture – i.e. brittle or ductile, or following fatigue ||| – <b>断裂</b>——脆性或韧性断裂，或疲劳后断裂
+– Corrosion – can cause failures independently or contribute to the above ||| – <b>腐蚀</b>——可以单独导致失效，也可以促进上述失效
+– Wear – all failure mechanisms contribute to wear mechanisms ||| – <b>磨损</b>——各种失效机制都对磨损有贡献
+! 区分：strong（强，抵抗屈服/断裂的应力高）、stiff（刚，E 大，变形小）、tough（韧，断裂前吸收能量多、抗裂纹扩展）、ductile（延性好，断裂前塑性变形大）、brittle（脆，几乎无塑性变形就断裂）。玻璃“刚而脆”，橡胶“韧而不刚”。
+
+@slide 25
+Fracture length scales ||| 断裂的尺度
+(Chart) 10⁻¹⁰ to 10² m: fracture | fracture processes and criteria | plasticity | testing | applications; materials science, applied mechanics, engineering, fracture mechanics; Our Course ||| （图）10⁻¹⁰ 到 10² m：断裂 | 断裂过程与判据 | 塑性 | 试验 | 应用；材料科学、应用力学、工程、断裂力学；本课程覆盖的范围
+• Unlike many areas of engineering, fracture mechanisms operate on every length scale: – Atomistic to entire engineering systems ||| • 与许多工程领域不同，断裂机制在<b>每一个尺度</b>上都起作用：– 从原子尺度到整个工程系统
+
+@slide 26
+Deformation of brittle materials ||| 脆性材料的变形
+σ–ε: Elastic behaviour to failure; X Fracture at (ε_f, σ_f); slope = E ||| σ—ε：一直弹性直到失效；在 (ε_f, σ_f) 处断裂；斜率 = E
+
+@slide 27
+Deformation of ductile materials ||| 韧性材料的变形
+Elastic and plastic regions; σ_y, σ_TS, ε_e, ε_p; X Fracture; Total strain ε = ε_e + ε_p = σ_y/E + ε_p ||| 弹性区和塑性区；σ_y、σ_TS、ε_e、ε_p；X 处断裂；总应变 ε = ε_e + ε_p = σ_y/E + ε_p
+
+@example 温度对扩散蠕变速率的影响 Effect of temperature on creep rate
+Q: Diffusion (and hence diffusion creep rate) follows an Arrhenius law, rate ∝ exp(−Q/RT). For a nickel alloy with activation energy Q = 280 kJ mol⁻¹, by what factor does the creep rate increase when the blade temperature rises from 900 °C to 950 °C? (R = 8.314 J mol⁻¹ K⁻¹) ||| 扩散（以及扩散蠕变速率）服从阿伦尼乌斯规律：速率 ∝ exp(−Q/RT)。某镍合金的激活能 Q = 280 kJ/mol，叶片温度从 900 °C 升高到 950 °C 时，蠕变速率增大多少倍？（R = 8.314 J mol⁻¹ K⁻¹）
+S: 换算成开尔文：T₁ = 1173 K，T₂ = 1223 K
+S: 速率比 = exp[(Q/R)(1/T₁ − 1/T₂)]
+S: 1/T₁ − 1/T₂ = 1/1173 − 1/1223 = 8.525 × 10⁻⁴ − 8.177 × 10⁻⁴ = 3.49 × 10⁻⁵ K⁻¹
+S: Q/R = 280 000 / 8.314 = 33 678 K
+S: 速率比 = exp(33 678 × 3.49 × 10⁻⁵) = exp(1.175) ≈ <b>3.2</b>
+A: 仅升高 50 °C，蠕变速率约增大到 3.2 倍。所以涡轮叶片要用内部冷却通道和热障涂层，哪怕只降低几十度，寿命也能显著延长。
+
+@example 塔脚腐蚀减薄后的承载能力 Load capacity after corrosion thinning
+Q: A tower-foot angle member originally has a cross-section of 1200 mm² and is designed to carry 150 kN in tension (σ_y = 345 MPa). Corrosion (slides 15–16) has reduced the effective cross-section by 30%. (a) Find the safety factor against yielding before and after corrosion. (b) What is the minimum section that keeps a safety factor of 1.5? ||| 某塔脚角钢原截面积 1200 mm²，设计承受 150 kN 拉力（σ_y = 345 MPa）。腐蚀（第 15–16 页）使有效截面积减少了 30%。(a) 求腐蚀前后防屈服的安全系数；(b) 要保持安全系数 1.5，最小截面积是多少？
+S: (a) 腐蚀前：σ = 150 000 / 1200 = 125 MPa；安全系数 n = 345 / 125 = <b>2.76</b>
+S: 腐蚀后：A = 1200 × 0.70 = 840 mm²；σ = 150 000 / 840 = 178.6 MPa；n = 345 / 178.6 = <b>1.93</b>
+S: (b) 要 n ≥ 1.5：许用应力 = 345 / 1.5 = 230 MPa → A_min = 150 000 / 230 = <b>652 mm²</b>，即最多允许损失约 46% 的截面。
+A: 安全系数从 2.76 降到 1.93。腐蚀坑还会造成应力集中，并成为疲劳裂纹源，实际危险比单纯截面减薄更大——所以要定期巡检和采取防护措施。
+
+@example 判断失效模式 Identifying the failure mode
+Q: Using slides 22–24, identify the main failure mechanism and one suitable countermeasure for: (a) a wire strand that breaks after years of wind-induced vibration; (b) a U-shackle worn into a groove; (c) a lead-sheathed cable that slowly sags between supports; (d) a glass insulator that shatters suddenly on a cold night; (e) a galvanised tower leg thinned near the ground. ||| 根据第 22–24 页，判断下列情况的主要失效机制，并各提出一项对策：(a) 导线股线在多年风振后断裂；(b) U 形挂环磨出沟槽；(c) 铅护套电缆在支点间慢慢下垂；(d) 玻璃绝缘子在寒冷的夜晚突然碎裂；(e) 镀锌铁塔腿部靠近地面处减薄。
+S: (a) <b>疲劳</b>：循环应力低于屈服强度，裂纹缓慢扩展后断裂 → 安装防振锤，降低振幅。
+S: (b) <b>磨损</b>：小接触面、大活动空间，反复碰撞和滑动 → 改用直角挂环（面接触）或耐磨材料。
+S: (c) <b>蠕变</b>：铅在室温下 T/Tₘ ≈ 0.49 → 缩短支点间距，或改用抗蠕变的护套材料。
+S: (d) <b>脆性断裂</b>：玻璃没有塑性变形，温差产生的热应力在微小缺陷处引发裂纹快速扩展 → 采用钢化玻璃或复合（硅橡胶）绝缘子。
+S: (e) <b>腐蚀</b>：镀锌层消耗后钢基体被腐蚀 → 涂覆防护层、斜面保护帽、定期清理积盐（第 17 页）。
+A: 疲劳、磨损、蠕变、脆性断裂、腐蚀——课程中讨论的五类失效机制在一条输电线路上都能找到实例。
