@@ -1,0 +1,79 @@
+@lecture 9
+@skip 1-4
+@title Recap: Bonding between Atoms ||| 回顾：原子间的键合
+@summary 本讲是第 8 讲的复习课：回顾键能曲线、离子键、共价键、金属键、范德华力、氢键，以及不同键型与陶瓷、金属、聚合物性能之间的关系；最后布置任务：查找碳纤维/环氧树脂复合材料中的键合性质。
+
+@glossary
+recap ||| 回顾
+bond energy curve ||| 键能曲线
+carbon fibre ||| 碳纤维
+epoxy matrix ||| 环氧树脂基体
+fibre–matrix interface ||| 纤维—基体界面
+cross-linked network ||| 交联网络
+sizing (surface treatment) ||| 上浆剂（表面处理）
+mechanical interlocking ||| 机械嵌合
+functional groups ||| 官能团
+boiling point ||| 沸点
+
+@slide 5
+Bonding energies (1) ||| 键能（1）
+• Ball and spring model: – Atoms subjected to competing repulsive and attractive forces • At rest, atoms will be in their lowest energy state • r₀ = equilibrium interatomic spacing; U = potential energy of bond ||| • 球—弹簧模型：– 原子同时受到相互竞争的排斥力和吸引力 • 静止时原子处于能量最低状态 • r₀ = 平衡原子间距；U = 键的势能
+! 第 5–11 页为第 8 讲内容的回顾，详细对照和讲解见第 8 讲 Slide 9–24。
+
+@slide 6
+Ionic bonding (1) ||| 离子键（1）
+• Electrostatic attraction between ions: e.g. Na⁺ + Cl⁻ → NaCl • At equilibrium spacing, electrostatic attraction balanced with repulsion energy • Ionic bonds are non-directional but ionic structures must alternate from +ve to −ve ||| • 离子间的静电吸引：如 Na⁺ + Cl⁻ → NaCl • 平衡间距处静电吸引与排斥平衡 • 离子键无方向性，但正负离子必须交替排列
+
+@slide 7
+Covalent bonding ||| 共价键
+• Sharing of electron orbitals: e.g. Diamond, silicon carbide; high-melting point metals (W, Mo, Ta); hydrocarbon chains • Covalent bonds are highly directional ||| • 共享电子轨道：如金刚石、碳化硅；高熔点金属（W、Mo、Ta）；碳氢链 • 共价键方向性很强
+
+@slide 8
+Metallic bonding ||| 金属键
+• Mobile electrons around fixed metal cations – Mobile electrons give the highest electrical conductivity • Metallic bonds are completely non-directional ||| • 自由电子环绕固定的金属阳离子——自由电子带来最高的导电性 • 金属键完全没有方向性
+
+@slide 9
+Van der Waals forces ||| 范德华力
+• Dipolar attraction between uncharged atoms • Without Van der Waals forces, liquefaction would not be possible for many important industrial liquids: Liquid nitrogen, oxygen, helium and hydrogen ||| • 不带电原子之间的偶极吸引 • 没有范德华力，许多重要工业液体（液氮、液氧、液氦、液氢）就无法液化
+
+@slide 10
+Hydrogen bonding ||| 氢键
+• Hydrogen atoms are able to share their charge: Only with nitrogen, oxygen or fluorine in molecules • Essential for solid polymers and keeping water liquid! Hydrogen bonding in nylon 6,6 ||| • 氢原子能“共享”其电荷：只能与分子中的氮、氧或氟形成 • 对固态聚合物至关重要，也使水保持液态！尼龙 6,6 中的氢键
+
+@slide 11
+Bonding types and properties ||| 键型与性能
+• Ceramics: Large bond energy; Stiff and strong, but brittle; High melting point and low thermal expansion coefficient; Ionic and covalent bonding ||| • 陶瓷：键能大；刚而强但脆；熔点高、热膨胀系数低；离子键和共价键
+• Metals: Variable bond energy; Moderate stiffness and strength, can be brittle or ductile; High thermal and electrical conductivity; Metallic bonding ||| • 金属：键能不一；刚度和强度中等，可脆可韧；导热导电性高；金属键
+• Polymers: Directional properties; Low stiffness and strength; poor thermal properties; Covalent and secondary bonding ||| • 聚合物：性能有方向性；刚度和强度低，热性能差；共价键和次价键
+
+@slide 12
+Task! ||| 任务！
+• Use internet to find out the nature of bonding between carbon fiber-epoxy matrix reinforced composite! ||| • 上网查找：碳纤维增强环氧树脂基复合材料中纤维与基体之间的键合性质！
+! 参考答案见本讲例题 1。
+
+@example 碳纤维/环氧复合材料中的键合（任务参考答案） Bonding in carbon fibre–epoxy composites
+Q: Describe the types of bonding (a) inside a carbon fibre, (b) inside the cured epoxy matrix, and (c) at the fibre–matrix interface. Why do manufacturers surface-treat ("size") carbon fibres? ||| 描述 (a) 碳纤维内部、(b) 固化后环氧树脂基体内部、(c) 纤维与基体界面上的键合类型。为什么生产商要对碳纤维进行表面处理（上浆）？
+S: (a) 碳纤维：碳原子在石墨层内以很强的<b>共价键</b>结合（层面沿纤维轴向排列，所以纤维轴向模量和强度极高）；石墨层之间只有较弱的<b>范德华力</b>。
+S: (b) 环氧树脂：固化后分子链之间通过化学反应形成三维<b>共价交联网络</b>（热固性塑料），同时链段间还有范德华力和氢键（环氧中含 –OH 基团）。
+S: (c) 界面：未经处理的碳纤维表面很“惰性”，与树脂之间主要是<b>次价键</b>（范德华力）和<b>机械嵌合</b>。经过氧化处理后，纤维表面产生 –OH、–COOH 等含氧官能团，能与树脂形成<b>氢键</b>，并可与上浆剂或树脂发生反应形成部分<b>共价键</b>。
+S: 上浆的目的：提高界面结合强度，使载荷能从基体有效传递到纤维；同时保护纤维在加工中不被磨损。界面太弱，复合材料容易发生纤维拔出和分层。
+A: 纤维内：强共价键（层内）+ 范德华力（层间）；基体内：共价交联网络 + 次价键；界面：以次价键和机械嵌合为主，表面处理后增加氢键和部分共价键。
+
+@example 判断键型 Identifying the dominant bond type
+Q: State the dominant bond type in each of the following and give one property that follows from it: NaCl, SiC, copper, tungsten, ice, polyethylene, MgO. ||| 指出下列材料中起主导作用的键型，并各写出由此带来的一项性能：NaCl、SiC、铜、钨、冰、聚乙烯、MgO。
+S: NaCl：<b>离子键</b> → 固态不导电、硬而脆、易沿解理面断裂。
+S: SiC：<b>共价键</b>（方向性强）→ 极硬、耐磨，用于磨料和切削工具。
+S: 铜：<b>金属键</b> → 导电导热极好、延性好。
+S: 钨：<b>金属键 + 部分共价键</b>（第 7 页）→ 熔点极高（3422 °C），用于灯丝和高温部件。
+S: 冰：分子内<b>共价键</b>，分子间<b>氢键</b> → 熔点（0 °C）比同类分子高得多；氢键使冰的结构疏松，所以冰的密度比水小。
+S: 聚乙烯：链内<b>共价键</b>，链间<b>范德华力</b> → 熔点低、模量低、易蠕变。
+S: MgO：<b>离子键</b>（含部分共价）→ 熔点高（约 2850 °C）、耐火材料。
+A: 离子键：NaCl、MgO；共价键：SiC；金属键：Cu、W（W 含部分共价）；共价 + 氢键：冰；共价 + 范德华：聚乙烯。
+
+@example 氢键对沸点的影响 Effect of hydrogen bonding on boiling point
+Q: H₂O (molar mass 18 g/mol) boils at 100 °C, whereas H₂S (34 g/mol), a heavier molecule of similar shape, boils at about −60 °C. Explain this using secondary bonding. ||| H₂O（摩尔质量 18 g/mol）的沸点是 100 °C，而形状相似、更重的 H₂S（34 g/mol）沸点只有约 −60 °C。请用次价键解释。
+S: 沸腾要克服的是<b>分子之间</b>的次价键，而不是分子内部的共价键。
+S: 一般来说分子越重，范德华力越强，沸点越高——按这个规律 H₂S 的沸点应该更高。
+S: 但氧是能形成氢键的三种元素之一（N、O、F，第 10 页），水分子之间存在大量<b>氢键</b>；硫不能形成有效的氢键，H₂S 分子之间主要只有范德华力。
+S: 氢键比范德华力强得多，所以要把水分子分开需要更多能量 → 沸点异常高。
+A: 水分子间的氢键使其沸点比 H₂S 高约 160 °C。这正是课件所说“氢键使水保持液态”的原因；同理，尼龙链间的氢键使它比聚乙烯更强、熔点更高。
