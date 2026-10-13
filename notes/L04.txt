@@ -1,0 +1,176 @@
+@lecture 4
+@skip 1-3
+@title Materials Selection: Charts, Merit Indices and Methodology ||| 选材：性能图、性能指数与选材方法
+@summary 本讲先用第 3 讲的“轻而强的梁”案例，说明如何在对数坐标的 Ashby 图上画出材料指数导引线（σ<sub>f</sub><sup>1/2</sup>/ρ = C 为斜率 2 的直线）并划定搜索区域；接着完整讲解 2013 年考题（箭杆）：推导最轻箭杆的指数 M₁ = E<sup>1/2</sup>/ρ 和最细箭杆的指数 M₂ = E，并在模量—密度图上作图选材；然后回顾材料世界、选材流程和三者关系，引出本部分的学习目标——系统的选材方法：转化、筛选、排序、补充信息。
+
+@glossary
+availability of materials ||| 材料的可获得性
+material index / merit index ||| 材料指数 / 性能指数（优值指数）
+performance index ||| 性能指标
+guideline (on a log–log chart) ||| 导引线（对数坐标图上的）
+gradient / slope ||| 斜率
+search region ||| 搜索区域
+buckling / elastic buckling load ||| 屈曲 / 弹性屈曲载荷
+column / shaft ||| 柱 / 杆
+second moment of area I ||| 截面惯性矩 I
+radius r ||| 半径 r
+minimise mass ||| 质量最小化
+air resistance ||| 空气阻力
+selection methodology ||| 选材方法
+function / constraint / objective / free variable ||| 功能 / 约束 / 目标 / 自由变量
+translation ||| 转化
+screening ||| 筛选
+ranking ||| 排序
+supporting information ||| 补充信息
+trade-off ||| 权衡（取舍）
+market need ||| 市场需求
+concept / embodiment / detail design ||| 概念设计 / 具体化设计 / 详细设计
+product prototype ||| 产品原型
+ferrous alloys ||| 铁基合金（钢铁材料）
+
+@slide 4
+Case study ||| 案例
+(Diagram) Cantilever, length L, end load F_D, section b × d ||| （图）悬臂梁，长 L，端部载荷 F_D，截面 b × d
+For a given material the material index for strong light beam: √σ_f / ρ = C ||| 对于给定材料，轻而强的梁的材料指数为：√σ_f / ρ = C
+Taking logs gives the expression: ½ log₁₀ σ_f − log₁₀ ρ = log₁₀ C ||| 取对数得：½ log₁₀ σ_f − log₁₀ ρ = log₁₀ C
+Which is of the form y = mx + c ||| 这正是直线方程 y = mx + c 的形式
+So we can now plot log₁₀ σ_f versus log₁₀ ρ and plot guidelines with gradient m = 2 ||| 因此可以以 log₁₀ σ_f 对 log₁₀ ρ 作图，并画出斜率 m = 2 的导引线
+(Chart) Materials property 2 vs Materials property 1; Guidelines for √σ_f/ρ = C; C = 40; Search Region ||| （图）材料性能 2 对材料性能 1；√σ_f/ρ = C 的导引线；C = 40；搜索区域
+! 整理一下：log σ_f = 2 log ρ + 2 log C。所有 C 相同的材料落在同一条斜率为 2 的直线上；把直线向左上方平移，C 增大，直线上方（左上）区域就是“比这条线更好”的搜索区域。
+
+@slide 5
+Case study ||| 案例
+√σ_f / ρ = C;  ½ log₁₀ σ_f − log₁₀ ρ = log₁₀ C ||| √σ_f / ρ = C；½ log₁₀ σ_f − log₁₀ ρ = log₁₀ C
+(Chart) Strength–Density with guidelines C = 0.1, C = 1, C = 10 ||| （图）强度—密度图，并画出 C = 0.1、C = 1、C = 10 三条导引线
+Low alloy steels: ρ 7.8–7.85 Mg m⁻³, σ 50–1980 MPa ||| 低合金钢：ρ 7.8–7.85 Mg m⁻³，σ 50–1980 MPa
+Al alloys: ρ 2.52–2.54 Mg m⁻³, σ 40–510 MPa ||| 铝合金：ρ 2.52–2.54 Mg m⁻³，σ 40–510 MPa
+! 两类材料在图上都是几乎竖直的长条：密度结构不敏感（几乎不变），强度结构敏感（跨度很大）。比较时要看长条哪部分落在较高的 C 线上——强度高端的铝合金与高强度低合金钢的 C 值相当，甚至更高。
+
+@slide 6
+Exam question 2013 ||| 2013 年考题
+At the Battle of Bosworth in 1485, the best armour was almost impervious to arrows. ||| 1485 年博斯沃思战役中，最好的盔甲几乎能挡住弓箭。
+Arrow shafts are designed to be light and stiff so they can be fired over a long distance. ||| 箭杆被设计得又轻又刚，这样才能射得远。
+Historically, the shaft of an arrow was made from wood, often poplar but many other woods were used. ||| 历史上，箭杆用木材制作，常用杨木，也用过许多其他木材。
+You are required to compare and contrast modern materials to form the shaft of an arrow. ||| 要求你比较各种现代材料用作箭杆的优劣。
+The arrow shaft is a rod of length L which is fixed for any given archer. ||| 箭杆是一根长度为 L 的杆，对某一射手而言 L 是固定的。
+The mass of the arrow is critical since a lighter arrow can be fired further, however, at the release of the arrow and the impact in its target, a high force is experienced and buckling must be resisted if the arrow is to find its target with accuracy and inflict damage. ||| 箭的质量至关重要，因为越轻的箭射得越远；但是在箭射出和击中目标的瞬间，箭会承受很大的力，必须防止屈曲，箭才能准确命中目标并造成伤害。
+The elastic buckling load of a column of length L and radius r is F_crit = π²EI / L² ||| 长度为 L、半径为 r 的柱的弹性屈曲载荷为 F_crit = π²EI / L²
+where E is the modulus and I is the second moment of the area of the column given by I = πr⁴/4 ||| 其中 E 为模量，I 为柱截面的惯性矩：I = πr⁴/4
+Derive a suitable merit index which would allow you to minimise the weight of the arrow subject to the arrow shaft not buckling. ||| 推导一个合适的性能指数，使箭杆在不屈曲的前提下重量最小。
+It is also desirable that the shaft should be as narrow as possible, as thicker arrows will exhibit greater air resistance. Derive a second merit index where the arrow should be as thin as possible without buckling. ||| 箭杆还应尽可能细，因为粗箭的空气阻力更大。推导第二个性能指数，使箭杆在不屈曲的前提下尽可能细。
+
+@slide 7
+Exam question 2013: Answer ||| 2013 年考题：解答
+The requirement is to minimise the mass ||| 要求是使质量最小
+Mass of a shaft is given by: m = πr²Lρ   (1) ||| 杆的质量：m = πr²Lρ　　(1)
+Elastic buckling load of a column of length L and radius r is: F_crit = π²EI / L²   (2) ||| 长 L、半径 r 的柱的弹性屈曲载荷：F_crit = π²EI / L²　　(2)
+Where I is the second moment of area: I = πr⁴/4   (3) ||| 其中 I 为截面惯性矩：I = πr⁴/4　　(3)
+The load must not exceed F_crit. Insert (3) into (2): F ≤ π³Er⁴ / 4L²   (4) ||| 载荷不得超过 F_crit。把 (3) 代入 (2)：F ≤ π³Er⁴ / 4L²　　(4)
+
+@slide 8
+Exam question 2013: Answer ||| 2013 年考题：解答
+If we rearrange equation (1) and square it we get an expression…: r⁴ = m² / π²L²ρ²   (5) ||| 把式 (1) 变形并平方，得到：r⁴ = m² / π²L²ρ²　　(5)
+Insert (5) into (4): F ≤ π³Em² / 4L⁴π²ρ² ||| 把 (5) 代入 (4)：F ≤ π³Em² / 4L⁴π²ρ²
+Rearranging for m, which we wish to minimise. If the arrow is not going to buckle then: m ≥ (4F/π)<sup>1/2</sup> L² [ρ / E<sup>1/2</sup>] ||| 解出我们希望最小化的 m。若箭不屈曲，则：m ≥ (4F/π)<sup>1/2</sup> L² [ρ / E<sup>1/2</sup>]
+Design | Materials properties ||| 设计项 | 材料性能项
+
+@slide 9
+Exam question 2013: Answer ||| 2013 年考题：解答
+All materials properties in square brackets. So if we want to minimise m then we need to maximise: M₁ = E<sup>1/2</sup> / ρ ||| 所有材料性能都在方括号内。所以要使 m 最小，就要使 M₁ = E<sup>1/2</sup> / ρ 最大
+To minimise the cross sectional area of the shaft we simply need to rearrange: F ≤ π³Er⁴ / 4L² ||| 要使箭杆截面最小，只需把 F ≤ π³Er⁴ / 4L² 变形：
+r ≥ (4F/π³)<sup>1/4</sup> (L)<sup>1/2</sup> [1/E]<sup>1/4</sup> ||| r ≥ (4F/π³)<sup>1/4</sup> (L)<sup>1/2</sup> [1/E]<sup>1/4</sup>
+Again, materials properties are in square brackets. To minimise r we should maximise: M₂ = E ||| 同样，材料性能在方括号内。要使 r 最小，应使 M₂ = E 最大
+! 两个指数对应两个不同目标：目标是“质量最小”→ M₁ = E<sup>1/2</sup>/ρ；目标是“直径最小”→ M₂ = E（与密度无关）。同一个约束（不屈曲）在不同目标下给出不同的材料指数。
+
+@slide 10
+Exam question 2013: Answer ||| 2013 年考题：解答
+(Chart) Modulus–Density with lines M1 (E<sup>1/2</sup>/ρ = C, slope 2) and M2 (E = constant, horizontal); the shaded upper-left region satisfies both ||| （图）模量—密度图，画出 M1 线（E<sup>1/2</sup>/ρ = C，斜率 2）和 M2 线（E = 常数，水平线）；左上方阴影区同时满足两个要求
+! 结论：阴影区内主要是 CFRP、陶瓷等，其中工程上可用作箭杆的是碳纤维复合材料（CFRP），这也是现代竞技箭杆的主流材料；木材 M₁ 不错，但模量低，箭杆会更粗。
+
+@slide 11
+The World of Materials ||| 材料世界
+• >150,000 different materials available • 5 families of materials • Hybrids combine two or more of the others ||| • 可供使用的材料超过 150,000 种 • 材料分为 5 大族 • 混杂材料由其他两种或多种材料组合而成
+Metals, alloys; Ceramics; Polymers; Glasses; Elastomers; Hybrids (Composites, sandwiches: GFRP, CFRP, foams) ||| 金属与合金；陶瓷；聚合物；玻璃；弹性体；混杂材料（复合材料、夹层结构：GFRP、CFRP、泡沫）
+! 第 11–14 页是第 1 讲内容的回顾，各图中英文对照详见第 1 讲 Slide 15、17、18、24。
+
+@slide 12
+Materials selection in design ||| 设计中的选材
+Engineering design → Environment, Component shape, Design loads → Required properties → 1. Materials selection → 2. Process selection → 3. Cost → Make part ||| 工程设计 → 环境、零件形状、设计载荷 → 所需性能 → 1. 选材 → 2. 工艺选择 → 3. 成本 → 制造零件（任一步回答“否”则返回重新设计）
+
+@slide 13
+Properties of engineering materials ||| 工程材料的性能
+Mechanical, Chemical, Physical, Thermal, Life-cycle, Others ||| 力学、化学、物理、热学、生命周期、其他
+
+@slide 14
+Three-way relationship ||| 三者关系
+• Processing: shaping and tailoring material properties • Structure: controlled by composition and processing • Properties: controlled by microstructure ||| • 加工：成形并调控材料性能 • 结构：由成分和加工控制 • 性能：由显微组织控制
+Must understand how processing history controls microstructures and properties ||| 必须理解加工历史如何控制显微组织和性能
+
+@slide 15
+Learning objectives ||| 学习目标
+• To develop a methodology for selecting materials in Engineering Design: ||| • 建立工程设计中的选材方法：
+– Translating design requirements ||| – <b>转化</b>设计要求
+– Screening materials ||| – <b>筛选</b>材料
+– Ranking materials based on derived performance indices ||| – 根据推导出的<b>性能指数</b>对材料<b>排序</b>
+– Refining our selection based on supporting information ||| – 根据<b>补充信息</b>完善（<b>细化</b>）选择
+
+@slide 16
+Why do we need a selection methodology? ||| 为什么需要选材方法？
+• Material properties vary enormously: e.g. Order of magnitude difference between weakest and strongest ferrous alloys ||| • 材料性能差异极大：例如最弱和最强的铁基合金之间相差一个数量级
+• Multiple factors complicate design choices: ||| • 多种因素使设计选择更复杂：
+– Function – loading, environment, design life etc. ||| – <b>功能</b>——载荷、环境、设计寿命等
+– Cost – availability of raw materials and manufacturing processes ||| – <b>成本</b>——原材料的可获得性和制造工艺
+– Time – production deadlines and required manufacturing volumes ||| – <b>时间</b>——生产期限和所需产量
+(Chart) Yield strength (elastic limit) (MPa) ranges: Low alloy steel, High carbon steel, Medium carbon steel, Stainless steel, Cast iron ductile (nodular), Low carbon steel, Cast iron gray ||| （图）屈服强度（弹性极限，MPa）范围：低合金钢、高碳钢、中碳钢、不锈钢、球墨铸铁、低碳钢、灰铸铁
+
+@slide 17
+Mechanical properties ||| 力学性能
+• Influencing factors: Atoms; Bonds; Crystals; Grain structure ||| • 影响因素：<b>原子</b>；<b>键</b>；<b>晶体</b>；<b>晶粒结构</b>
+• Manipulated by: Heat treatments (alloys); Making composites; Making foams ||| • 调控手段：热处理（合金）；制成复合材料；制成泡沫
+
+@slide 18
+Thermal properties ||| 热性能
+• Influencing factors: Bond types; Thermal energy is atomic vibration; propagates as waves, scattered by obstacles ||| • 影响因素：键型；热能即原子振动，以波的形式传播，并被障碍物散射
+• Manipulated by: Composition (purity); Structure ||| • 调控手段：成分（纯度）；结构
+
+@slide 19
+Trade-offs must be made! ||| 必须进行权衡！
+Griff on the scales ||| （照片）站在秤上的豚鼠 “Griff”
+! 选材几乎总要在相互矛盾的要求之间权衡：轻与强、性能与成本、刚度与韧性……没有在所有方面都最好的材料。
+
+@slide 20
+Materials selection in design ||| 设计中的选材
+Market need → Design requirements → Concept → Embodiment → Detail → Product prototype ||| 市场需求 → 设计要求 → 概念设计 → 具体化设计 → 详细设计 → 产品原型
+Material & process needs: Data for all materials and processes, low precision → Data for fewer materials or processes, higher precision → Data for one material or process, highest precision ||| 材料与工艺需求：所有材料和工艺的数据，精度低 → 较少材料或工艺的数据，精度较高 → 一种材料或工艺的数据，精度最高
+All materials → Material search space: Screen, rank (×3) → Final choice ||| 所有材料 → 材料搜索空间：筛选、排序（逐级三次）→ 最终选择
+! 设计越深入，候选材料越少，但需要的数据越精确——漏斗形的搜索空间逐步收窄。
+
+@slide 21
+Materials selection process (1) ||| 选材流程（1）
+1 – Translation: Express design requirements as constraints and objectives ||| 1 —— 转化：把设计要求表达为<b>约束条件</b>和<b>目标</b>
+2 – Screening: Eliminate materials based on constraints and objectives ||| 2 —— 筛选：根据约束条件和目标<b>淘汰材料</b>
+3 – Ranking: Rank materials against metrics describing best performance ||| 3 —— 排序：按描述最佳性能的指标对材料<b>排序</b>
+4 – Supporting information: Use additional information to refine selection ||| 4 —— 补充信息：利用更多信息<b>完善选择</b>
+
+@example 用两个指数比较箭杆材料 Comparing arrow-shaft materials
+Q: Using typical values — wood (along grain): E = 10 GPa, ρ = 0.5 Mg m⁻³; aluminium alloy: E = 70 GPa, ρ = 2.7; steel: E = 210 GPa, ρ = 7.8; CFRP: E = 110 GPa, ρ = 1.55 — evaluate M₁ = E<sup>1/2</sup>/ρ and M₂ = E for each, and recommend an arrow-shaft material. ||| 取典型值——木材（顺纹）：E = 10 GPa，ρ = 0.5 Mg m⁻³；铝合金：E = 70 GPa，ρ = 2.7；钢：E = 210 GPa，ρ = 7.8；CFRP：E = 110 GPa，ρ = 1.55——计算各材料的 M₁ = E<sup>1/2</sup>/ρ 和 M₂ = E，并推荐箭杆材料。
+S: M₁（质量最小）：木材 √10/0.5 = 3.16/0.5 = <b>6.32</b>；铝 √70/2.7 = 8.37/2.7 = <b>3.10</b>；钢 √210/7.8 = 14.5/7.8 = <b>1.86</b>；CFRP √110/1.55 = 10.5/1.55 = <b>6.77</b>（单位 GPa<sup>1/2</sup>/(Mg m⁻³)）
+S: M₂（直径最小）：钢 210 ＞ CFRP 110 ＞ 铝 70 ＞ 木材 10（GPa）
+S: 比较：钢 M₂ 最大但 M₁ 最小——箭杆最细但最重；木材 M₁ 很高（轻），但 M₂ 很低——箭杆粗、空气阻力大；CFRP 的 M₁ 最高，M₂ 也较高，两项都靠前。
+A: 推荐 CFRP：同时满足“轻”和“细”，正好落在第 10 页图中的阴影区内。木材是“轻但粗”的传统选择，铝合金箭杆介于两者之间。
+
+@example 推导轻而刚的拉杆的材料指数 Index for a light, stiff tie
+Q: A tie of fixed length L carries a tensile force F, and its extension must not exceed δ. The cross-sectional area A is free. Derive the material index that minimises the mass, and state the gradient of its guideline on a log E – log ρ chart. ||| 一根长度 L 固定的拉杆承受拉力 F，伸长量不得超过 δ，截面积 A 可以自由选择。推导使质量最小的材料指数，并说明它在 log E – log ρ 图上导引线的斜率。
+S: <b>目标</b>：质量 m = A L ρ　　(1)
+S: <b>约束</b>（刚度）：δ = F L / (A E) ≤ δ_max → A ≥ F L / (E δ_max)　　(2)
+S: <b>消去自由变量 A</b>：把 (2) 代入 (1)：m ≥ (F L² / δ_max) × [ρ / E]
+S: 括号前为设计项，括号内为材料项。要 m 最小，就要使 <b>M = E / ρ</b> 最大（比刚度）。
+S: 取对数：log E = log ρ + log M → 斜率为 <b>1</b> 的直线。
+A: 指数 M = E/ρ，导引线斜率为 1。比较：拉杆 E/ρ（斜率 1）、屈曲的杆 E<sup>1/2</sup>/ρ（斜率 2）、受弯的板 E<sup>1/3</sup>/ρ（斜率 3）——同样“轻而刚”，受力形式不同，指数也不同。
+
+@example 在对数图上画导引线 Plotting a guideline
+Q: On a modulus–density chart, draw the guideline M₁ = E<sup>1/2</sup>/ρ = 6 (E in GPa, ρ in Mg m⁻³). Find two points on it, and decide whether a material with E = 50 GPa, ρ = 1.0 Mg m⁻³ lies above or below the line. ||| 在模量—密度图上画出导引线 M₁ = E<sup>1/2</sup>/ρ = 6（E 以 GPa 计，ρ 以 Mg m⁻³ 计）。求线上两点，并判断 E = 50 GPa、ρ = 1.0 Mg m⁻³ 的材料在线的上方还是下方。
+S: 由 E<sup>1/2</sup> = 6ρ 得 E = 36ρ²。
+S: 取 ρ = 1 → E = 36 GPa；取 ρ = 0.5 → E = 9 GPa；取 ρ = 2 → E = 144 GPa。在对数图上，ρ 每增大 10 倍，E 增大 100 倍——斜率为 2。
+S: 判断：该材料 M₁ = √50 / 1.0 = 7.07 ＞ 6，或者看 ρ = 1 时它的 E = 50 ＞ 36，所以位于导引线<b>上方</b>（左上方），优于导引线上的材料。
+A: 线上的点如 (0.5, 9)、(1, 36)、(2, 144)；该材料在导引线上方，属于搜索区域内的候选材料。
